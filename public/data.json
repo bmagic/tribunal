@@ -1,0 +1,1053 @@
+{
+    "emission": [
+        {
+            "url": "https://youtu.be/YglE-FnSd3g",
+            "date": "31/08/2021"
+        },
+        {
+            "url": "https://youtu.be/msjthe2mWO4",
+            "date": "07/09/2021"
+        },
+        {
+            "url": "https://youtu.be/cKo50XAX4Og",
+            "date": "15/09/2021"
+        },
+        {
+            "url": "https://youtu.be/CcCvQmT369Q",
+            "date": "23/09/2021"
+        },
+        {
+            "url": "https://youtu.be/7mr06caJ_Vo",
+            "date": "03/10/2021"
+        },
+        {
+            "url": "https://youtu.be/E2nF_iotCU8",
+            "date": "13/10/2021"
+        },
+        {
+            "url": "https://youtu.be/XIt5h0WvaQI",
+            "date": "20/10/2021"
+        },
+        {
+            "url": "https://www.twitch.tv/videos/1188559420",
+            "date": "27/10/2021"
+        },
+        {
+            "url": "https://www.twitch.tv/videos/1194110571",
+            "date": "02/11/2021"
+        }
+    ],
+    "desktop": [
+        {
+            "id": "1-1",
+            "emission": 1,
+            "time": 211,
+            "jugement": "coupable"
+        },
+        {
+            "id": "1-2",
+            "emission": 1,
+            "time": 512,
+            "jugement": "coupable"
+        },
+        {
+            "id": "1-3",
+            "emission": 1,
+            "time": 701,
+            "jugement": "coupable"
+        },
+        {
+            "id": "1-4",
+            "emission": 1,
+            "time": 960,
+            "jugement": "coupable"
+        },
+        {
+            "id": "1-5",
+            "emission": 1,
+            "time": 1277,
+            "jugement": "coupable"
+        },
+        {
+            "id": "1-6",
+            "emission": 1,
+            "time": 1577,
+            "jugement": "coupable"
+        },
+        {
+            "id": "1-7",
+            "emission": 1,
+            "time": 1906,
+            "jugement": "coupable"
+        },
+        {
+            "id": "1-8",
+            "emission": 1,
+            "time": 2202,
+            "jugement": "coupable"
+        },
+        {
+            "id": "1-9",
+            "emission": 1,
+            "time": 2636,
+            "jugement": "coupable"
+        },
+        {
+            "id": "1-10",
+            "emission": 1,
+            "time": 2950,
+            "jugement": "coupable"
+        },
+        {
+            "id": "1-11",
+            "emission": 1,
+            "time": 3468,
+            "jugement": "coupable"
+        },
+        {
+            "id": "1-12",
+            "emission": 1,
+            "time": 3662,
+            "jugement": "coupable"
+        },
+        {
+            "id": "1-13",
+            "emission": 1,
+            "time": 3904,
+            "jugement": "coupable"
+        },
+        {
+            "id": "1-14",
+            "emission": 1,
+            "time": 4382,
+            "jugement": "coupable"
+        },
+        {
+            "id": "1-15",
+            "emission": 1,
+            "time": 4828,
+            "jugement": "coupable"
+        },
+        {
+            "id": "1-16",
+            "emission": 1,
+            "time": 5133,
+            "jugement": "relaxe"
+        },
+        {
+            "id": "1-17",
+            "emission": 1,
+            "time": 5576,
+            "jugement": "coupable"
+        },
+        {
+            "id": "1-18",
+            "emission": 1,
+            "time": 6099,
+            "owner": "LupusVII",
+            "jugement": "coupable"
+        },
+        {
+            "id": "1-19",
+            "emission": 1,
+            "time": 6532,
+            "jugement": "coupable"
+        },
+        {
+            "id": "1-20",
+            "emission": 1,
+            "time": 7204,
+            "owner": "Bmagic",
+            "jugement": "relaxe"
+        },
+        {
+            "id": "1-21",
+            "emission": 1,
+            "time": 7755,
+            "jugement": "coupable"
+        },
+        {
+            "id": "1-22",
+            "emission": 1,
+            "time": 8421,
+            "jugement": "relaxe"
+        },
+        {
+            "id": "1-23",
+            "emission": 1,
+            "time": 8803,
+            "jugement": "coupable"
+        },
+        {
+            "id": "1-24",
+            "emission": 1,
+            "time": 9089,
+            "jugement": "coupable"
+        },
+        {
+            "id": "1-25",
+            "emission": 1,
+            "time": 9469,
+            "jugement": "coupable"
+        },
+        {
+            "id": "1-26",
+            "emission": 1,
+            "time": 10025,
+            "jugement": "relaxe"
+        },
+        {
+            "id": "2-1",
+            "emission": 2,
+            "time": 352,
+            "owner": "Ellen Replay",
+            "jugement": "coupable"
+        },
+        {
+            "id": "2-2",
+            "emission": 2,
+            "time": 829,
+            "owner": "Ivan Le Fou",
+            "jugement": "coupable"
+        },
+        {
+            "id": "2-3",
+            "emission": 2,
+            "time": 1423,
+            "owner": "Toto",
+            "jugement": "relaxe"
+        },
+        {
+            "id": "2-4",
+            "emission": 2,
+            "time": 1904,
+            "jugement": "coupable"
+        },
+        {
+            "id": "2-5",
+            "emission": 2,
+            "time": 2239,
+            "jugement": "coupable"
+        },
+        {
+            "id": "2-6",
+            "emission": 2,
+            "time": 2690,
+            "jugement": "coupable"
+        },
+        {
+            "id": "2-7",
+            "emission": 2,
+            "time": 3082,
+            "jugement": "coupable"
+        },
+        {
+            "id": "2-8",
+            "emission": 2,
+            "time": 4243,
+            "jugement": "coupable"
+        },
+        {
+            "id": "2-9",
+            "emission": 2,
+            "time": 4782,
+            "jugement": "nonjuge"
+        },
+        {
+            "id": "2-10",
+            "emission": 2,
+            "time": 5096,
+            "jugement": "coupable"
+        },
+        {
+            "id": "2-11",
+            "emission": 2,
+            "time": 5460,
+            "owner": "Yliaene",
+            "jugement": "coupable"
+        },
+        {
+            "id": "2-12",
+            "emission": 2,
+            "time": 5907,
+            "jugement": "coupable"
+        },
+        {
+            "id": "2-13",
+            "emission": 2,
+            "time": 6470,
+            "jugement": "coupable"
+        },
+        {
+            "id": "2-14",
+            "emission": 2,
+            "time": 7177,
+            "jugement": "coupable"
+        },
+        {
+            "id": "2-15",
+            "emission": 2,
+            "time": 7813,
+            "jugement": "coupable"
+        },
+        {
+            "id": "2-16",
+            "emission": 2,
+            "time": 8284,
+            "jugement": "relaxe"
+        },
+        {
+            "id": "2-17",
+            "emission": 2,
+            "time": 8613,
+            "jugement": "coupable"
+        },
+        {
+            "id": "2-18",
+            "emission": 2,
+            "time": 9258,
+            "jugement": "coupable"
+        },
+        {
+            "id": "2-19",
+            "emission": 2,
+            "time": 9622,
+            "jugement": "coupable"
+        },
+        {
+            "id": "2-20",
+            "emission": 2,
+            "time": 10386,
+            "jugement": "coupable"
+        },
+        {
+            "id": "2-21",
+            "emission": 2,
+            "time": 10386,
+            "jugement": "relaxe"
+        },
+        {
+            "id": "2-22",
+            "emission": 2,
+            "time": 11237,
+            "jugement": "coupable"
+        },
+        {
+            "id": "3-1",
+            "emission": 3,
+            "time": 162,
+            "jugement": "coupable"
+        },
+        {
+            "id": "3-2",
+            "emission": 3,
+            "time": 761,
+            "jugement": "coupable"
+        },
+        {
+            "id": "3-3",
+            "emission": 3,
+            "time": 1165,
+            "jugement": "coupable"
+        },
+        {
+            "id": "3-4",
+            "emission": 3,
+            "time": 2064,
+            "jugement": "coupable"
+        },
+        {
+            "id": "3-5",
+            "emission": 3,
+            "time": 2757,
+            "jugement": "coupable"
+        },
+        {
+            "id": "3-6",
+            "emission": 3,
+            "time": 3309,
+            "jugement": "coupable"
+        },
+        {
+            "id": "3-7",
+            "emission": 3,
+            "time": 3724,
+            "jugement": "relaxe"
+        },
+        {
+            "id": "3-8",
+            "emission": 3,
+            "time": 4355,
+            "jugement": "coupable"
+        },
+        {
+            "id": "3-9",
+            "emission": 3,
+            "time": 5911,
+            "jugement": "coupable"
+        },
+        {
+            "id": "3-10",
+            "emission": 3,
+            "time": 6244,
+            "jugement": "relaxe"
+        },
+        {
+            "id": "3-11",
+            "emission": 3,
+            "time": 6947,
+            "jugement": "coupable"
+        },
+        {
+            "id": "3-12",
+            "emission": 3,
+            "time": 8051,
+            "jugement": "coupable"
+        },
+        {
+            "id": "3-13",
+            "emission": 3,
+            "time": 8634,
+            "jugement": "coupable"
+        },
+        {
+            "id": "3-14",
+            "emission": 3,
+            "time": 9409,
+            "jugement": "relaxe"
+        },
+        {
+            "id": "4-1",
+            "emission": 4,
+            "time": 318,
+            "jugement": "coupable",
+            "sanction": "epreuve"
+        },
+        {
+            "id": "4-2",
+            "emission": 4,
+            "time": 1444,
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": "4-3",
+            "emission": 4,
+            "time": 2179,
+            "jugement": "coupable",
+            "sanction": "epreuve"
+        },
+        {
+            "id": "4-4",
+            "emission": 4,
+            "time": 2848,
+            "owner": "Squwal",
+            "jugement": "coupable",
+            "sanction": "rappel"
+        },
+        {
+            "id": "4-5",
+            "emission": 4,
+            "time": 3541,
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": "4-6",
+            "emission": 4,
+            "time": 4149,
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": "4-7",
+            "emission": 4,
+            "time": 4168,
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": "4-8",
+            "emission": 4,
+            "time": 4641,
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": "4-9",
+            "emission": 4,
+            "time": 4752,
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": "4-10",
+            "emission": 4,
+            "time": 5305,
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": "4-11",
+            "emission": 4,
+            "time": 5546,
+            "jugement": "coupable",
+            "sanction": "rappel"
+        },
+        {
+            "id": "4-12",
+            "emission": 4,
+            "time": 5980,
+            "jugement": "relaxe"
+        },
+        {
+            "id": "4-13",
+            "emission": 4,
+            "time": 6707,
+            "jugement": "coupable",
+            "sanction": "epreuve"
+        },
+        {
+            "id": "5-1",
+            "emission": 5,
+            "time": 805,
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": "5-2",
+            "emission": 5,
+            "time": 1237,
+            "owner": "PurpleDrain",
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": "5-3",
+            "emission": 5,
+            "time": 1809,
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": "5-4",
+            "emission": 5,
+            "time": 2302,
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": "5-5",
+            "emission": 5,
+            "time": 2720,
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": "5-6",
+            "emission": 5,
+            "time": 3421,
+            "jugement": "coupable",
+            "sanction": "epreuve"
+        },
+        {
+            "id": "5-7",
+            "emission": 5,
+            "time": 4126,
+            "jugement": "coupable",
+            "sanction": "epreuve"
+        },
+        {
+            "id": "5-8",
+            "emission": 5,
+            "time": 4633,
+            "jugement": "relaxe"
+        },
+        {
+            "id": "5-9",
+            "emission": 5,
+            "time": 5467,
+            "jugement": "coupable",
+            "sanction": "epreuve"
+        },
+        {
+            "id": "5-10",
+            "emission": 5,
+            "time": 6404,
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": "5-11",
+            "emission": 5,
+            "time": 6972,
+            "jugement": "coupable",
+            "sanction": "rappel"
+        },
+        {
+            "id": "5-12",
+            "emission": 5,
+            "time": 7851,
+            "jugement": "coupable",
+            "sanction": "rappel"
+        },
+        {
+            "id": "5-13",
+            "emission": 5,
+            "time": 8717,
+            "jugement": "coupable",
+            "sanction": "epreuve"
+        },
+        {
+            "id": "5-14",
+            "emission": 5,
+            "time": 9305,
+            "owner": "jeanbat17",
+            "jugement": "coupable",
+            "sanction": "rappel"
+        },
+        {
+            "id": "5-15",
+            "emission": 5,
+            "time": 9804,
+            "jugement": "relaxe"
+        },
+        {
+            "id": "6-1",
+            "emission": 6,
+            "time": 213,
+            "jugement": "coupable",
+            "sanction": "epreuve"
+        },
+        {
+            "id": "6-2",
+            "emission": 6,
+            "time": 863,
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": "6-3",
+            "emission": 6,
+            "time": 1350,
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": "6-4",
+            "emission": 6,
+            "time": 2031,
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": "6-5",
+            "emission": 6,
+            "time": 2596,
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": "6-6",
+            "emission": 6,
+            "time": 3068,
+            "jugement": "coupable",
+            "sanction": "epreuve"
+        },
+        {
+            "id": "6-7",
+            "emission": 6,
+            "time": 3814,
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": "6-8",
+            "emission": 6,
+            "time": 4160,
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": "6-9",
+            "emission": 6,
+            "time": 4772,
+            "jugement": "coupable",
+            "sanction": "epreuve"
+        },
+        {
+            "id": "6-10",
+            "emission": 6,
+            "time": 5596,
+            "jugement": "coupable",
+            "sanction": "rappel"
+        },
+        {
+            "id": "6-11",
+            "emission": 6,
+            "time": 6022,
+            "jugement": "coupable",
+            "sanction": "epreuve"
+        },
+        {
+            "id": "6-12",
+            "emission": 6,
+            "time": 6455,
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": "6-13",
+            "emission": 6,
+            "time": 6768,
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": "6-14",
+            "emission": 6,
+            "time": 7563,
+            "jugement": "coupable",
+            "sanction": "rappel"
+        },
+        {
+            "id": "7-1",
+            "emission": 7,
+            "time": "164",
+            "jugement": "coupable",
+            "sanction": "rappel"
+        },
+        {
+            "id": "7-2",
+            "emission": 7,
+            "time": "780",
+            "jugement": "coupable",
+            "sanction": "rappel"
+        },
+        {
+            "id": "7-3",
+            "emission": 7,
+            "time": "1292",
+            "jugement": "coupable",
+            "sanction": "rappel"
+        },
+        {
+            "id": "7-4",
+            "emission": 7,
+            "time": "1745",
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": "7-5",
+            "emission": 7,
+            "time": "2054",
+            "jugement": "coupable",
+            "sanction": "rappel"
+        },
+        {
+            "id": "7-6",
+            "emission": 7,
+            "time": "2629",
+            "jugement": "coupable",
+            "sanction": "rappel"
+        },
+        {
+            "id": "7-7",
+            "emission": 7,
+            "time": "3035",
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": "7-8",
+            "emission": 7,
+            "time": "3575",
+            "jugement": "relaxe"
+        },
+        {
+            "id": "7-9",
+            "emission": 7,
+            "time": "3796",
+            "jugement": "coupable",
+            "sanction": "epreuve"
+        },
+        {
+            "id": "7-10",
+            "emission": 7,
+            "time": "4229",
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": "7-11",
+            "emission": 7,
+            "time": "4399",
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": "7-12",
+            "emission": 7,
+            "time": "4858",
+            "jugement": "coupable",
+            "sanction": "rappel"
+        },
+        {
+            "id": "7-13",
+            "emission": 7,
+            "time": "5281",
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": "7-14",
+            "emission": 7,
+            "time": "5593",
+            "jugement": "coupable",
+            "sanction": "epreuve"
+        },
+        {
+            "id": "7-15",
+            "emission": 7,
+            "time": "6222",
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": "7-16",
+            "emission": 7,
+            "time": "6565",
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": "7-17",
+            "emission": 7,
+            "time": "7019",
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": "7-18",
+            "emission": 7,
+            "time": "7394",
+            "jugement": "relaxe"
+        },
+        {
+            "id": "8-1",
+            "emission": 8,
+            "time": "00h17m46s",
+            "jugement": "coupable",
+            "sanction": "rappel"
+        },
+        {
+            "id": "8-2",
+            "emission": 8,
+            "time": "00h24m36s",
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": "8-3",
+            "emission": 8,
+            "time": "00h28m01s",
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": "8-4",
+            "emission": 8,
+            "time": "00h35m24s",
+            "jugement": "coupable",
+            "sanction": "rappel"
+        },
+        {
+            "id": "8-5",
+            "emission": 8,
+            "time": "00h42m12s",
+            "jugement": "coupable",
+            "sanction": "rappel"
+        },
+        {
+            "id": "8-6",
+            "emission": 8,
+            "time": "00h48m34s",
+            "jugement": "relaxe"
+        },
+        {
+            "id": "8-7",
+            "emission": 8,
+            "time": "00h59m28s",
+            "jugement": "coupable",
+            "sanction": "epreuve"
+        },
+        {
+            "id": "8-8",
+            "emission": 8,
+            "time": "01h10m14s",
+            "jugement": "relaxe"
+        },
+        {
+            "id": "8-9",
+            "emission": 8,
+            "time": "01h16m55s",
+            "jugement": "relaxe"
+        },
+        {
+            "id": "8-10",
+            "emission": 8,
+            "time": "01h28m44s",
+            "jugement": "coupable",
+            "sanction": "rappel"
+        },
+        {
+            "id": "8-11",
+            "emission": 8,
+            "time": "01h38m33s",
+            "jugement": "coupable",
+            "sanction": "rappel"
+        },
+        {
+            "id": "8-12",
+            "emission": 8,
+            "time": "01h47m03s",
+            "jugement": "coupable",
+            "sanction": "epreuve"
+        },
+        {
+            "id": "8-13",
+            "emission": 8,
+            "time": "01h51m34s",
+            "jugement": "relaxe"
+        },
+        {
+            "id": "8-14",
+            "emission": 8,
+            "time": "01h54m41s",
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": "8-15",
+            "emission": 8,
+            "time": "01h58m58s",
+            "jugement": "relaxe"
+        },
+        {
+            "id": "8-16",
+            "emission": 8,
+            "time": "02h02m42s",
+            "jugement": "relaxe"
+        },
+        {
+            "id": "8-17",
+            "emission": 8,
+            "time": "02h10m02s",
+            "jugement": "coupable",
+            "sanction": "rappel"
+        },
+        {
+            "id": "8-18",
+            "emission": 8,
+            "time": "02h19m24s",
+            "jugement": "coupable",
+            "sanction": "epreuve"
+        },
+        {
+            "id": "8-19",
+            "emission": 8,
+            "time": "02h32m28s",
+            "jugement": "relaxe"
+        },
+        {
+            "id": "8-20",
+            "emission": 8,
+            "time": "02h39m29s",
+            "jugement": "coupable",
+            "sanction": "epreuve"
+        },
+        {
+            "id": "8-21",
+            "emission": 8,
+            "time": "02h46m19s",
+            "jugement": "coupable",
+            "sanction": "rappel"
+        },
+        {
+            "id": "9-1",
+            "emission": 9,
+            "time": "00h08m42s",
+            "jugement": "coupable",
+            "sanction": "epreuve"
+        },
+        {
+            "id": "9-2",
+            "emission": 9,
+            "time": "00h17m49s",
+            "jugement": "coupable",
+            "sanction": "rappel"
+        },
+        {
+            "id": "9-3",
+            "emission": 9,
+            "time": "00h27m28s",
+            "jugement": "coupable",
+            "sanction": "rappel"
+        },
+        {
+            "id": "9-4",
+            "emission": 9,
+            "time": "00h37m23s",
+            "jugement": "coupable",
+            "sanction": "epreuve"
+        },
+        {
+            "id": "9-5",
+            "emission": 9,
+            "time": "00h49m15s",
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": "9-6",
+            "emission": 9,
+            "time": "01h02m56s",
+            "jugement": "relaxe"
+        },
+        {
+            "id": "9-7",
+            "emission": 9,
+            "time": "01h13m25s",
+            "jugement": "coupable",
+            "sanction": "rappel"
+        },
+        {
+            "id": "9-8",
+            "emission": 9,
+            "time": "01h25m34s",
+            "jugement": "coupable",
+            "sanction": "rappel"
+        },
+        {
+            "id": "9-9",
+            "emission": 9,
+            "time": "01h39m11s",
+            "jugement": "coupable",
+            "sanction": "rappel"
+        },
+        {
+            "id": "9-10",
+            "emission": 9,
+            "time": "01h48m11s",
+            "jugement": "relaxe"
+        },
+        {
+            "id": "9-11",
+            "emission": 9,
+            "time": "02h01m06s",
+            "jugement": "coupable",
+            "sanction": "epreuve"
+        }
+    ]
+}
