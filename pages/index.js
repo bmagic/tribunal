@@ -33,11 +33,11 @@ export default function Home() {
         <title>Greffe du Tribunal des Bureaux</title>
         <link rel="icon" href="favicon.ico" />
         <meta name="author" content="Bmagic" />
-        <meta name="description" content="Retrouvez les minutes de tous les jugements de l'honorable juge Ackboo" />
+        <meta name="description" content="Retrouvez les minutes de tous les jugements de l'honorable juge ackboo" />
         <meta property="og:url" content="https://tribunal.bmagic.fr" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Greffe du Tribunal des Bureaux" />
-        <meta property="og:description" content="Retrouvez les minutes de tous les jugements de l'honorable juge Ackboo" />
+        <meta property="og:description" content="Retrouvez les minutes de tous les jugements de l'honorable juge ackboo" />
         <meta property="og:image" content="https://tribunal.bmagic.fr/logo.jpg" />
       </Head>
 
@@ -49,7 +49,7 @@ export default function Home() {
           <h1 className="title is-size-1">
             Greffe du Tribunal des Bureaux
           </h1>
-          <h2 className="subtitle">Présidé par l&lsquo;honorable juge Ackboo</h2>
+          <h2 className="subtitle">Présidé par l&lsquo;honorable juge ackboo</h2>
           <div className='container '>
             <div className="level">
               <div className="level-item">
