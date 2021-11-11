@@ -5,6 +5,7 @@ import json from '../public/data.json'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // 
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { useRouter } from 'next/router'
+import DesktopImage from '../components/DesktopImage'
 
 export default function Home() {
   const router = useRouter()
@@ -29,27 +30,28 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Le Tribunal des Bureaux</title>
+        <title>Greffe du Tribunal des Bureaux</title>
+        <link rel="icon" href="favicon.ico" />
         <meta name="author" content="Bmagic" />
-        <meta name="description" content="Toutes les statistiques des jugements de l'honorable juge Ackboo" />
+        <meta name="description" content="Retrouvez les minutes de tous les jugements de l'honorable juge Ackboo" />
         <meta property="og:url" content="https://tribunal.bmagic.fr" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Le Tribunal des Bureaux" />
-        <meta property="og:description" content="Toutes les statistiques des jugements de l'honorable juge Ackboo" />
+        <meta property="og:title" content="Greffe du Tribunal des Bureaux" />
+        <meta property="og:description" content="Retrouvez les minutes de tous les jugements de l'honorable juge Ackboo" />
         <meta property="og:image" content="https://tribunal.bmagic.fr/logo.jpg" />
       </Head>
 
       <main >
         <div className="is-italic has-text-grey p-1 is-pulled-right">
-          Pour soumettre un changement me contacter sur discord Bmagic#6057 ou par mail contact@bmagic.fr
+          Pour que votre pseudo soit référencé ou pour tout autre demande me contacter sur discord Bmagic#6057.
         </div>
         <a className="is-pulled-left" href="https://github.com/bmagic/tribunal"><img loading="lazy" width="120" height="120" src="https://github.blog/wp-content/uploads/2008/12/forkme_left_gray_6d6d6d.png?resize=149%2C149" className="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1" /></a>
 
         <div className='section has-text-centered'>
           <h1 className="title is-size-1">
-            Le Tribunal des Bureaux
+            Greffe du Tribunal des Bureaux
           </h1>
-          <h2 className="subtitle">par l&lsquo;honorable juge Ackboo</h2>
+          <h2 className="subtitle">Présidé par l&lsquo;honorable juge Ackboo</h2>
           <div className='container '>
             <div className="level">
               <div className="level-item">
@@ -148,8 +150,7 @@ export default function Home() {
               return <div key={desktop.id} className="column is-4">
                 <div className="card">
                   <div className="card-image">
-                    <a target='_blank' rel="noreferrer" href={`${emission.url}?t=${desktop.time}`}><Image className="image is-16by9" width={640} blurDataURL='/img/blur.jpeg' placeholder='blur'
-                      height={360} src={`/img/${desktop.id}.jpg`} />
+                    <a target='_blank' rel="noreferrer" href={`${emission.url}?t=${desktop.time}`}><DesktopImage id={desktop.id} />
                       {desktop.jugement !== "nonjuge" && <img src={`/jugements/${desktop.sanction || desktop.jugement}.png`} className="jugement" />}
                     </a>
                   </div>
