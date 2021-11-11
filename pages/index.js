@@ -43,10 +43,8 @@ export default function Home() {
 
       <main >
         <div className="is-italic has-text-grey p-1 is-pulled-right">
-          Pour que votre pseudo soit référencé ou pour tout autre demande me contacter sur discord Bmagic#6057.
+          Pour que votre pseudo soit référencé ou pour tout autre demande me contacter sur discord Bmagic#6057
         </div>
-        <a className="is-pulled-left" href="https://github.com/bmagic/tribunal"><img loading="lazy" width="120" height="120" src="https://github.blog/wp-content/uploads/2008/12/forkme_left_gray_6d6d6d.png?resize=149%2C149" className="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1" /></a>
-
         <div className='section has-text-centered'>
           <h1 className="title is-size-1">
             Greffe du Tribunal des Bureaux
