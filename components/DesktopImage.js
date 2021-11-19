@@ -162,6 +162,15 @@ import i10_6 from '../public/img/10-6.jpg'
 import i10_7 from '../public/img/10-7.jpg'
 import i10_8 from '../public/img/10-8.jpg'
 import i10_9 from '../public/img/10-9.jpg'
+import i11_1 from '../public/img/11-1.jpg'
+import i11_2 from '../public/img/11-2.jpg'
+import i11_3 from '../public/img/11-3.jpg'
+import i11_4 from '../public/img/11-4.jpg'
+import i11_5 from '../public/img/11-5.jpg'
+import i11_6 from '../public/img/11-6.jpg'
+import i11_7 from '../public/img/11-7.jpg'
+import i11_8 from '../public/img/11-8.jpg'
+import i11_9 from '../public/img/11-9.jpg'
 
 export default function DesktopImage({ id }) {
     const imgMap = {
@@ -328,6 +337,15 @@ export default function DesktopImage({ id }) {
         '10-7': i10_7,
         '10-8': i10_8,
         '10-9': i10_9,
+        '11-1': i11_1,
+        '11-2': i11_2,
+        '11-3': i11_3,
+        '11-4': i11_4,
+        '11-5': i11_5,
+        '11-6': i11_6,
+        '11-7': i11_7,
+        '11-8': i11_8,
+        '11-9': i11_9,
     }
 
     return <Image className="image is-16by9" width={640} height={360} blurDataURL='/img/blur.jpeg' placeholder='blur' src={imgMap[id]} />
