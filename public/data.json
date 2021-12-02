@@ -41,12 +41,16 @@
             "date": "11/11/2021"
         },
         {
-            "url": "https://www.twitch.tv/videos/1209164047",
+            "url": "https://youtu.be/y53M4F46Wrc",
             "date": "18/11/2021"
         },
         {
             "url": "https://www.twitch.tv/videos/1213798032",
             "date": "23/11/2021"
+        },
+        {
+            "url": "https://www.twitch.tv/videos/1222065369",
+            "date": "02/12/2021"
         }
     ],
     "desktop": [
@@ -622,7 +626,8 @@
             "id": "5-15",
             "emission": 5,
             "time": 9804,
-            "jugement": "relaxe"
+            "jugement": "relaxe",
+            "owner": "Kolik"
         },
         {
             "id": "6-1",
@@ -803,7 +808,8 @@
             "emission": 7,
             "time": "4858",
             "jugement": "coupable",
-            "sanction": "rappel"
+            "sanction": "rappel",
+            "owner": "MasterPixel (Bhorcys)"
         },
         {
             "id": "7-13",
@@ -1127,7 +1133,7 @@
         {
             "id": "11-1",
             "emission": 11,
-            "time": "00h06m07s",
+            "time": "236",
             "jugement": "coupable",
             "sanction": "gnouf",
             "owner": "Nodoka"
@@ -1135,55 +1141,55 @@
         {
             "id": "11-2",
             "emission": 11,
-            "time": "00h19m45s",
+            "time": "1054",
             "jugement": "coupable",
             "sanction": "gnouf"
         },
         {
             "id": "11-3",
             "emission": 11,
-            "time": "00h36m48s",
+            "time": "2076",
             "jugement": "coupable",
             "sanction": "epreuve"
         },
         {
             "id": "11-4",
             "emission": 11,
-            "time": "00h50m52s",
+            "time": "2921",
             "jugement": "coupable",
             "sanction": "gnouf"
         },
         {
             "id": "11-5",
             "emission": 11,
-            "time": "01h29m09s",
+            "time": "5218",
             "jugement": "coupable",
             "sanction": "gnouf"
         },
         {
             "id": "11-6",
             "emission": 11,
-            "time": "01h34m52s",
+            "time": "5561",
             "jugement": "coupable",
             "sanction": "gnouf"
         },
         {
             "id": "11-7",
             "emission": 11,
-            "time": "01h43m12s",
+            "time": "6061",
             "jugement": "relaxe"
         },
         {
             "id": "11-8",
             "emission": 11,
-            "time": "01h49m10s",
+            "time": "6419",
             "jugement": "relaxe",
             "owner": "Demeterium"
         },
         {
             "id": "11-9",
             "emission": 11,
-            "time": "02h01m07s",
+            "time": "7136",
             "jugement": "relaxe"
         },
         {
@@ -1228,6 +1234,66 @@
             "id": "12-7",
             "emission": 12,
             "time": "01h33m15s",
+            "jugement": "coupable",
+            "sanction": "rappel"
+        },
+        {
+            "id": "13-1",
+            "emission": 13,
+            "time": "00h07m47s",
+            "jugement": "coupable",
+            "sanction": "rappel"
+        },
+        {
+            "id": "13-2",
+            "emission": 13,
+            "time": "00h24m36s",
+            "jugement": "relaxe"
+        },
+        {
+            "id": "13-3",
+            "emission": 13,
+            "time": "00h48m03s",
+            "jugement": "coupable",
+            "sanction": "rappel"
+        },
+        {
+            "id": "13-4",
+            "emission": 13,
+            "time": "01h03m02s",
+            "jugement": "coupable",
+            "sanction": "rappel"
+        },
+        {
+            "id": "13-5",
+            "emission": 13,
+            "time": "01h14m55s",
+            "jugement": "coupable",
+            "sanction": "rappel"
+        },
+        {
+            "id": "13-6",
+            "emission": 13,
+            "time": "01h30m27s",
+            "jugement": "relaxe"
+        },
+        {
+            "id": "13-7",
+            "emission": 13,
+            "time": "01h39m38s",
+            "jugement": "relaxe"
+        },
+        {
+            "id": "13-8",
+            "emission": 13,
+            "time": "01h48m26s",
+            "jugement": "coupable",
+            "sanction": "rappel"
+        },
+        {
+            "id": "13-9",
+            "emission": 13,
+            "time": "01h58m18s",
             "jugement": "coupable",
             "sanction": "rappel"
         }
