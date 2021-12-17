@@ -187,6 +187,29 @@ import i13_6 from '../public/img/13-6.jpg'
 import i13_7 from '../public/img/13-7.jpg'
 import i13_8 from '../public/img/13-8.jpg'
 import i13_9 from '../public/img/13-9.jpg'
+import i14_1 from '../public/img/14-1.jpg'
+import i14_2 from '../public/img/14-2.jpg'
+import i14_3 from '../public/img/14-3.jpg'
+import i14_4 from '../public/img/14-4.jpg'
+import i14_5 from '../public/img/14-5.jpg'
+import i14_6 from '../public/img/14-6.jpg'
+import i14_7 from '../public/img/14-7.jpg'
+import i14_8 from '../public/img/14-8.jpg'
+import i14_9 from '../public/img/14-9.jpg'
+import i14_10 from '../public/img/14-10.jpg'
+import i14_11 from '../public/img/14-11.jpg'
+import i14_12 from '../public/img/14-12.jpg'
+import i15_1 from '../public/img/15-1.jpg'
+import i15_2 from '../public/img/15-2.jpg'
+import i15_3 from '../public/img/15-3.jpg'
+import i15_4 from '../public/img/15-4.jpg'
+import i15_5 from '../public/img/15-5.jpg'
+import i15_6 from '../public/img/15-6.jpg'
+import i15_7 from '../public/img/15-7.jpg'
+import i15_8 from '../public/img/15-8.jpg'
+import i15_9 from '../public/img/15-9.jpg'
+import i15_10 from '../public/img/15-10.jpg'
+import i15_11 from '../public/img/15-11.jpg'
 
 export default function DesktopImage({ id }) {
     const imgMap = {
@@ -378,6 +401,29 @@ export default function DesktopImage({ id }) {
         '13-7': i13_7,
         '13-8': i13_8,
         '13-9': i13_9,
+        '14-1': i14_1,
+        '14-2': i14_2,
+        '14-3': i14_3,
+        '14-4': i14_4,
+        '14-5': i14_5,
+        '14-6': i14_6,
+        '14-7': i14_7,
+        '14-8': i14_8,
+        '14-9': i14_9,
+        '14-10': i14_10,
+        '14-11': i14_11,
+        '14-12': i14_12,
+        '15-1': i15_1,
+        '15-2': i15_2,
+        '15-3': i15_3,
+        '15-4': i15_4,
+        '15-5': i15_5,
+        '15-6': i15_6,
+        '15-7': i15_7,
+        '15-8': i15_8,
+        '15-9': i15_9,
+        '15-10': i15_10,
+        '15-11': i15_11,
     }
 
     return <Image className="image is-16by9" width={640} height={360} blurDataURL='/img/blur.jpeg' placeholder='blur' src={imgMap[id]} />
