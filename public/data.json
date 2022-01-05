@@ -49,15 +49,15 @@
             "date": "23/11/2021"
         },
         {
-            "url": "https://www.twitch.tv/videos/1222065369",
+            "url": "https://youtu.be/gkZM7pOu_zA",
             "date": "02/12/2021"
         },
         {
-            "url": "https://www.twitch.tv/videos/1227722274",
+            "url": "https://youtu.be/KHOqdSSfeoo",
             "date": "08/12/2021"
         },
         {
-            "url": "https://www.twitch.tv/videos/1236086620",
+            "url": "https://youtu.be/yGYl8jml2dA",
             "date": "17/12/2021"
         }
     ],
@@ -1249,148 +1249,148 @@
         {
             "id": "13-1",
             "emission": 13,
-            "time": "00h07m47s",
+            "time": "145",
             "jugement": "coupable",
             "sanction": "rappel"
         },
         {
             "id": "13-2",
             "emission": 13,
-            "time": "00h24m36s",
+            "time": "1153",
             "jugement": "relaxe"
         },
         {
             "id": "13-3",
             "emission": 13,
-            "time": "00h48m03s",
+            "time": "2561",
             "jugement": "coupable",
             "sanction": "rappel"
         },
         {
             "id": "13-4",
             "emission": 13,
-            "time": "01h03m02s",
+            "time": "3459",
             "jugement": "coupable",
             "sanction": "rappel"
         },
         {
             "id": "13-5",
             "emission": 13,
-            "time": "01h14m55s",
+            "time": "4173",
             "jugement": "coupable",
             "sanction": "rappel"
         },
         {
             "id": "13-6",
             "emission": 13,
-            "time": "01h30m27s",
+            "time": "5105",
             "jugement": "relaxe"
         },
         {
             "id": "13-7",
             "emission": 13,
-            "time": "01h39m38s",
+            "time": "5656",
             "jugement": "relaxe"
         },
         {
             "id": "13-8",
             "emission": 13,
-            "time": "01h48m26s",
+            "time": "6184",
             "jugement": "coupable",
             "sanction": "rappel"
         },
         {
             "id": "13-9",
             "emission": 13,
-            "time": "01h58m18s",
+            "time": "6771",
             "jugement": "coupable",
             "sanction": "rappel"
         },
         {
             "id": "14-1",
             "emission": 14,
-            "time": "00h06m34s",
+            "time": "92",
             "jugement": "coupable",
             "sanction": "rappel"
         },
         {
             "id": "14-2",
             "emission": 14,
-            "time": "00h19m56s",
+            "time": "896",
             "jugement": "coupable",
             "sanction": "gnouf"
         },
         {
             "id": "14-3",
             "emission": 14,
-            "time": "00h32m07s",
+            "time": "1625",
             "jugement": "relaxe"
         },
         {
             "id": "14-4",
             "emission": 14,
-            "time": "00h46m58s",
+            "time": "2516",
             "jugement": "coupable",
             "sanction": "gnouf"
         },
         {
             "id": "14-5",
             "emission": 14,
-            "time": "00h50m46s",
+            "time": "2744",
             "jugement": "coupable",
             "sanction": "gnouf"
         },
         {
             "id": "14-6",
             "emission": 14,
-            "time": "01h05m44s",
+            "time": "3643",
             "jugement": "coupable",
             "sanction": "epreuve"
         },
         {
             "id": "14-7",
             "emission": 14,
-            "time": "01h19m10s",
+            "time": "4449",
             "jugement": "relaxe"
         },
         {
             "id": "14-8",
             "emission": 14,
-            "time": "01h27m49s",
+            "time": "4967",
             "jugement": "coupable",
             "sanction": "rappel"
         },
         {
             "id": "14-9",
             "emission": 14,
-            "time": "01h37m01s",
+            "time": "5520",
             "jugement": "relaxe"
         },
         {
             "id": "14-10",
             "emission": 14,
-            "time": "01h43m29s",
+            "time": "5907",
             "jugement": "coupable",
             "sanction": "gnouf"
         },
         {
             "id": "14-11",
             "emission": 14,
-            "time": "01h51m14s",
+            "time": "6375",
             "jugement": "coupable",
             "sanction": "gnouf"
         },
         {
             "id": "14-12",
             "emission": 14,
-            "time": "02h02m47s",
+            "time": "7065",
             "jugement": "coupable",
             "sanction": "rappel"
         },
         {
             "id": "15-1",
             "emission": 15,
-            "time": "00h03m39s",
+            "time": "96",
             "jugement": "coupable",
             "sanction": "rappel",
             "owner": "JB Show"
@@ -1398,7 +1398,7 @@
         {
             "id": "15-2",
             "emission": 15,
-            "time": "00h23m50s",
+            "time": "1305",
             "jugement": "coupable",
             "sanction": "epreuve",
             "owner": "Daz"
@@ -1406,7 +1406,7 @@
         {
             "id": "15-3",
             "emission": 15,
-            "time": "00h42m53s",
+            "time": "2450",
             "jugement": "coupable",
             "sanction": "gnouf",
             "owner": "Ivan Le Fou"
@@ -1414,7 +1414,7 @@
         {
             "id": "15-4",
             "emission": 15,
-            "time": "00h52m26s",
+            "time": "3023",
             "jugement": "coupable",
             "sanction": "gnouf",
             "owner": "Laurent Gaudé"
@@ -1422,14 +1422,14 @@
         {
             "id": "15-5",
             "emission": 15,
-            "time": "01h14m53s",
+            "time": "4370",
             "jugement": "relaxe",
             "owner": "Gautoz"
         },
         {
             "id": "15-6",
             "emission": 15,
-            "time": "01h32m16s",
+            "time": "5413",
             "jugement": "coupable",
             "sanction": "rappel",
             "owner": "Louis-Ferdinand Sébum"
@@ -1437,7 +1437,7 @@
         {
             "id": "15-7",
             "emission": 15,
-            "time": "01h49m57s",
+            "time": "6474",
             "jugement": "coupable",
             "sanction": "epreuve",
             "owner": "Ultia"
@@ -1445,7 +1445,7 @@
         {
             "id": "15-8",
             "emission": 15,
-            "time": "02h08m56s",
+            "time": "7612",
             "jugement": "coupable",
             "sanction": "epreuve",
             "owner": "Alt236"
@@ -1453,7 +1453,7 @@
         {
             "id": "15-9",
             "emission": 15,
-            "time": "02h26m15s",
+            "time": "8652",
             "jugement": "coupable",
             "sanction": "rappel",
             "owner": "Izual"
@@ -1461,14 +1461,14 @@
         {
             "id": "15-10",
             "emission": 15,
-            "time": "02h36m50s",
+            "time": "9286",
             "jugement": "relaxe",
             "owner": "Denis"
         },
         {
             "id": "15-11",
             "emission": 15,
-            "time": "02h49m55s",
+            "time": "10071",
             "jugement": "coupable",
             "sanction": "gnouf",
             "owner": "Oni"
