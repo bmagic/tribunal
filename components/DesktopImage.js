@@ -210,6 +210,14 @@ import i15_8 from '../public/img/15-8.jpg'
 import i15_9 from '../public/img/15-9.jpg'
 import i15_10 from '../public/img/15-10.jpg'
 import i15_11 from '../public/img/15-11.jpg'
+import i16_1 from '../public/img/16-1.jpg'
+import i16_2 from '../public/img/16-2.jpg'
+import i16_3 from '../public/img/16-3.jpg'
+import i16_4 from '../public/img/16-4.jpg'
+import i16_5 from '../public/img/16-5.jpg'
+import i16_6 from '../public/img/16-6.jpg'
+import i16_7 from '../public/img/16-7.jpg'
+import i16_8 from '../public/img/16-8.jpg'
 
 export default function DesktopImage({ id }) {
     const imgMap = {
@@ -424,6 +432,14 @@ export default function DesktopImage({ id }) {
         '15-9': i15_9,
         '15-10': i15_10,
         '15-11': i15_11,
+        '16-1': i16_1,
+        '16-2': i16_2,
+        '16-3': i16_3,
+        '16-4': i16_4,
+        '16-5': i16_5,
+        '16-6': i16_6,
+        '16-7': i16_7,
+        '16-8': i16_8,
     }
 
     return <Image className="image is-16by9" width={640} height={360} blurDataURL='/img/blur.jpeg' placeholder='blur' src={imgMap[id]} />

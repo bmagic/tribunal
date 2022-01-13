@@ -59,6 +59,10 @@
         {
             "url": "https://youtu.be/yGYl8jml2dA",
             "date": "17/12/2021"
+        },
+        {
+            "url": "https://www.twitch.tv/videos/1262474200",
+            "date": "13/01/2022"
         }
     ],
     "desktop": [
@@ -66,7 +70,8 @@
             "id": "1-1",
             "emission": 1,
             "time": 211,
-            "jugement": "coupable"
+            "jugement": "coupable",
+            "owner": "Djeki"
         },
         {
             "id": "1-2",
@@ -1472,6 +1477,59 @@
             "jugement": "coupable",
             "sanction": "gnouf",
             "owner": "Oni"
+        },
+        {
+            "id": "16-1",
+            "emission": 16,
+            "time": "00h10m35s",
+            "jugement": "coupable",
+            "sanction": "rappel"
+        },
+        {
+            "id": "16-2",
+            "emission": 16,
+            "time": "00h31m42s",
+            "jugement": "coupable",
+            "sanction": "rappel"
+        },
+        {
+            "id": "16-3",
+            "emission": 16,
+            "time": "00h40m17s",
+            "jugement": "coupable",
+            "sanction": "rappel"
+        },
+        {
+            "id": "16-4",
+            "emission": 16,
+            "time": "00h52m13s",
+            "jugement": "relaxe"
+        },
+        {
+            "id": "16-5",
+            "emission": 16,
+            "time": "01h07m08s",
+            "jugement": "coupable",
+            "sanction": "rappel"
+        },
+        {
+            "id": "16-6",
+            "emission": 16,
+            "time": "01h38m32s",
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": "16-7",
+            "emission": 16,
+            "time": "01h57m17s",
+            "jugement": "relaxe"
+        },
+        {
+            "id": "16-8",
+            "emission": 16,
+            "time": "01h57m17s",
+            "jugement": "relaxe"
         }
     ]
 }
