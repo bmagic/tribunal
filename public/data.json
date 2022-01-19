@@ -63,6 +63,10 @@
         {
             "url": "https://www.twitch.tv/videos/1262474200",
             "date": "13/01/2022"
+        },
+        {
+            "url": "https://www.twitch.tv/videos/1269082835",
+            "date": "19/01/2022"
         }
     ],
     "desktop": [
@@ -1529,6 +1533,68 @@
             "id": "16-8",
             "emission": 16,
             "time": "01h57m17s",
+            "jugement": "relaxe"
+        },
+        {
+            "id": "17-1",
+            "emission": 17,
+            "time": "00h10m03s",
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": "17-2",
+            "emission": 17,
+            "time": "00h16m30s",
+            "jugement": "coupable",
+            "sanction": "epreuve"
+        },
+        {
+            "id": "17-3",
+            "emission": 17,
+            "time": "00h25m57s",
+            "jugement": "coupable",
+            "sanction": "rappel"
+        },
+        {
+            "id": "17-4",
+            "emission": 17,
+            "time": "00h31m49s",
+            "jugement": "coupable",
+            "sanction": "rappel"
+        },
+        {
+            "id": "17-5",
+            "emission": 17,
+            "time": "00h46m33s",
+            "jugement": "coupable",
+            "sanction": "rappel"
+        },
+        {
+            "id": "17-6",
+            "emission": 17,
+            "time": "01h08m39s",
+            "jugement": "coupable",
+            "sanction": "rappel"
+        },
+        {
+            "id": "17-7",
+            "emission": 17,
+            "time": "01h25m43s",
+            "jugement": "coupable",
+            "sanction": "rappel"
+        },
+        {
+            "id": "17-8",
+            "emission": 17,
+            "time": "01h37m02s",
+            "jugement": "coupable",
+            "sanction": "rappel"
+        },
+        {
+            "id": "17-9",
+            "emission": 17,
+            "time": "01h48m09s",
             "jugement": "relaxe"
         }
     ]
