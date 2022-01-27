@@ -67,6 +67,10 @@
         {
             "url": "https://www.twitch.tv/videos/1269082835",
             "date": "19/01/2022"
+        },
+        {
+            "url": "https://www.twitch.tv/videos/1276687113",
+            "date": "26/01/2022"
         }
     ],
     "desktop": [
@@ -1595,6 +1599,61 @@
             "id": "17-9",
             "emission": 17,
             "time": "01h48m09s",
+            "jugement": "relaxe"
+        },
+        {
+            "id": "18-1",
+            "emission": 18,
+            "time": "00h07m46s",
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": "18-2",
+            "emission": 18,
+            "time": "00h16m34s",
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": "18-3",
+            "emission": 18,
+            "time": "00h26m19s",
+            "jugement": "coupable",
+            "sanction": "epreuve"
+        },
+        {
+            "id": "18-4",
+            "emission": 18,
+            "time": "00h37m50s",
+            "jugement": "coupable",
+            "sanction": "epreuve"
+        },
+        {
+            "id": "18-5",
+            "emission": 18,
+            "time": "00h48m47s",
+            "jugement": "coupable",
+            "sanction": "rappel"
+        },
+        {
+            "id": "18-6",
+            "emission": 18,
+            "time": "01h02m14s",
+            "jugement": "coupable",
+            "sanction": "rappel"
+        },
+        {
+            "id": "18-7",
+            "emission": 18,
+            "time": "01h19m55s",
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": "18-8",
+            "emission": 18,
+            "time": "01h36m25s",
             "jugement": "relaxe"
         }
     ]
