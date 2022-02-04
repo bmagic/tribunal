@@ -71,6 +71,10 @@
         {
             "url": "https://www.twitch.tv/videos/1276687113",
             "date": "26/01/2022"
+        },
+        {
+            "url": "https://www.twitch.tv/videos/1286922022",
+            "date": "04/02/2022"
         }
     ],
     "desktop": [
@@ -1655,6 +1659,60 @@
             "emission": 18,
             "time": "01h36m25s",
             "jugement": "relaxe"
+        },
+        {
+            "id": "19-1",
+            "emission": 19,
+            "time": "00h05m56s",
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": "19-2",
+            "emission": 19,
+            "time": "00h22m29s",
+            "jugement": "coupable",
+            "sanction": "rappel"
+        },
+        {
+            "id": "19-3",
+            "emission": 19,
+            "time": "00h33m46s",
+            "jugement": "coupable",
+            "sanction": "rappel"
+        },
+        {
+            "id": "19-4",
+            "emission": 19,
+            "time": "00h47m53s",
+            "jugement": "relaxe"
+        },
+        {
+            "id": "19-5",
+            "emission": 19,
+            "time": "01h03m51s",
+            "jugement": "coupable",
+            "sanction": "epreuve"
+        },
+        {
+            "id": "19-6",
+            "emission": 19,
+            "time": "01h20m03s",
+            "jugement": "relaxe"
+        },
+        {
+            "id": "19-7",
+            "emission": 19,
+            "time": "01h32m55s",
+            "jugement": "coupable",
+            "sanction": "rappel"
+        },
+        {
+            "id": "19-8",
+            "emission": 19,
+            "time": "01h46m30s",
+            "jugement": "coupable",
+            "sanction": "rappel"
         }
     ]
 }

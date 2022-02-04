@@ -6,6 +6,7 @@ import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { useRouter } from 'next/router'
 import DesktopImage from '../components/DesktopImage'
 import Header from '../components/Header';
+import ScrollToTop from "react-scroll-to-top";
 
 export default function Home() {
   const router = useRouter()
@@ -33,7 +34,7 @@ export default function Home() {
     <main >
       <Header />
 
-
+      <ScrollToTop smooth />
       <div className="level pb-1 pt-5">
         <div className="level-item">
           <div className="control">

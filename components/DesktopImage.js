@@ -235,6 +235,14 @@ import i18_5 from '../public/img/18-5.jpg'
 import i18_6 from '../public/img/18-6.jpg'
 import i18_7 from '../public/img/18-7.jpg'
 import i18_8 from '../public/img/18-8.jpg'
+import i19_1 from '../public/img/19-1.jpg'
+import i19_2 from '../public/img/19-2.jpg'
+import i19_3 from '../public/img/19-3.jpg'
+import i19_4 from '../public/img/19-4.jpg'
+import i19_5 from '../public/img/19-5.jpg'
+import i19_6 from '../public/img/19-6.jpg'
+import i19_7 from '../public/img/19-7.jpg'
+import i19_8 from '../public/img/19-8.jpg'
 
 export default function DesktopImage({ id }) {
     const imgMap = {
@@ -474,6 +482,14 @@ export default function DesktopImage({ id }) {
         '18-6': i18_6,
         '18-7': i18_7,
         '18-8': i18_8,
+        '19-1': i19_1,
+        '19-2': i19_2,
+        '19-3': i19_3,
+        '19-4': i19_4,
+        '19-5': i19_5,
+        '19-6': i19_6,
+        '19-7': i19_7,
+        '19-8': i19_8,
     }
 
     return <Image className="image is-16by9" width={640} height={360} blurDataURL='/img/blur.jpeg' placeholder='blur' src={imgMap[id]} />
