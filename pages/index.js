@@ -1,5 +1,3 @@
-import { useState } from 'react';
-import Image from 'next/image'
 import json from '../public/data.json'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // 
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";

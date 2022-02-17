@@ -243,6 +243,29 @@ import i19_5 from '../public/img/19-5.jpg'
 import i19_6 from '../public/img/19-6.jpg'
 import i19_7 from '../public/img/19-7.jpg'
 import i19_8 from '../public/img/19-8.jpg'
+import i20_1 from '../public/img/20-1.jpg'
+import i20_2 from '../public/img/20-2.jpg'
+import i20_3 from '../public/img/20-3.jpg'
+import i20_4 from '../public/img/20-4.jpg'
+import i20_5 from '../public/img/20-5.jpg'
+import i20_6 from '../public/img/20-6.jpg'
+import i20_7 from '../public/img/20-7.jpg'
+import i20_8 from '../public/img/20-8.jpg'
+import i20_9 from '../public/img/20-9.jpg'
+import i21c_1 from '../public/img/21c-1.jpg'
+import i21c_2 from '../public/img/21c-2.jpg'
+import i21c_3 from '../public/img/21c-3.jpg'
+import i21c_4 from '../public/img/21c-4.jpg'
+import i21c_5 from '../public/img/21c-5.jpg'
+import i21c_6 from '../public/img/21c-6.jpg'
+import i21c_7 from '../public/img/21c-7.jpg'
+import i21c_8 from '../public/img/21c-8.jpg'
+import i21c_9 from '../public/img/21c-9.jpg'
+import i21c_10 from '../public/img/21c-10.jpg'
+import i21c_11 from '../public/img/21c-11.jpg'
+import i21_1 from '../public/img/21-1.jpg'
+import i21_2 from '../public/img/21-2.jpg'
+import i21_3 from '../public/img/21-3.jpg'
 
 export default function DesktopImage({ id }) {
     const imgMap = {
@@ -490,6 +513,29 @@ export default function DesktopImage({ id }) {
         '19-6': i19_6,
         '19-7': i19_7,
         '19-8': i19_8,
+        '20-1': i20_1,
+        '20-2': i20_2,
+        '20-3': i20_3,
+        '20-4': i20_4,
+        '20-5': i20_5,
+        '20-6': i20_6,
+        '20-7': i20_7,
+        '20-8': i20_8,
+        '20-9': i20_9,
+        '21c-1': i21c_1,
+        '21c-2': i21c_2,
+        '21c-3': i21c_3,
+        '21c-4': i21c_4,
+        '21c-5': i21c_5,
+        '21c-6': i21c_6,
+        '21c-7': i21c_7,
+        '21c-8': i21c_8,
+        '21c-9': i21c_9,
+        '21c-10': i21c_10,
+        '21c-11': i21c_11,
+        '21-1': i21_1,
+        '21-2': i21_2,
+        '21-3': i21_3,
     }
 
     return <Image className="image is-16by9" width={640} height={360} blurDataURL='/img/blur.jpeg' placeholder='blur' src={imgMap[id]} />
