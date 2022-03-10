@@ -266,6 +266,12 @@ import i21c_11 from '../public/img/21c-11.jpg'
 import i21_1 from '../public/img/21-1.jpg'
 import i21_2 from '../public/img/21-2.jpg'
 import i21_3 from '../public/img/21-3.jpg'
+import i22c_1 from '../public/img/22c-1.jpg'
+import i22_1 from '../public/img/22-1.jpg'
+import i22_2 from '../public/img/22-2.jpg'
+import i22_3 from '../public/img/22-3.jpg'
+import i22_4 from '../public/img/22-4.jpg'
+import i22_5 from '../public/img/22-5.jpg'
 
 export default function DesktopImage({ id }) {
     const imgMap = {
@@ -536,6 +542,12 @@ export default function DesktopImage({ id }) {
         '21-1': i21_1,
         '21-2': i21_2,
         '21-3': i21_3,
+        '22c-1': i22c_1,
+        '22-1': i22_1,
+        '22-2': i22_2,
+        '22-3': i22_3,
+        '22-4': i22_4,
+        '22-5': i22_5,
     }
 
     return <Image className="image is-16by9" width={640} height={360} blurDataURL='/img/blur.jpeg' placeholder='blur' src={imgMap[id]} />
