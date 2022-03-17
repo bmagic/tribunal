@@ -1081,6 +1081,7 @@
         {
             "id": "8-15",
             "emission": 8,
+            "owner": "FabFix",
             "time": "6932",
             "jugement": "relaxe"
         },
