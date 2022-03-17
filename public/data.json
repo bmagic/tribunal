@@ -91,6 +91,10 @@
         {
             "url": "https://www.twitch.tv/videos/1421470435",
             "date": "10/03/2022"
+        },
+        {
+            "url": "https://www.twitch.tv/videos/1428425384",
+            "date": "17/03/2022"
         }
     ],
     "collection": [
@@ -1975,6 +1979,34 @@
             "time": "02h00m53s",
             "jugement": "coupable",
             "sanction": "gnouf"
+        },
+        {
+            "id": "24-1",
+            "emission": 24,
+            "time": "00h36m39s",
+            "jugement": "coupable",
+            "sanction": "rappel"
+        },
+        {
+            "id": "24-2",
+            "emission": 24,
+            "time": "00h51m42s",
+            "jugement": "coupable",
+            "sanction": "rappel"
+        },
+        {
+            "id": "24-3",
+            "emission": 24,
+            "time": "01h07m04s",
+            "jugement": "coupable",
+            "sanction": "rappel"
+        },
+        {
+            "id": "24-4",
+            "emission": 24,
+            "time": "01h34m38s",
+            "jugement": "coupable",
+            "sanction": "rappel"
         }
     ]
 }
