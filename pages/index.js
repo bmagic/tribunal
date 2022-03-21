@@ -4,6 +4,7 @@ import Header from '../components/Header';
 import ScrollToTop from "react-scroll-to-top";
 import Card from '../components/Card';
 
+json.desktop.reverse()
 export default function Home() {
   const router = useRouter()
 

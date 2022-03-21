@@ -1,7 +1,7 @@
 import json from '../public/data.json'
 import Header from '../components/Header';
 import Card from '../components/Card';
-
+json.collection.reverse()
 export default function Home() {
   return (
     <main >
