@@ -178,9 +178,17 @@
         {
             "id": "22c-1",
             "emission": 22,
-            "time": "00h03m01s",
+            "time": "10",
             "jugement": "coupable",
             "sanction": "gnouf"
+        }
+    ],
+    "lifestyle": [
+        {
+            "id": "the",
+            "emission": 1,
+            "time": 211,
+            "description": "Le thé"
         }
     ],
     "desktop": [
