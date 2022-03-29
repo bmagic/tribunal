@@ -284,7 +284,15 @@ import i24_1 from '../img/24-1.jpg'
 import i24_2 from '../img/24-2.jpg'
 import i24_3 from '../img/24-3.jpg'
 import i24_4 from '../img/24-4.jpg'
-
+import i25_1 from '../img/25-1.jpg'
+import i25_2 from '../img/25-2.jpg'
+import i25_3 from '../img/25-3.jpg'
+import i25_4 from '../img/25-4.jpg'
+import i25_5 from '../img/25-5.jpg'
+import i25_6 from '../img/25-6.jpg'
+import i25_7 from '../img/25-7.jpg'
+import i25_8 from '../img/25-8.jpg'
+import i25_9 from '../img/25-9.jpg'
 
 export default function DesktopImage({ id }) {
     const imgMap = {
@@ -572,6 +580,15 @@ export default function DesktopImage({ id }) {
         '24-2': i24_2,
         '24-3': i24_3,
         '24-4': i24_4,
+        '25-1': i25_1,
+        '25-2': i25_2,
+        '25-3': i25_3,
+        '25-4': i25_4,
+        '25-5': i25_5,
+        '25-6': i25_6,
+        '25-7': i25_7,
+        '25-8': i25_8,
+        '25-9': i25_9,
     }
 
     return <Image className="image is-16by9" width={640} height={360} blurDataURL={blur.src} placeholder='blur' src={imgMap[id]} />
