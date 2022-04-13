@@ -89,7 +89,7 @@
             "date": "01/03/2022"
         },
         {
-            "url": "https://www.twitch.tv/videos/1421470435",
+            "url": "https://youtu.be/F9sHsuMFn4Y",
             "date": "10/03/2022"
         },
         {
@@ -99,6 +99,14 @@
         {
             "url": "https://www.twitch.tv/videos/1436501410 ",
             "date": "25/03/2022"
+        },
+        {
+            "url": "https: //www.twitch.tv/videos/1447994862",
+            "date": "06/04/2022"
+        },
+        {
+            "url": "https://www.twitch.tv/videos/1453798186",
+            "date": "12/04/2022"
         }
     ],
     "collection": [
@@ -1940,48 +1948,48 @@
         {
             "id": "23-1",
             "emission": 23,
-            "time": "00h08m16s",
+            "time": "301",
             "jugement": "coupable",
             "sanction": "rappel"
         },
         {
             "id": "23-2",
             "emission": 23,
-            "time": "00h24m50s",
+            "time": "1297",
             "jugement": "relaxe"
         },
         {
             "id": "23-3",
             "emission": 23,
-            "time": "00h25m52s",
+            "time": "1959",
             "jugement": "coupable",
             "sanction": "epreuve"
         },
         {
             "id": "23-4",
             "emission": 23,
-            "time": "01h02m41s",
+            "time": "3567",
             "jugement": "coupable",
             "sanction": "gnouf"
         },
         {
             "id": "23-5",
             "emission": 23,
-            "time": "01h28m31s",
+            "time": "5119",
             "jugement": "coupable",
             "sanction": "gnouf"
         },
         {
             "id": "23-6",
             "emission": 23,
-            "time": "01h43m12s",
+            "time": "5998",
             "jugement": "coupable",
             "sanction": "gnouf"
         },
         {
             "id": "23-7",
             "emission": 23,
-            "time": "02h00m53s",
+            "time": "7059",
             "jugement": "coupable",
             "sanction": "gnouf"
         },
@@ -2070,6 +2078,95 @@
             "id": "25-9",
             "emission": 25,
             "time": "01h52m50s",
+            "jugement": "coupable",
+            "sanction": "rappel"
+        },
+        {
+            "id": "26-1",
+            "emission": 26,
+            "time": "00h11m44s",
+            "jugement": "coupable",
+            "sanction": "epreuve"
+        },
+        {
+            "id": "26-2",
+            "emission": 26,
+            "time": "00h25m41s",
+            "jugement": "relaxe"
+        },
+        {
+            "id": "26-3",
+            "emission": 26,
+            "time": "00h50m46s",
+            "jugement": "coupable",
+            "sanction": "rappel"
+        },
+        {
+            "id": "26-4",
+            "emission": 26,
+            "time": "01h06m19s",
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": "26-5",
+            "emission": 26,
+            "time": "01h15m39s",
+            "jugement": "relaxe"
+        },
+        {
+            "id": "26-6",
+            "emission": 26,
+            "time": "01h35m08s",
+            "jugement": "coupable",
+            "sanction": "rappel"
+        },
+        {
+            "id": "26-7",
+            "emission": 26,
+            "time": "01h44m12s",
+            "jugement": "coupable",
+            "sanction": "rappel"
+        },
+        {
+            "id": "27-1",
+            "emission": 27,
+            "time": "00h50m28s",
+            "jugement": "coupable",
+            "sanction": "rappel"
+        },
+        {
+            "id": "27-2",
+            "emission": 27,
+            "time": "01h05m36s",
+            "jugement": "coupable",
+            "sanction": "rappel"
+        },
+        {
+            "id": "27-3",
+            "emission": 27,
+            "time": "01h14m52s",
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": "27-4",
+            "emission": 27,
+            "time": "01h18m57s",
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": "27-5",
+            "emission": 27,
+            "time": "01h23m04s",
+            "jugement": "coupable",
+            "sanction": "rappel"
+        },
+        {
+            "id": "27-6",
+            "emission": 27,
+            "time": "01h37m36s",
             "jugement": "coupable",
             "sanction": "rappel"
         }

@@ -293,7 +293,19 @@ import i25_6 from '../img/25-6.jpg'
 import i25_7 from '../img/25-7.jpg'
 import i25_8 from '../img/25-8.jpg'
 import i25_9 from '../img/25-9.jpg'
-
+import i26_1 from '../img/26-1.jpg'
+import i26_2 from '../img/26-2.jpg'
+import i26_3 from '../img/26-3.jpg'
+import i26_4 from '../img/26-4.jpg'
+import i26_5 from '../img/26-5.jpg'
+import i26_6 from '../img/26-6.jpg'
+import i26_7 from '../img/26-7.jpg'
+import i27_1 from '../img/27-1.jpg'
+import i27_2 from '../img/27-2.jpg'
+import i27_3 from '../img/27-3.jpg'
+import i27_4 from '../img/27-4.jpg'
+import i27_5 from '../img/27-5.jpg'
+import i27_6 from '../img/27-6.jpg'
 export default function DesktopImage({ id }) {
     const imgMap = {
         '1-1': i1_1,
@@ -589,6 +601,19 @@ export default function DesktopImage({ id }) {
         '25-7': i25_7,
         '25-8': i25_8,
         '25-9': i25_9,
+        '26-1': i26_1,
+        '26-2': i26_2,
+        '26-3': i26_3,
+        '26-4': i26_4,
+        '26-5': i26_5,
+        '26-6': i26_6,
+        '26-7': i26_7,
+        '27-1': i27_1,
+        '27-2': i27_2,
+        '27-3': i27_3,
+        '27-4': i27_4,
+        '27-5': i27_5,
+        '27-6': i27_6,
     }
 
     return <Image className="image is-16by9" width={640} height={360} blurDataURL={blur.src} placeholder='blur' src={imgMap[id]} />
