@@ -2168,7 +2168,8 @@
             "emission": 27,
             "time": "01h37m36s",
             "jugement": "coupable",
-            "sanction": "rappel"
+            "sanction": "rappel",
+            "owner": "Barbegrasse"
         }
     ]
 }
