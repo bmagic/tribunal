@@ -1,4 +1,4 @@
 # Tribunal des bureaux
-Un petit site web pour lister les bureaux jugé pendant l'émission de CanardPC sur la chaine twitch. 
+Un petit site web pour lister les bureaux jugés pendant l'émission de CanardPC sur la chaîne Twitch. 
 
 Créé par Bmagic
