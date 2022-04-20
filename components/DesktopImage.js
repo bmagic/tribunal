@@ -306,6 +306,14 @@ import i27_3 from '../img/27-3.jpg'
 import i27_4 from '../img/27-4.jpg'
 import i27_5 from '../img/27-5.jpg'
 import i27_6 from '../img/27-6.jpg'
+import i28_1 from '../img/28-1.jpg'
+import i28_2 from '../img/28-2.jpg'
+import i28_3 from '../img/28-3.jpg'
+import i28_4 from '../img/28-4.jpg'
+import i28_5 from '../img/28-5.jpg'
+import i28_6 from '../img/28-6.jpg'
+import i28_7 from '../img/28-7.jpg'
+
 export default function DesktopImage({ id }) {
     const imgMap = {
         '1-1': i1_1,
@@ -614,6 +622,13 @@ export default function DesktopImage({ id }) {
         '27-4': i27_4,
         '27-5': i27_5,
         '27-6': i27_6,
+        '28-1': i28_1,
+        '28-2': i28_2,
+        '28-3': i28_3,
+        '28-4': i28_4,
+        '28-5': i28_5,
+        '28-6': i28_6,
+        '28-7': i28_7,
     }
 
     return <Image className="image is-16by9" width={640} height={360} blurDataURL={blur.src} placeholder='blur' src={imgMap[id]} />

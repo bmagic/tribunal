@@ -97,7 +97,7 @@
             "date": "17/03/2022"
         },
         {
-            "url": "https://www.twitch.tv/videos/1436501410 ",
+            "url": "https://www.twitch.tv/videos/1436501410",
             "date": "25/03/2022"
         },
         {
@@ -107,6 +107,10 @@
         {
             "url": "https://www.twitch.tv/videos/1453798186",
             "date": "12/04/2022"
+        },
+        {
+            "url": "https://www.twitch.tv/videos/1460807724",
+            "date": "19/04/2022"
         }
     ],
     "collection": [
@@ -2170,6 +2174,53 @@
             "jugement": "coupable",
             "sanction": "rappel",
             "owner": "Barbegrasse"
+        },
+        {
+            "id": "28-1",
+            "emission": 28,
+            "time": "00h07m41s",
+            "jugement": "coupable",
+            "sanction": "rappel"
+        },
+        {
+            "id": "28-2",
+            "emission": 28,
+            "time": "00h45m21s",
+            "jugement": "relaxe"
+        },
+        {
+            "id": "28-3",
+            "emission": 28,
+            "time": "00h59m13s",
+            "jugement": "coupable",
+            "sanction": "epreuve"
+        },
+        {
+            "id": "28-4",
+            "emission": 28,
+            "time": "01h18m47s",
+            "jugement": "coupable",
+            "sanction": "epreuve"
+        },
+        {
+            "id": "28-5",
+            "emission": 28,
+            "time": "01h38m47s",
+            "jugement": "relaxe"
+        },
+        {
+            "id": "28-6",
+            "emission": 28,
+            "time": "01h48m39s",
+            "jugement": "coupable",
+            "sanction": "rappel"
+        },
+        {
+            "id": "28-7",
+            "emission": 28,
+            "time": "02h13m35s",
+            "jugement": "coupable",
+            "sanction": "rappel"
         }
     ]
 }
