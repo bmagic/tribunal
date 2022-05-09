@@ -93,11 +93,11 @@
             "date": "10/03/2022"
         },
         {
-            "url": "https://www.twitch.tv/videos/1428425384",
+            "url": "https://youtu.be/xgY3qFSGro4",
             "date": "17/03/2022"
         },
         {
-            "url": "https://www.twitch.tv/videos/1436501410",
+            "url": "https://youtu.be/FvTwBmLq5DQ",
             "date": "25/03/2022"
         },
         {
@@ -2000,88 +2000,88 @@
         {
             "id": "24-1",
             "emission": 24,
-            "time": "00h36m39s",
+            "time": "2042",
             "jugement": "coupable",
             "sanction": "rappel"
         },
         {
             "id": "24-2",
             "emission": 24,
-            "time": "00h51m42s",
+            "time": "3001",
             "jugement": "coupable",
             "sanction": "rappel"
         },
         {
             "id": "24-3",
             "emission": 24,
-            "time": "01h07m04s",
+            "time": "3924",
             "jugement": "coupable",
             "sanction": "rappel"
         },
         {
             "id": "24-4",
             "emission": 24,
-            "time": "01h34m38s",
+            "time": "5578",
             "jugement": "coupable",
             "sanction": "rappel"
         },
         {
             "id": "25-1",
             "emission": 25,
-            "time": "00h14m37s",
+            "time": "594",
             "jugement": "coupable",
             "sanction": "epreuve"
         },
         {
             "id": "25-2",
             "emission": 25,
-            "time": "00h26m26s",
+            "time": "1304",
             "jugement": "coupable",
             "sanction": "gnouf"
         },
         {
             "id": "25-3",
             "emission": 25,
-            "time": "00h41m44s",
+            "time": "2221",
             "jugement": "coupable",
             "sanction": "rappel"
         },
         {
             "id": "25-4",
             "emission": 25,
-            "time": "00h57m39s",
+            "time": "3177",
             "jugement": "coupable",
             "sanction": "gnouf"
         },
         {
             "id": "25-5",
             "emission": 25,
-            "time": "01h06m28s",
+            "time": "3705",
             "jugement": "relaxe"
         },
         {
             "id": "25-6",
             "emission": 25,
-            "time": "01h18m46s",
+            "time": "4444",
             "jugement": "coupable",
             "sanction": "rappel"
         },
         {
             "id": "25-7",
             "emission": 25,
-            "time": "01h31m36s",
+            "time": "5213",
             "jugement": "relaxe"
         },
         {
             "id": "25-8",
             "emission": 25,
-            "time": "01h43m32s",
+            "time": "5930",
             "jugement": "relaxe"
         },
         {
             "id": "25-9",
             "emission": 25,
-            "time": "01h52m50s",
+            "time": "6488",
             "jugement": "coupable",
             "sanction": "rappel"
         },
