@@ -1,4 +1,4 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTwitch, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import DesktopImage from '../components/DesktopImage'
 

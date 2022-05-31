@@ -1,115 +1,171 @@
 {
     "emission": [
         {
+            "season": 1,
+            "episode": 1,
             "url": "https://youtu.be/YglE-FnSd3g",
             "date": "31/08/2021"
         },
         {
+            "season": 1,
+            "episode": 2,
             "url": "https://youtu.be/msjthe2mWO4",
             "date": "07/09/2021"
         },
         {
+            "season": 1,
+            "episode": 3,
             "url": "https://youtu.be/cKo50XAX4Og",
             "date": "15/09/2021"
         },
         {
+            "season": 1,
+            "episode": 4,
             "url": "https://youtu.be/CcCvQmT369Q",
             "date": "23/09/2021"
         },
         {
+            "season": 1,
+            "episode": 5,
             "url": "https://youtu.be/7mr06caJ_Vo",
             "date": "03/10/2021"
         },
         {
+            "season": 1,
+            "episode": 6,
             "url": "https://youtu.be/E2nF_iotCU8",
             "date": "13/10/2021"
         },
         {
+            "season": 1,
+            "episode": 7,
             "url": "https://youtu.be/XIt5h0WvaQI",
             "date": "20/10/2021"
         },
         {
+            "season": 1,
+            "episode": 8,
             "url": "https://youtu.be/KHIwpbMByBk",
             "date": "27/10/2021"
         },
         {
+            "season": 1,
+            "episode": 9,
             "url": "https://youtu.be/xB9hRkzWlgo",
             "date": "02/11/2021"
         },
         {
+            "season": 1,
+            "episode": 10,
             "url": "https://youtu.be/FK5OsIR2nBA",
             "date": "11/11/2021"
         },
         {
+            "season": 1,
+            "episode": 11,
             "url": "https://youtu.be/y53M4F46Wrc",
             "date": "18/11/2021"
         },
         {
+            "season": 1,
+            "episode": 12,
             "url": "https://youtu.be/ipsQPCF2j_4",
             "date": "23/11/2021"
         },
         {
+            "season": 1,
+            "episode": 13,
             "url": "https://youtu.be/gkZM7pOu_zA",
             "date": "02/12/2021"
         },
         {
+            "season": 1,
+            "episode": 14,
             "url": "https://youtu.be/KHOqdSSfeoo",
             "date": "08/12/2021"
         },
         {
+            "season": 1,
+            "episode": 15,
             "url": "https://youtu.be/yGYl8jml2dA",
             "date": "17/12/2021"
         },
         {
+            "season": 1,
+            "episode": 16,
             "url": "https://youtu.be/RPL8eLOwajI",
             "date": "13/01/2022"
         },
         {
+            "season": 1,
+            "episode": 17,
             "url": "https://youtu.be/CUG5dOTk2w4",
             "date": "19/01/2022"
         },
         {
+            "season": 1,
+            "episode": 18,
             "url": "https://youtu.be/Bck0GTd1EcE",
             "date": "26/01/2022"
         },
         {
+            "season": 1,
+            "episode": 19,
             "url": "https://youtu.be/XiZs_Pt9WDM",
             "date": "04/02/2022"
         },
         {
+            "season": 1,
+            "episode": 20,
             "url": "https://youtu.be/BSpqLq5qknM",
             "date": "12/02/2022"
         },
         {
+            "season": 1,
+            "episode": 21,
             "url": "https://youtu.be/zqQVnCD8MLA",
             "date": "17/02/2022"
         },
         {
+            "season": 1,
+            "episode": 22,
             "url": "https://youtu.be/XNj1AMagyqU",
             "date": "01/03/2022"
         },
         {
+            "season": 1,
+            "episode": 23,
             "url": "https://youtu.be/F9sHsuMFn4Y",
             "date": "10/03/2022"
         },
         {
+            "season": 1,
+            "episode": 24,
             "url": "https://youtu.be/xgY3qFSGro4",
             "date": "17/03/2022"
         },
         {
+            "season": 1,
+            "episode": 25,
             "url": "https://youtu.be/FvTwBmLq5DQ",
             "date": "25/03/2022"
         },
         {
-            "url": "https://www.twitch.tv/videos/1447994862",
+            "season": 1,
+            "episode": 26,
+            "url": "https://youtu.be/2CA2cpoDIKc",
             "date": "06/04/2022"
         },
         {
-            "url": "https://www.twitch.tv/videos/1453798186",
+            "season": 1,
+            "episode": 27,
+            "url": "https://youtu.be/hNEUZEeUJYQ",
             "date": "12/04/2022"
         },
         {
-            "url": "https://www.twitch.tv/videos/1460807724",
+            "season": 1,
+            "episode": 28,
+            "url": "https://youtu.be/Wn7f4Z1dD7w",
             "date": "19/04/2022"
         }
     ],
@@ -2088,89 +2144,89 @@
         {
             "id": "26-1",
             "emission": 26,
-            "time": "00h11m44s",
+            "time": "495",
             "jugement": "coupable",
             "sanction": "epreuve"
         },
         {
             "id": "26-2",
             "emission": 26,
-            "time": "00h25m41s",
+            "time": "1332",
             "jugement": "relaxe"
         },
         {
             "id": "26-3",
             "emission": 26,
-            "time": "00h50m46s",
+            "time": "2838",
             "jugement": "coupable",
             "sanction": "rappel"
         },
         {
             "id": "26-4",
             "emission": 26,
-            "time": "01h06m19s",
+            "time": "3770",
             "jugement": "coupable",
             "sanction": "gnouf"
         },
         {
             "id": "26-5",
             "emission": 26,
-            "time": "01h15m39s",
+            "time": "4331",
             "jugement": "relaxe"
         },
         {
             "id": "26-6",
             "emission": 26,
-            "time": "01h35m08s",
+            "time": "5499",
             "jugement": "coupable",
             "sanction": "rappel"
         },
         {
             "id": "26-7",
             "emission": 26,
-            "time": "01h44m12s",
+            "time": "6044",
             "jugement": "coupable",
             "sanction": "rappel"
         },
         {
             "id": "27-1",
             "emission": 27,
-            "time": "00h50m28s",
+            "time": "2756",
             "jugement": "coupable",
             "sanction": "rappel"
         },
         {
             "id": "27-2",
             "emission": 27,
-            "time": "01h05m36s",
+            "time": "3665",
             "jugement": "coupable",
             "sanction": "rappel"
         },
         {
             "id": "27-3",
             "emission": 27,
-            "time": "01h14m52s",
+            "time": "4221",
             "jugement": "coupable",
             "sanction": "gnouf"
         },
         {
             "id": "27-4",
             "emission": 27,
-            "time": "01h18m57s",
+            "time": "4466",
             "jugement": "coupable",
             "sanction": "gnouf"
         },
         {
             "id": "27-5",
             "emission": 27,
-            "time": "01h23m04s",
+            "time": "4712",
             "jugement": "coupable",
             "sanction": "rappel"
         },
         {
             "id": "27-6",
             "emission": 27,
-            "time": "01h37m36s",
+            "time": "5585",
             "jugement": "coupable",
             "sanction": "rappel",
             "owner": "Barbegrasse"
@@ -2178,47 +2234,47 @@
         {
             "id": "28-1",
             "emission": 28,
-            "time": "00h07m41s",
+            "time": "320",
             "jugement": "coupable",
             "sanction": "rappel"
         },
         {
             "id": "28-2",
             "emission": 28,
-            "time": "00h45m21s",
+            "time": "2580",
             "jugement": "relaxe"
         },
         {
             "id": "28-3",
             "emission": 28,
-            "time": "00h59m13s",
+            "time": "3412",
             "jugement": "coupable",
             "sanction": "epreuve"
         },
         {
             "id": "28-4",
             "emission": 28,
-            "time": "01h18m47s",
+            "time": "4586",
             "jugement": "coupable",
             "sanction": "epreuve"
         },
         {
             "id": "28-5",
             "emission": 28,
-            "time": "01h38m47s",
+            "time": "5787",
             "jugement": "relaxe"
         },
         {
             "id": "28-6",
             "emission": 28,
-            "time": "01h48m39s",
+            "time": "6378",
             "jugement": "coupable",
             "sanction": "rappel"
         },
         {
             "id": "28-7",
             "emission": 28,
-            "time": "02h13m35s",
+            "time": "7874",
             "jugement": "coupable",
             "sanction": "rappel"
         }

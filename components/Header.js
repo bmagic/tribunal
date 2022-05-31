@@ -33,6 +33,8 @@ export default function Header() {
                         <li className={`${router.pathname === '/' ? 'is-active' : ''}`}><Link href="/"><a>Bureaux</a></Link></li>
                         <li className={`${router.pathname === '/collections' ? 'is-active' : ''}`} ><Link href="/collections"><a>Collections</a></Link></li>
                         <li className={`${router.pathname === '/stats' ? 'is-active' : ''}`} ><Link href="/stats"><a>Statistiques</a></Link></li>
+                        <li className={`${router.pathname === '/dotys1' ? 'is-active' : ''}`} ><Link href="/dotys1"><a>DOTY Saison 1</a></Link></li>
+
                     </ul>
                 </div>
             </div>
