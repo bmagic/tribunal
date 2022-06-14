@@ -8,6 +8,7 @@ json.desktop.reverse()
 export default function Home() {
   const router = useRouter()
 
+  let saisonFilter = parseInt(router.query.saison) || 'all'
   let audienceFilter = router.query.audience || 'all'
   let jugementFilter = router.query.jugement || 'all'
   let sanctionFilter = router.query.sanction || 'all'
@@ -15,10 +16,12 @@ export default function Home() {
   let jugements = {}
   let sanctions = {}
   let desktopFitered = []
+
   for (const desktop of json.desktop) {
+    if (saisonFilter !== 'all' && saisonFilter !== desktop.saison) continue
     if (jugementFilter !== 'all' && jugementFilter !== desktop.jugement) continue
     if (sanctionFilter !== 'all' && sanctionFilter !== desktop.sanction) continue
-    if (audienceFilter !== 'all' && parseInt(audienceFilter) !== desktop.emission) continue
+    if (audienceFilter !== 'all' && audienceFilter !== `s${desktop.saison}e${desktop.emission}`) continue
 
     desktopFitered.push(desktop)
     jugements[desktop.jugement] = jugements[desktop.jugement] !== undefined ? jugements[desktop.jugement] + 1 : 1
@@ -36,10 +39,24 @@ export default function Home() {
         <div className="level-item">
           <div className="control">
             <div className="select">
-              <select onChange={(e) => router.push(`?audience=${e.target.value}&jugement=${jugementFilter}&sanction=${sanctionFilter}`)} value={audienceFilter}>
+              <select onChange={(e) => { audienceFilter = 'all'; router.push(`?saison=${e.target.value}&audience=${audienceFilter}&jugement=${jugementFilter}&sanction=${sanctionFilter}`) }} value={saisonFilter}>
+                <option value='all'>Toutes les saisons</option>
+                {[1, 2].map((saison, index) => {
+                  return <option key={index} value={saison}>Saison {saison}</option>
+                })}
+              </select>
+            </div>
+          </div>
+        </div>
+        <div className="level-item">
+          <div className="control">
+            <div className="select">
+              <select onChange={(e) => { router.push(`?saison=${saisonFilter}&audience=${e.target.value}&jugement=${jugementFilter}&sanction=${sanctionFilter}`) }} value={audienceFilter}>
                 <option value='all'>Toutes les audiences</option>
-                {json.emission.map((emission, index) => {
-                  return <option key={index} value={index + 1}>Audience {index + 1} - {emission.date}</option>
+                {Object.entries(json.emission).map(([key, emission]) => {
+                  if (saisonFilter !== 'all' && emission.saison !== saisonFilter) return null
+                  return <option key={key} value={key}>{saisonFilter === 'all' ? `Saison ${emission.saison} - Audience ${emission.emission
+                    }` : `Audience ${emission.emission}`}</option>
                 })}
               </select>
             </div>
@@ -48,7 +65,7 @@ export default function Home() {
         <div className="level-item">
           <div className="control">
             <div className="select" >
-              <select onChange={(e) => { sanctionFilter = 'all'; router.push(`?audience=${audienceFilter}&jugement=${e.target.value}&sanction=${sanctionFilter}`) }} value={jugementFilter}>
+              <select onChange={(e) => { sanctionFilter = 'all'; router.push(`?saison=${saisonFilter}&audience=${audienceFilter}&jugement=${e.target.value}&sanction=${sanctionFilter}`) }} value={jugementFilter}>
                 <option value='all'>Tous les jugements</option>
                 <option value='relaxe'>Relaxe</option>
                 <option value='coupable'>Coupable</option>
@@ -57,10 +74,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-        {(jugementFilter === 'all' || jugementFilter === 'coupable') && <div className="level-item">
+        {(jugementFilter === 'all' || jugementFilter === 'coupable') && saisonFilter !== 2 && <div className="level-item">
           <div className="control">
             <div className="select" >
-              <select onChange={(e) => { if (e.target.value !== 'all') jugementFilter = "coupable"; router.push(`?audience=${audienceFilter}&jugement=${jugementFilter}&sanction=${e.target.value}`) }} value={sanctionFilter}>
+              <select onChange={(e) => { if (e.target.value !== 'all') jugementFilter = "coupable"; router.push(`?saison=${saisonFilter}&audience=${audienceFilter}&jugement=${jugementFilter}&sanction=${e.target.value}`) }} value={sanctionFilter}>
                 <option value='all'>Toutes les sanctions</option>
                 <option value='rappel'>Rappel à la loi</option>
                 <option value='epreuve'>Mise à l&lsquo;épreuve</option>
@@ -99,19 +116,19 @@ export default function Home() {
                 <p className="title is-size-2"> {jugements["nonjuge"] || 0}</p>
               </div>
             </div>}
-            {((jugementFilter === 'all' || jugementFilter === 'coupable') && sanctionFilter === 'all') && <div className="column is-4 has-text-centered">
+            {((jugementFilter === 'all' || jugementFilter === 'coupable') && sanctionFilter === 'all' && saisonFilter !== 2) && <div className="column is-4 has-text-centered">
               <div>
                 <p className="heading">{sanctions["rappel"] > 1 ? 'Rappels à la loi' : 'Rappel à la loi'}</p>
                 <p className="title is-size-2"> {sanctions["rappel"] || 0}</p>
               </div>
             </div>}
-            {((jugementFilter === 'all' || jugementFilter === 'coupable') && sanctionFilter === 'all') && <div className="column is-4 has-text-centered">
+            {((jugementFilter === 'all' || jugementFilter === 'coupable') && sanctionFilter === 'all' && saisonFilter !== 2) && <div className="column is-4 has-text-centered">
               <div>
                 <p className="heading">{sanctions["epreuve"] > 1 ? 'Mises à l\'épreuve' : 'Mise à l\'épreuve'}</p>
                 <p className="title is-size-2"> {sanctions["epreuve"] || 0}</p>
               </div>
             </div>}
-            {((jugementFilter === 'all' || jugementFilter === 'coupable') && sanctionFilter === 'all') && <div className="column is-4 has-text-centered">
+            {((jugementFilter === 'all' || jugementFilter === 'coupable') && sanctionFilter === 'all' && saisonFilter !== 2) && <div className="column is-4 has-text-centered">
               <div>
                 <p className="heading">{sanctions["gnouf"] > 1 ? 'Gnoufs' : 'Gnouf'}</p>
                 <p className="title is-size-2"> {sanctions["gnouf"] || 0}</p>
@@ -123,10 +140,10 @@ export default function Home() {
       <div className="section container">
         <div className='columns is-multiline'>
           {desktopFitered.length === 0 && <div>Aucun bureau trouvé avec ces filtres </div>}
-          {desktopFitered.map((desktop) => {
+          {desktopFitered.map((desktop, index) => {
 
-            const emission = json.emission[desktop.emission - 1]
-            return <div key={desktop.id} className="column is-4">
+            const emission = json.emission[`s${desktop.saison}e${desktop.emission}`]
+            return <div key={index} className="column is-4">
               <Card desktop={desktop} emission={emission} />
             </div>
 

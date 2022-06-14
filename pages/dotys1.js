@@ -2,13 +2,13 @@ import Header from '../components/Header';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
-import animaux from '../img/s1/doty/animaux.jpg'
-import miniminimaliste from '../img/s1/doty/miniminimaliste.jpg'
-import bricolobordelique from '../img/s1/doty/bricolobordelique.jpg'
-import angoisse from '../img/s1/doty/angoisse.jpg'
-import prixspecialdupublic from '../img/s1/doty/prixspecialdupublic.jpg'
-import doty from '../img/s1/doty/doty.jpg'
-import hop from '../img/s1/doty/hop.jpg'
+import animaux from '../public/img/s1/doty/animaux.jpg'
+import miniminimaliste from '../public/img/s1/doty/miniminimaliste.jpg'
+import bricolobordelique from '../public/img/s1/doty/bricolobordelique.jpg'
+import angoisse from '../public/img/s1/doty/angoisse.jpg'
+import prixspecialdupublic from '../public/img/s1/doty/prixspecialdupublic.jpg'
+import doty from '../public/img/s1/doty/doty.jpg'
+import hop from '../public/img/s1/doty/hop.jpg'
 import Image from 'next/image';
 import ScrollToTop from "react-scroll-to-top";
 
@@ -62,7 +62,7 @@ export default function Home() {
               <div className="column is-6 is-offset-6">
                 <h1 className="title is-1 ">Animaux</h1>
                 <hr className="content-divider" />
-                <a href="https://www.twitch.tv/videos/1481209067?t=00h09m21s" rel="noreferrer" target='_blank' className="button is-white is-inverted">Regarder la catégorie&ensp;<FontAwesomeIcon icon={faChevronRight} /></a>
+                <a href="https://youtu.be/aMlUdUnFLTM?t=385" rel="noreferrer" target='_blank' className="button is-white is-inverted">Regarder la catégorie&ensp;<FontAwesomeIcon icon={faChevronRight} /></a>
               </div>
             </div>
           </div>
@@ -77,7 +77,7 @@ export default function Home() {
               <div className="column is-6">
                 <h1 className="title is-1 ">Miniminimaliste</h1>
                 <hr className="content-divider" />
-                <a href="https://www.twitch.tv/videos/1481209067?t=00h28m14s" rel="noreferrer" target='_blank' className="button is-white is-inverted">Regarder la catégorie&ensp;<FontAwesomeIcon icon={faChevronRight} /></a>
+                <a href="https://youtu.be/aMlUdUnFLTM?t=1516" rel="noreferrer" target='_blank' className="button is-white is-inverted">Regarder la catégorie&ensp;<FontAwesomeIcon icon={faChevronRight} /></a>
               </div>
             </div>
           </div>
@@ -92,7 +92,7 @@ export default function Home() {
               <div className="column is-6 is-offset-6">
                 <h1 className="title is-1 ">Bricolo Bordélique</h1>
                 <hr className="content-divider" />
-                <a href="https://www.twitch.tv/videos/1481209067?t=00h49m43s" rel="noreferrer" target='_blank' className="button is-white is-inverted">Regarder la catégorie&ensp;<FontAwesomeIcon icon={faChevronRight} /></a>
+                <a href="https://youtu.be/aMlUdUnFLTM?t=2810" rel="noreferrer" target='_blank' className="button is-white is-inverted">Regarder la catégorie&ensp;<FontAwesomeIcon icon={faChevronRight} /></a>
               </div>
             </div>
           </div>
@@ -107,7 +107,7 @@ export default function Home() {
               <div className="column is-6">
                 <h1 className="title is-1 ">Angoisse</h1>
                 <hr className="content-divider" />
-                <a href="https://www.twitch.tv/videos/1481209067?t=01h11m36s" rel="noreferrer" target='_blank' className="button is-white is-inverted">Regarder la catégorie&ensp;<FontAwesomeIcon icon={faChevronRight} /></a>
+                <a href="https://youtu.be/aMlUdUnFLTM?t=4120" rel="noreferrer" target='_blank' className="button is-white is-inverted">Regarder la catégorie&ensp;<FontAwesomeIcon icon={faChevronRight} /></a>
               </div>
             </div>
           </div>
@@ -122,7 +122,7 @@ export default function Home() {
               <div className="column is-6 is-offset-6">
                 <h1 className="title is-1 ">Prix spécial du public</h1>
                 <hr className="content-divider" />
-                <a href="https://www.twitch.tv/videos/1481209067?t=01h45m14s" rel="noreferrer" target='_blank' className="button is-white is-inverted">Regarder la catégorie&ensp;<FontAwesomeIcon icon={faChevronRight} /></a>
+                <a href="https://youtu.be/aMlUdUnFLTM?t=6136" rel="noreferrer" target='_blank' className="button is-white is-inverted">Regarder la catégorie&ensp;<FontAwesomeIcon icon={faChevronRight} /></a>
               </div>
             </div>
           </div>
@@ -137,7 +137,7 @@ export default function Home() {
               <div className="column is-6">
                 <h1 className="title is-1 ">DOTY</h1>
                 <hr className="content-divider" />
-                <a href="https://www.twitch.tv/videos/1481209067?t=02h00m25s" rel="noreferrer" target='_blank' className="button is-white is-inverted">Regarder la catégorie&ensp;<FontAwesomeIcon icon={faChevronRight} /></a>
+                <a href="https://youtu.be/aMlUdUnFLTM?t=7049" rel="noreferrer" target='_blank' className="button is-white is-inverted">Regarder la catégorie&ensp;<FontAwesomeIcon icon={faChevronRight} /></a>
               </div>
             </div>
           </div>

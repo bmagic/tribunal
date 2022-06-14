@@ -10,9 +10,9 @@ export default function Home() {
         <div className='columns is-multiline'>
           {json.collection.map((desktop) => {
 
-            const emission = json.emission[desktop.emission - 1]
+            const emission = json.emission[`s${desktop.saison}e${desktop.emission}`]
             return <div key={desktop.id} className="column is-4">
-              <Card desktop={desktop} emission={emission} />
+              <Card desktop={desktop} emission={emission} collection={true} />
             </div>
 
           })}

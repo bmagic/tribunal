@@ -3,15 +3,18 @@ import Header from "../components/Header"
 import json from '../public/data.json'
 
 export default function Stats() {
-    const data = [];
-    const data2 = [];
+    const datas1 = [];
+    const datas2 = [];
+    let counts1 = 0;
+    let counts2 = 0;
+    let relaxes1 = 0;
+    let relaxes2 = 0;
 
-    const map = {}
+    const map = { s1: {}, s2: {} }
     let relaxe = 0
-    for (const emissionIndex in json.emission) {
-
-        map[(parseInt(emissionIndex) + 1)] = {
-            name: json.emission[emissionIndex].date,
+    for (const [key, emission] of Object.entries(json.emission)) {
+        map[`s${emission.saison}`][`e${emission.emission}`] = {
+            name: json.emission[key].date,
             coupable: 0,
             relaxe: 0,
             gnouf: 0,
@@ -22,56 +25,69 @@ export default function Stats() {
     }
     for (const desktop of json.desktop) {
         if (desktop.jugement === 'coupable') {
-            map[desktop.emission].coupable++
+            map[`s${desktop.saison}`][`e${desktop.emission}`].coupable++
             switch (desktop.sanction) {
                 case 'gnouf':
-                    map[desktop.emission].gnouf++
+                    map[`s${desktop.saison}`][`e${desktop.emission}`].gnouf++
                     break
                 case 'epreuve':
-                    map[desktop.emission].epreuve++
+                    map[`s${desktop.saison}`][`e${desktop.emission}`].epreuve++
                     break
                 case 'rappel':
-                    map[desktop.emission].rappel++
+                    map[`s${desktop.saison}`][`e${desktop.emission}`].rappel++
                     break
             }
         } else {
-            relaxe++
+            desktop.saison === 1 ? relaxes1++ : relaxes2++
 
-            map[desktop.emission].relaxe++
+            map[`s${desktop.saison}`][`e${desktop.emission}`].relaxe++
         }
+        desktop.saison === 1 ? counts1++ : counts2++
     }
-    for (const index in map) {
+    for (const [key, emission] of Object.entries(map['s1'])) {
 
-
-        if (map[index].gnouf !== 0 || map[index].epreuve !== 0 || map[index].rappel !== 0)
-            delete map[index].coupable
+        if (emission.gnouf !== 0 || emission.epreuve !== 0 || emission.rappel !== 0)
+            delete emission.coupable
         else {
 
-            delete map[index].gnouf
-            delete map[index].epreuve
-            delete map[index].rappel
+            delete emission.gnouf
+            delete emission.epreuve
+            delete emission.rappel
         }
-        data.push(map[index])
+        datas1.push(emission)
 
     }
 
+    for (const [key, emission] of Object.entries(map['s2'])) {
 
+        if (emission.gnouf !== 0 || emission.epreuve !== 0 || emission.rappel !== 0)
+            delete emission.coupable
+        else {
+
+            delete emission.gnouf
+            delete emission.epreuve
+            delete emission.rappel
+        }
+        datas2.push(emission)
+
+    }
     return <main >
         <Header />
         <div className="container has-text-centered">
-            <h2 className="title mt-6">
-                Le juge traite en moyenne {Math.round(json.desktop.length / json.emission.length)} bureaux par audience.
-            </h2>
-            <h2 className="title mt-6">
-                Dans sa clémence, le juge a relaxé {Math.round((relaxe / json.desktop.length) * 100)}% des bureaux.
-            </h2>
+            <h1 className='title mt-4'>Saison 1</h1>
+            <div className="subtitle mt-1 mb-0">
+                Le juge a traité en moyenne {Math.round(counts1 / datas1.length)} bureaux par audience.
+            </div>
+            <div className="subtitle mt-0 mb-2">
+                Dans sa clémence, le juge a relaxé {Math.round((relaxes1 / counts1) * 100)}% des bureaux.
+            </div>
             <div style={{ width: '100%', height: 300 }} className="mb-5">
 
                 <ResponsiveContainer >
                     <BarChart
                         width={500}
                         height={300}
-                        data={data}
+                        data={datas1}
                         margin={{
                             top: 20,
                             right: 30,
@@ -87,6 +103,36 @@ export default function Stats() {
                         <Bar dataKey="gnouf" stackId="a" fill="#b20000" />
                         <Bar dataKey="epreuve" stackId="a" fill="#b25000" />
                         <Bar dataKey="rappel" stackId="a" fill="#1aaaac" />
+                        <Bar dataKey="relaxe" stackId="a" fill="#1abc9c" />
+                    </BarChart>
+                </ResponsiveContainer>
+            </div>
+            <h1 className='title mt-4'>Saison 2</h1>
+            <div className="subtitle mt-1 mb-0">
+                Le juge a traité en moyenne {Math.round(counts2 / datas2.length)} bureaux par audience.
+            </div>
+            <div className="subtitle mt-0 mb-2">
+                Dans sa clémence, le juge a relaxé {Math.round((relaxes2 / counts2) * 100)}% des bureaux.
+            </div>
+            <div style={{ width: '100%', height: 300 }} className="mb-5">
+
+                <ResponsiveContainer >
+                    <BarChart
+                        width={500}
+                        height={300}
+                        data={datas2}
+                        margin={{
+                            top: 20,
+                            right: 30,
+                            left: 20,
+                            bottom: 5,
+                        }}
+                    >
+                        <CartesianGrid strokeDasharray="3 3" />
+                        <XAxis dataKey="name" />
+                        <YAxis />
+                        <Tooltip contentStyle={{ backgroundColor: '#1f2424' }} />
+                        <Bar dataKey="gnouf" stackId="a" fill="#b20000" />
                         <Bar dataKey="relaxe" stackId="a" fill="#1abc9c" />
                     </BarChart>
                 </ResponsiveContainer>
