@@ -5,7 +5,7 @@ import DesktopImage from '../components/DesktopImage'
 export default function Card({ emission, desktop, collection }) {
     return <div className="card">
         <div className="card-image">
-            <a target='_blank' rel="noreferrer" href={`${emission.url}?t=${desktop.time}`}><DesktopImage collection={collection} id={desktop.id} saison={desktop.saison} emission={desktop.emission} />
+            <a target='_blank' rel="noreferrer" href={`${desktop.url || emission.url}?t=${desktop.time}`}><DesktopImage collection={collection} id={desktop.id} saison={desktop.saison} emission={desktop.emission} />
                 {desktop.jugement !== "nonjuge" && <img src={`/jugements/${desktop.sanction || desktop.jugement}.png`} className="jugement" />}
             </a>
         </div>
@@ -16,7 +16,7 @@ export default function Card({ emission, desktop, collection }) {
             </div>
         </div>
         <footer className="card-footer">
-            <a className="card-footer-item" target='_blank' rel="noreferrer" href={`${emission.url}?t=${desktop.time}`}><FontAwesomeIcon icon={emission.url.search('youtu') !== -1 ? faYoutube : faTwitch} />&nbsp;&nbsp;Voir le jugement</a>
+            <a className="card-footer-item" target='_blank' rel="noreferrer" href={`${desktop.url || emission.url}?t=${desktop.time}`}><FontAwesomeIcon icon={emission.url.search('youtu') !== -1 ? faYoutube : faTwitch} />&nbsp;&nbsp;Voir le jugement</a>
         </footer>
     </div>
 }

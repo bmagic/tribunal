@@ -179,6 +179,12 @@
             "emission": 2,
             "url": "https://www.twitch.tv/videos/1500064833",
             "date": "10/06/2022"
+        },
+        "s2e3": {
+            "saison": 2,
+            "emission": 3,
+            "url": "https://www.twitch.tv/videos/1507456297",
+            "date": "18/06/2022"
         }
     },
     "collection": [
@@ -2787,6 +2793,124 @@
             "saison": 2,
             "emission": 2,
             "time": "02h15m26s",
+            "jugement": "relaxe"
+        },
+        {
+            "id": 1,
+            "saison": 2,
+            "emission": 3,
+            "time": "00h05m15s",
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": 2,
+            "saison": 2,
+            "emission": 3,
+            "time": "00h22m46s",
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": 3,
+            "saison": 2,
+            "emission": 3,
+            "time": "00h29m40s",
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": 4,
+            "saison": 2,
+            "emission": 3,
+            "time": "00h36m56s",
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": 5,
+            "saison": 2,
+            "emission": 3,
+            "time": "00h42m21s",
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": 6,
+            "saison": 2,
+            "emission": 3,
+            "time": "00h04m39s",
+            "url": "https://www.twitch.tv/videos/1507498448",
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": 7,
+            "saison": 2,
+            "emission": 3,
+            "time": "00h09m05s",
+            "url": "https://www.twitch.tv/videos/1507498448",
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": 8,
+            "saison": 2,
+            "emission": 3,
+            "time": "00h16m03s",
+            "url": "https://www.twitch.tv/videos/1507498448",
+            "jugement": "relaxe"
+        },
+        {
+            "id": 9,
+            "saison": 2,
+            "emission": 3,
+            "time": "00h22m06s",
+            "url": "https://www.twitch.tv/videos/1507498448",
+            "jugement": "relaxe"
+        },
+        {
+            "id": 10,
+            "saison": 2,
+            "emission": 3,
+            "time": "00h36m15s",
+            "url": "https://www.twitch.tv/videos/1507498448",
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": 11,
+            "saison": 2,
+            "emission": 3,
+            "time": "00h43m48s",
+            "url": "https://www.twitch.tv/videos/1507498448",
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": 12,
+            "saison": 2,
+            "emission": 3,
+            "time": "00h54m07s",
+            "url": "https://www.twitch.tv/videos/1507498448",
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": 13,
+            "saison": 2,
+            "emission": 3,
+            "time": "00h58m33s",
+            "url": "https://www.twitch.tv/videos/1507498448",
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": 14,
+            "saison": 2,
+            "emission": 3,
+            "url": "https://www.twitch.tv/videos/1507498448",
+            "time": "01h07m39s",
             "jugement": "relaxe"
         }
     ]

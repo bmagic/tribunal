@@ -141,7 +141,6 @@ export default function Home() {
         <div className='columns is-multiline'>
           {desktopFitered.length === 0 && <div>Aucun bureau trouvé avec ces filtres </div>}
           {desktopFitered.map((desktop, index) => {
-
             const emission = json.emission[`s${desktop.saison}e${desktop.emission}`]
             return <div key={index} className="column is-4">
               <Card desktop={desktop} emission={emission} />
