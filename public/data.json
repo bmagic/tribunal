@@ -185,6 +185,12 @@
             "emission": 3,
             "url": "https://www.twitch.tv/videos/1507456297",
             "date": "18/06/2022"
+        },
+        "s2e4": {
+            "saison": 2,
+            "emission": 4,
+            "url": "https://www.twitch.tv/videos/1513974842",
+            "date": "24/06/2022"
         }
     },
     "collection": [
@@ -347,6 +353,7 @@
             "id": 9,
             "saison": 1,
             "emission": 1,
+            "owner": "Nono5785",
             "time": 2636,
             "jugement": "coupable"
         },
@@ -2676,7 +2683,6 @@
             "id": 9,
             "saison": 2,
             "emission": 1,
-            "owner": "NoBrainToz",
             "time": "5062",
             "jugement": "relaxe"
         },
@@ -2685,6 +2691,7 @@
             "saison": 2,
             "emission": 1,
             "time": "5732",
+            "owner": "NoBrainToz",
             "jugement": "coupable",
             "sanction": "gnouf"
         },
@@ -2769,6 +2776,7 @@
             "id": 10,
             "saison": 2,
             "emission": 2,
+            "owner": "elbistro",
             "time": "01h59m04s",
             "jugement": "coupable",
             "sanction": "gnouf"
@@ -2911,6 +2919,114 @@
             "emission": 3,
             "url": "https://www.twitch.tv/videos/1507498448",
             "time": "01h07m39s",
+            "jugement": "relaxe"
+        },
+        {
+            "id": 1,
+            "saison": 2,
+            "emission": 4,
+            "time": "00h26m43s",
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": 2,
+            "saison": 2,
+            "emission": 4,
+            "time": "00h33m57s",
+            "jugement": "relaxe"
+        },
+        {
+            "id": 3,
+            "saison": 2,
+            "emission": 4,
+            "time": "00h43m50s",
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": 4,
+            "saison": 2,
+            "emission": 4,
+            "time": "01h00m34",
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": 5,
+            "saison": 2,
+            "emission": 4,
+            "time": "01h06m57",
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": 6,
+            "saison": 2,
+            "emission": 4,
+            "time": "01h10m12",
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": 7,
+            "saison": 2,
+            "emission": 4,
+            "time": "01h13m48",
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": 8,
+            "saison": 2,
+            "emission": 4,
+            "time": "01h18m13",
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": 9,
+            "saison": 2,
+            "emission": 4,
+            "time": "01h27m04",
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": 10,
+            "saison": 2,
+            "emission": 4,
+            "time": "01h38m26",
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": 11,
+            "saison": 2,
+            "emission": 4,
+            "time": "01h51m39",
+            "jugement": "relaxe"
+        },
+        {
+            "id": 12,
+            "saison": 2,
+            "emission": 4,
+            "time": "01h59m19",
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": 13,
+            "saison": 2,
+            "emission": 4,
+            "time": "02h04m55",
+            "jugement": "relaxe"
+        },
+        {
+            "id": 14,
+            "saison": 2,
+            "emission": 4,
+            "time": "02h12m41",
             "jugement": "relaxe"
         }
     ]
