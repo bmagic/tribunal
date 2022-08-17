@@ -177,25 +177,25 @@
         "s2e2": {
             "saison": 2,
             "emission": 2,
-            "url": "https://www.twitch.tv/videos/1500064833",
+            "url": "https://youtu.be/EhTBQTDf6_E",
             "date": "10/06/2022"
         },
         "s2e3": {
             "saison": 2,
             "emission": 3,
-            "url": "https://www.twitch.tv/videos/1507456297",
+            "url": "https://youtu.be/HhNpuW_eFOM",
             "date": "18/06/2022"
         },
         "s2e4": {
             "saison": 2,
             "emission": 4,
-            "url": "https://www.twitch.tv/videos/1513974842",
+            "url": "https://youtu.be/OMwQy1sv_Xo",
             "date": "24/06/2022"
         },
         "s2e5": {
             "saison": 2,
             "emission": 5,
-            "url": "https://www.twitch.tv/videos/1520557913",
+            "url": "https://youtu.be/CPKHFOwwuJg",
             "date": "02/07/2022"
         }
     },
@@ -2713,7 +2713,7 @@
             "id": 1,
             "saison": 2,
             "emission": 2,
-            "time": "00h20m52s",
+            "time": "1043",
             "jugement": "coupable",
             "sanction": "gnouf"
         },
@@ -2721,7 +2721,7 @@
             "id": 2,
             "saison": 2,
             "emission": 2,
-            "time": "00h33m49s",
+            "time": "1820",
             "jugement": "coupable",
             "sanction": "gnouf"
         },
@@ -2729,14 +2729,14 @@
             "id": 3,
             "saison": 2,
             "emission": 2,
-            "time": "00h43m22s",
+            "time": "2393",
             "jugement": "relaxe"
         },
         {
             "id": 4,
             "saison": 2,
             "emission": 2,
-            "time": "00h55m01s",
+            "time": "3093",
             "jugement": "coupable",
             "sanction": "gnouf"
         },
@@ -2744,21 +2744,21 @@
             "id": 5,
             "saison": 2,
             "emission": 2,
-            "time": "00h59m23s",
+            "time": "3353",
             "jugement": "relaxe"
         },
         {
             "id": 6,
             "saison": 2,
             "emission": 2,
-            "time": "01h16m37s",
+            "time": "4388",
             "jugement": "relaxe"
         },
         {
             "id": 7,
             "saison": 2,
             "emission": 2,
-            "time": "01h28m17s",
+            "time": "5088",
             "jugement": "coupable",
             "sanction": "gnouf"
         },
@@ -2766,7 +2766,7 @@
             "id": 8,
             "saison": 2,
             "emission": 2,
-            "time": "01h37m17s",
+            "time": "5628",
             "jugement": "coupable",
             "sanction": "gnouf"
         },
@@ -2774,7 +2774,7 @@
             "id": 9,
             "saison": 2,
             "emission": 2,
-            "time": "01h47m21s",
+            "time": "6231",
             "jugement": "coupable",
             "sanction": "gnouf"
         },
@@ -2783,7 +2783,7 @@
             "saison": 2,
             "emission": 2,
             "owner": "elbistro",
-            "time": "01h59m04s",
+            "time": "6935",
             "jugement": "coupable",
             "sanction": "gnouf"
         },
@@ -2791,7 +2791,7 @@
             "id": 11,
             "saison": 2,
             "emission": 2,
-            "time": "02h11m52s",
+            "time": "7700",
             "jugement": "coupable",
             "sanction": "gnouf"
         },
@@ -2799,21 +2799,21 @@
             "id": 12,
             "saison": 2,
             "emission": 2,
-            "time": "02h13m15s",
+            "time": "7787",
             "jugement": "relaxe"
         },
         {
             "id": 13,
             "saison": 2,
             "emission": 2,
-            "time": "02h15m26s",
+            "time": "7917",
             "jugement": "relaxe"
         },
         {
             "id": 1,
             "saison": 2,
             "emission": 3,
-            "time": "00h05m15s",
+            "time": "165",
             "jugement": "coupable",
             "sanction": "gnouf"
         },
@@ -2821,7 +2821,7 @@
             "id": 2,
             "saison": 2,
             "emission": 3,
-            "time": "00h22m46s",
+            "time": "1218",
             "jugement": "coupable",
             "sanction": "gnouf"
         },
@@ -2829,7 +2829,7 @@
             "id": 3,
             "saison": 2,
             "emission": 3,
-            "time": "00h29m40s",
+            "time": "1630",
             "jugement": "coupable",
             "sanction": "gnouf"
         },
@@ -2837,7 +2837,7 @@
             "id": 4,
             "saison": 2,
             "emission": 3,
-            "time": "00h36m56s",
+            "time": "2065",
             "jugement": "coupable",
             "sanction": "gnouf"
         },
@@ -2845,7 +2845,7 @@
             "id": 5,
             "saison": 2,
             "emission": 3,
-            "time": "00h42m21s",
+            "time": "2392",
             "jugement": "coupable",
             "sanction": "gnouf"
         },
@@ -2853,8 +2853,7 @@
             "id": 6,
             "saison": 2,
             "emission": 3,
-            "time": "00h04m39s",
-            "url": "https://www.twitch.tv/videos/1507498448",
+            "time": "2880",
             "jugement": "coupable",
             "sanction": "gnouf"
         },
@@ -2862,8 +2861,7 @@
             "id": 7,
             "saison": 2,
             "emission": 3,
-            "time": "00h09m05s",
-            "url": "https://www.twitch.tv/videos/1507498448",
+            "time": "3146",
             "jugement": "coupable",
             "sanction": "gnouf"
         },
@@ -2871,24 +2869,21 @@
             "id": 8,
             "saison": 2,
             "emission": 3,
-            "time": "00h16m03s",
-            "url": "https://www.twitch.tv/videos/1507498448",
+            "time": "3564",
             "jugement": "relaxe"
         },
         {
             "id": 9,
             "saison": 2,
             "emission": 3,
-            "time": "00h22m06s",
-            "url": "https://www.twitch.tv/videos/1507498448",
+            "time": "3927",
             "jugement": "relaxe"
         },
         {
             "id": 10,
             "saison": 2,
             "emission": 3,
-            "time": "00h36m15s",
-            "url": "https://www.twitch.tv/videos/1507498448",
+            "time": "4781",
             "jugement": "coupable",
             "sanction": "gnouf"
         },
@@ -2896,8 +2891,7 @@
             "id": 11,
             "saison": 2,
             "emission": 3,
-            "time": "00h43m48s",
-            "url": "https://www.twitch.tv/videos/1507498448",
+            "time": "5229",
             "jugement": "coupable",
             "sanction": "gnouf"
         },
@@ -2905,8 +2899,7 @@
             "id": 12,
             "saison": 2,
             "emission": 3,
-            "time": "00h54m07s",
-            "url": "https://www.twitch.tv/videos/1507498448",
+            "time": "5848",
             "jugement": "coupable",
             "sanction": "gnouf"
         },
@@ -2914,8 +2907,7 @@
             "id": 13,
             "saison": 2,
             "emission": 3,
-            "time": "00h58m33s",
-            "url": "https://www.twitch.tv/videos/1507498448",
+            "time": "6114",
             "jugement": "coupable",
             "sanction": "gnouf"
         },
@@ -2923,15 +2915,14 @@
             "id": 14,
             "saison": 2,
             "emission": 3,
-            "url": "https://www.twitch.tv/videos/1507498448",
-            "time": "01h07m39s",
+            "time": "6661",
             "jugement": "relaxe"
         },
         {
             "id": 1,
             "saison": 2,
             "emission": 4,
-            "time": "00h26m43s",
+            "time": "1451",
             "jugement": "coupable",
             "sanction": "gnouf"
         },
@@ -2939,14 +2930,14 @@
             "id": 2,
             "saison": 2,
             "emission": 4,
-            "time": "00h33m57s",
+            "time": "1886",
             "jugement": "relaxe"
         },
         {
             "id": 3,
             "saison": 2,
             "emission": 4,
-            "time": "00h43m50s",
+            "time": "2478",
             "jugement": "coupable",
             "sanction": "gnouf"
         },
@@ -2954,7 +2945,7 @@
             "id": 4,
             "saison": 2,
             "emission": 4,
-            "time": "01h00m34",
+            "time": "3483",
             "jugement": "coupable",
             "sanction": "gnouf"
         },
@@ -2962,7 +2953,7 @@
             "id": 5,
             "saison": 2,
             "emission": 4,
-            "time": "01h06m57",
+            "time": "3865",
             "jugement": "coupable",
             "sanction": "gnouf"
         },
@@ -2970,7 +2961,7 @@
             "id": 6,
             "saison": 2,
             "emission": 4,
-            "time": "01h10m12",
+            "time": "4060",
             "jugement": "coupable",
             "sanction": "gnouf"
         },
@@ -2978,7 +2969,7 @@
             "id": 7,
             "saison": 2,
             "emission": 4,
-            "time": "01h13m48",
+            "time": "4277",
             "jugement": "coupable",
             "sanction": "gnouf"
         },
@@ -2986,7 +2977,7 @@
             "id": 8,
             "saison": 2,
             "emission": 4,
-            "time": "01h18m13",
+            "time": "4541",
             "jugement": "coupable",
             "sanction": "gnouf"
         },
@@ -2994,7 +2985,7 @@
             "id": 9,
             "saison": 2,
             "emission": 4,
-            "time": "01h27m04",
+            "time": "5072",
             "jugement": "coupable",
             "sanction": "gnouf"
         },
@@ -3002,7 +2993,7 @@
             "id": 10,
             "saison": 2,
             "emission": 4,
-            "time": "01h38m26",
+            "time": "5876",
             "jugement": "coupable",
             "sanction": "gnouf"
         },
@@ -3010,14 +3001,14 @@
             "id": 11,
             "saison": 2,
             "emission": 4,
-            "time": "01h51m39",
+            "time": "6548",
             "jugement": "relaxe"
         },
         {
             "id": 12,
             "saison": 2,
             "emission": 4,
-            "time": "01h59m19",
+            "time": "7007",
             "jugement": "coupable",
             "sanction": "gnouf"
         },
@@ -3025,28 +3016,28 @@
             "id": 13,
             "saison": 2,
             "emission": 4,
-            "time": "02h04m55",
+            "time": "7344",
             "jugement": "relaxe"
         },
         {
             "id": 14,
             "saison": 2,
             "emission": 4,
-            "time": "02h12m41",
+            "time": "7810",
             "jugement": "relaxe"
         },
         {
             "id": 1,
             "saison": 2,
             "emission": 5,
-            "time": "00h12m21",
+            "time": "495",
             "jugement": "relaxe"
         },
         {
             "id": 2,
             "saison": 2,
             "emission": 5,
-            "time": "00h15m22",
+            "time": "675",
             "jugement": "coupable",
             "sanction": "gnouf"
         },
@@ -3054,7 +3045,7 @@
             "id": 3,
             "saison": 2,
             "emission": 5,
-            "time": "00h22m14",
+            "time": "1088",
             "jugement": "coupable",
             "sanction": "gnouf"
         },
@@ -3062,7 +3053,7 @@
             "id": 4,
             "saison": 2,
             "emission": 5,
-            "time": "00h31m42",
+            "time": "1656",
             "jugement": "coupable",
             "sanction": "gnouf"
         },
@@ -3070,7 +3061,7 @@
             "id": 5,
             "saison": 2,
             "emission": 5,
-            "time": "00h39m45",
+            "time": "2139",
             "jugement": "coupable",
             "sanction": "gnouf"
         },
@@ -3078,14 +3069,14 @@
             "id": 6,
             "saison": 2,
             "emission": 5,
-            "time": "00h50m13",
+            "time": "2767",
             "jugement": "relaxe"
         },
         {
             "id": 7,
             "saison": 2,
             "emission": 5,
-            "time": "00h58m10",
+            "time": "3244",
             "jugement": "coupable",
             "sanction": "gnouf"
         },
@@ -3093,7 +3084,7 @@
             "id": 8,
             "saison": 2,
             "emission": 5,
-            "time": "01h04m06",
+            "time": "3600",
             "jugement": "coupable",
             "sanction": "gnouf"
         },
@@ -3101,14 +3092,14 @@
             "id": 9,
             "saison": 2,
             "emission": 5,
-            "time": "01h13m42",
+            "time": "4176",
             "jugement": "relaxe"
         },
         {
             "id": 10,
             "saison": 2,
             "emission": 5,
-            "time": "01h23m33",
+            "time": "4767",
             "jugement": "coupable",
             "sanction": "gnouf"
         },
@@ -3116,14 +3107,14 @@
             "id": 11,
             "saison": 2,
             "emission": 5,
-            "time": "01h28m20",
+            "time": "5054",
             "jugement": "relaxe"
         },
         {
             "id": 12,
             "saison": 2,
             "emission": 5,
-            "time": "01h33m44",
+            "time": "5377",
             "jugement": "coupable",
             "sanction": "gnouf"
         },
@@ -3131,7 +3122,7 @@
             "id": 13,
             "saison": 2,
             "emission": 5,
-            "time": "01h59m57",
+            "time": "6951",
             "jugement": "coupable",
             "sanction": "gnouf"
         }
