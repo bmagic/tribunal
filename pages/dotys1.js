@@ -21,7 +21,7 @@ export default function Home() {
       <section className="hero is-small" style={{ backgroundColor: 'black' }}>
         <div className="hero-body">
           <div className="container">
-            <Image src={hop} />
+            <Image alt='Bandeau de présentation' src={hop} />
           </div>
         </div>
       </section>
