@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import ReactAudioPlayer from 'react-audio-player'
 
 export default function Header() {
     const router = useRouter()
@@ -27,6 +28,10 @@ export default function Header() {
                 Greffe du Tribunal des Bureaux
             </h1>
             <h2 className="subtitle">Présidé par l&lsquo;honorable juge ackboo</h2>
+            <ReactAudioPlayer
+            src="bureaulogie.mp3"
+            controls
+            />
             <div className='container'>
                 <div className="tabs">
                     <ul>

@@ -197,6 +197,12 @@
             "emission": 5,
             "url": "https://youtu.be/CPKHFOwwuJg",
             "date": "02/07/2022"
+        },
+        "s2e6": {
+            "saison": 2,
+            "emission": 6,
+            "url": "https://www.twitch.tv/videos/1580923032",
+            "date": "03/09/2022"
         }
     },
     "collection": [
@@ -3123,6 +3129,82 @@
             "saison": 2,
             "emission": 5,
             "time": "6951",
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": 1,
+            "saison": 2,
+            "emission": 6,
+            "time": "00h23m30s",
+            "jugement": "relaxe"
+        },
+        {
+            "id": 2,
+            "saison": 2,
+            "emission": 6,
+            "time": "00h32m06s",
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": 3,
+            "saison": 2,
+            "emission": 6,
+            "time": "00h40m02s",
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": 4,
+            "saison": 2,
+            "emission": 6,
+            "time": "00h49m47s",
+            "jugement": "relaxe"
+        },
+        {
+            "id": 5,
+            "saison": 2,
+            "emission": 6,
+            "time": "01h02m23s",
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": 6,
+            "saison": 2,
+            "emission": 6,
+            "time": "01h10m36s",
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": 7,
+            "saison": 2,
+            "emission": 6,
+            "time": "01h17m52s",
+            "jugement": "relaxe"
+        },
+        {
+            "id": 8,
+            "saison": 2,
+            "emission": 6,
+            "time": "01h26m14s",
+            "jugement": "relaxe"
+        },
+        {
+            "id": 9,
+            "saison": 2,
+            "emission": 6,
+            "time": "01h30m10s",
+            "jugement": "coupable",
+            "sanction": "gnouf"
+        },
+        {
+            "id": 10,
+            "saison": 2,
+            "emission": 6,
+            "time": "01h37m13s",
             "jugement": "coupable",
             "sanction": "gnouf"
         }
