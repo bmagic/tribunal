@@ -236,7 +236,19 @@
   "s2e12": {
     "saison": 2,
     "emission": 12,
-    "url": "https://www.twitch.tv/videos/1625169042",
+    "url": "https://youtu.be/h5YvAX7_1rw",
     "date": "15/10/2022"
+  },
+  "s2e13": {
+    "saison": 2,
+    "emission": 13,
+    "url": "https://youtu.be/YpOTpeB3wcs",
+    "date": "22/10/2022"
+  },
+  "s2e14": {
+    "saison": 2,
+    "emission": 14,
+    "url": "https://www.twitch.tv/videos/1637991844",
+    "date": "29/10/2022"
   }
 }
