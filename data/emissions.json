@@ -248,7 +248,25 @@
   "s2e14": {
     "saison": 2,
     "emission": 14,
-    "url": "https://www.twitch.tv/videos/1637991844",
+    "url": "https://youtu.be/ZMAiUwbz-LY",
     "date": "29/10/2022"
+  },
+  "s2e15": {
+    "saison": 2,
+    "emission": 15,
+    "url": "https://youtu.be/BUJfE7eELcI",
+    "date": "05/11/2022"
+  },
+  "s2e16": {
+    "saison": 2,
+    "emission": 16,
+    "url": "https://youtu.be/uJfW62ESX9A",
+    "date": "12/11/2022"
+  },
+  "s2e17": {
+    "saison": 2,
+    "emission": 17,
+    "url": "https://www.twitch.tv/videos/1657387158",
+    "date": "19/11/2022"
   }
 }
