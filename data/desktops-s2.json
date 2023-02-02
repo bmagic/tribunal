@@ -1221,7 +1221,7 @@
     "id": 1,
     "saison": 2,
     "emission": 21,
-    "time": "00h12m42s",
+    "time": "605",
     "jugement": "coupable",
     "sanction": "gnouf"
   },
@@ -1229,7 +1229,7 @@
     "id": 2,
     "saison": 2,
     "emission": 21,
-    "time": "00h33m00s",
+    "time": "1822",
     "jugement": "coupable",
     "sanction": "gnouf"
   },
@@ -1237,7 +1237,7 @@
     "id": 3,
     "saison": 2,
     "emission": 21,
-    "time": "00h38m46s",
+    "time": "2169",
     "jugement": "coupable",
     "sanction": "gnouf"
   }
