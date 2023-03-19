@@ -60,6 +60,10 @@ export default function Header() {
                 }`}>
                 Bureaux
               </Link>
+              <Link href="/vintages" className={`navbar-item ${router.pathname === '/vintages' ? 'is-active' : ''
+                }`}>
+                Vintages
+              </Link>
               <Link href="/claviers" className={`navbar-item ${router.pathname === '/claviers' ? 'is-active' : ''
                 }`}>
                 Claviers
