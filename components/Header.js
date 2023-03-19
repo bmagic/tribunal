@@ -52,55 +52,29 @@ export default function Header() {
           </div>
 
           <div
-            className={`navbar-menu ${
-              isOpen ? 'is-active' : ''
-            } is-transparent`}
+            className={`navbar-menu ${isOpen ? 'is-active' : ''
+              } is-transparent`}
           >
             <div className="navbar-start">
-              <Link href="/">
-                <a
-                  className={`navbar-item ${
-                    router.pathname === '/' ? 'is-active' : ''
-                  }`}
-                >
-                  Bureaux
-                </a>
+              <Link href="/" className={`navbar-item ${router.pathname === '/' ? 'is-active' : ''
+                }`}>
+                Bureaux
               </Link>
-              <Link href="/claviers">
-                <a
-                  className={`navbar-item ${
-                    router.pathname === '/claviers' ? 'is-active' : ''
-                  }`}
-                >
-                  Claviers
-                </a>
+              <Link href="/claviers" className={`navbar-item ${router.pathname === '/claviers' ? 'is-active' : ''
+                }`}>
+                Claviers
               </Link>
-              <Link href="/collections">
-                <a
-                  className={`navbar-item ${
-                    router.pathname === '/collections' ? 'is-active' : ''
-                  }`}
-                >
-                  Collections
-                </a>
+              <Link href="/collections" className={`navbar-item ${router.pathname === '/collections' ? 'is-active' : ''
+                }`}>
+                Collections
               </Link>
-              <Link href="/stats">
-                <a
-                  className={`navbar-item ${
-                    router.pathname === '/stats' ? 'is-active' : ''
-                  }`}
-                >
-                  Statistiques
-                </a>
+              <Link href="/stats" className={`navbar-item ${router.pathname === '/stats' ? 'is-active' : ''
+                }`}>
+                Statistiques
               </Link>
-              <Link href="/dotys1">
-                <a
-                  className={`navbar-item ${
-                    router.pathname === '/dotys1' ? 'is-active' : ''
-                  }`}
-                >
-                  DOTY Saison 1
-                </a>
+              <Link href="/dotys1" className={`navbar-item ${router.pathname === '/dotys1' ? 'is-active' : ''
+                }`}>
+                DOTY Saison 1
               </Link>
             </div>
           </div>

@@ -11,12 +11,14 @@ export default function Card({ emission, desktop, type }) {
           rel="noreferrer"
           href={`${desktop.url || emission.url}?t=${desktop.time}`}
         >
-          <DesktopImage
-            type={type}
-            id={desktop.id}
-            saison={desktop.saison}
-            emission={desktop.emission}
-          />
+          <figure className="image is-16by9">
+            <DesktopImage
+              type={type}
+              id={desktop.id}
+              saison={desktop.saison}
+              emission={desktop.emission}
+            />
+          </figure>
           {desktop.jugement !== 'nonjuge' && (
             <img
               src={`/jugements/${desktop.sanction || desktop.jugement}.png`}
