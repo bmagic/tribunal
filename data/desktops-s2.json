@@ -1575,5 +1575,12 @@
     "emission": 30,
     "time": "5967",
     "jugement": "relaxe"
+  },
+  {
+    "id": 9,
+    "saison": 2,
+    "emission": 32,
+    "time": "01h53m34s",
+    "jugement": "relaxe"
   }
 ]
