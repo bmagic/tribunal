@@ -1723,7 +1723,7 @@
     "id": 1,
     "saison": 2,
     "emission": 35,
-    "time": "00h16m21s",
+    "time": "871",
     "jugement": "coupable",
     "sanction": "gnouf"
   },
@@ -1731,7 +1731,7 @@
     "id": 2,
     "saison": 2,
     "emission": 35,
-    "time": "00h29m22s",
+    "time": "1653",
     "jugement": "coupable",
     "sanction": "gnouf"
   },
@@ -1739,14 +1739,14 @@
     "id": 3,
     "saison": 2,
     "emission": 35,
-    "time": "01h00m15s",
+    "time": "3505",
     "jugement": "relaxe"
   },
   {
     "id": 4,
     "saison": 2,
     "emission": 35,
-    "time": "01h11m05s",
+    "time": "4155",
     "jugement": "coupable",
     "sanction": "gnouf"
   },
@@ -1754,14 +1754,14 @@
     "id": 5,
     "saison": 2,
     "emission": 35,
-    "time": "01h33m21s",
+    "time": "5491",
     "jugement": "relaxe"
   },
   {
     "id": 6,
     "saison": 2,
     "emission": 35,
-    "time": "01h51m50s",
+    "time": "6600",
     "jugement": "coupable",
     "sanction": "gnouf"
   }
