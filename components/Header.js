@@ -80,6 +80,10 @@ export default function Header() {
                 }`}>
                 DOTY Saison 1
               </Link>
+              <Link href="/dotys2" className={`navbar-item ${router.pathname === '/dotys2' ? 'is-active' : ''
+                }`}>
+                DOTY Saison 2
+              </Link>
             </div>
           </div>
         </nav>
