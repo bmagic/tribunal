@@ -54,7 +54,8 @@
     "saison": 1,
     "emission": 1,
     "time": 2202,
-    "jugement": "coupable"
+    "jugement": "coupable",
+    "hidden": true
   },
   {
     "id": 9,

@@ -254,6 +254,7 @@ export default function Home() {
           {desktopFitered.map((desktop, index) => {
             const emission =
               json.emission[`s${desktop.saison}e${desktop.emission}`]
+            if (desktop.hidden === true) return null
             return (
               <div key={index} className="column is-4">
                 <Card desktop={desktop} emission={emission} />

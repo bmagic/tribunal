@@ -3,8 +3,8 @@ import Header from '../components/Header';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
-import pire from '../public/img/s2/5-5.jpg'
-import doty from '../public/img/s2/38-3.jpg'
+import pire from '../public/img/s2/doty/pire.jpg'
+import doty from '../public/img/s2/doty/doty.jpg'
 import header from '../public/img/s2/doty/header.png'
 import Image from 'next/image';
 import ScrollToTop from "react-scroll-to-top";
