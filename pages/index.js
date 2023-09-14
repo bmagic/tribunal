@@ -60,7 +60,7 @@ export default function Home() {
                 value={saisonFilter}
               >
                 <option value="all">Toutes les saisons</option>
-                {[1, 2].map((saison, index) => {
+                {[1, 2, 3].map((saison, index) => {
                   return (
                     <option key={index} value={saison}>
                       Saison {saison}
