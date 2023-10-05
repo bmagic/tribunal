@@ -1,6 +1,6 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTwitch, faYoutube } from '@fortawesome/free-brands-svg-icons'
-import DesktopImage from '../components/DesktopImage'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTwitch, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import DesktopImage from '../components/DesktopImage';
 
 export default function Card({ emission, desktop, type }) {
   return (
@@ -29,7 +29,8 @@ export default function Card({ emission, desktop, type }) {
       </div>
       <div className="card-content">
         <div className="content has-text-centered">
-          Saison {desktop.saison} Audience {desktop.emission}
+          Saison {desktop.saison} Audience {desktop.emission} Bureau{' '}
+          {desktop.id}
           {desktop.owner && (
             <span>,&nbsp;&nbsp;Accusé·e: {desktop.owner || 'Anonyme'}</span>
           )}
@@ -51,5 +52,5 @@ export default function Card({ emission, desktop, type }) {
         </a>
       </footer>
     </div>
-  )
+  );
 }

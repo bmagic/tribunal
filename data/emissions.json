@@ -398,7 +398,19 @@
   "s3e1": {
     "saison": 3,
     "emission": 1,
-    "url": "https://www.twitch.tv/videos/1922215610",
+    "url": "https://youtu.be/BkN-2QN0lfI",
     "date": "10/09/2023"
+  },
+  "s3e2":{
+    "saison": 3,
+    "emission": 2,
+    "url": "https://youtu.be/8pogdan6XEQ",
+    "date": "17/09/2023"
+  },
+  "s3e3":{
+    "saison": 3,
+    "emission": 3,
+    "url": "https://www.twitch.tv/videos/1940164248",
+    "date": "01/10/2023"
   }
 }
