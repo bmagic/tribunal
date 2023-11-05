@@ -410,7 +410,27 @@
   "s3e3":{
     "saison": 3,
     "emission": 3,
-    "url": "https://www.twitch.tv/videos/1940164248",
+    "url": "https://youtu.be/nXgQY9BMCQs",
     "date": "01/10/2023"
-  }
+  },
+  "s3e4":{
+    "saison": 3,
+    "emission": 4,
+    "url": "https://youtu.be/y83YYheW52k",
+    "date": "08/10/2023"
+  },
+  "s3e5":{
+    "saison": 3,
+    "emission": 5,
+    "url": "https://youtu.be/510LaYMoslE",
+    "date": "15/10/2023"
+  },
+  "s3e6":{
+    "saison": 3,
+    "emission": 6,
+    "url": "https://www.twitch.tv/videos/1963571139",
+    "date": "23/10/2023"
+  }    
+
+  
 }
