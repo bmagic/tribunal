@@ -454,5 +454,11 @@
     "emission": 10,
     "url": "https://youtu.be/CbB-Gmrkn3M",
     "date": "26/11/2023"
+  },
+  "s3e11":{
+    "saison": 3,
+    "emission": 11,
+    "url": "https://www.twitch.tv/videos/1994382611",
+    "date": "03/12/2023"
   }
 }
