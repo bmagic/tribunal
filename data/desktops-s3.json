@@ -570,7 +570,7 @@
     "id": 1,
     "saison": 3,
     "emission": 11,
-    "time": "00h05m32s",
+    "time": "211",
     "jugement": "coupable",
     "sanction": "gnouf"
   },
@@ -578,7 +578,7 @@
     "id": 2,
     "saison": 3,
     "emission": 11,
-    "time": "00h22m23s",
+    "time": "1222",
     "jugement": "coupable",
     "sanction": "gnouf"
   },
@@ -586,7 +586,7 @@
     "id": 3,
     "saison": 3,
     "emission": 11,
-    "time": "00h25m42s",
+    "time": "1421",
     "jugement": "coupable",
     "sanction": "gnouf"
   },
@@ -594,7 +594,7 @@
     "id": 4,
     "saison": 3,
     "emission": 11,
-    "time": "00h31m58s",
+    "time": "1797",
     "jugement": "coupable",
     "sanction": "gnouf"
   },
@@ -602,21 +602,21 @@
     "id": 5,
     "saison": 3,
     "emission": 11,
-    "time": "00h46m53s",
+    "time": "2692",
     "jugement": "relaxe"
   },
   {
     "id": 6,
     "saison": 3,
     "emission": 11,
-    "time": "01h13m43s",
+    "time": "4302",
     "jugement": "relaxe"
   },
   {
     "id": 7,
     "saison": 3,
     "emission": 11,
-    "time": "01h28m52s",
+    "time": "5211",
     "jugement": "coupable",
     "sanction": "gnouf"
   },
@@ -624,14 +624,14 @@
     "id": 8,
     "saison": 3,
     "emission": 11,
-    "time": "01h40m43s",
+    "time": "5922",
     "jugement": "relaxe"
   },
   {
     "id": 9,
     "saison": 3,
     "emission": 11,
-    "time": "01h51m59s",
+    "time": "6598",
     "jugement": "relaxe"
   }
 ]
