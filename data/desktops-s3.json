@@ -899,5 +899,28 @@
     "time": "5974",
     "jugement": "coupable",
     "sanction": "gnouf"
+  },
+  {
+    "id": 1,
+    "saison": 3,
+    "emission": 18,
+    "time": "2267",
+    "jugement": "relaxe"
+  },
+  {
+    "id": 2,
+    "saison": 3,
+    "emission": 18,
+    "time": "3855",
+    "jugement": "coupable",
+    "sanction": "gnouf"
+  },
+  {
+    "id": 3,
+    "saison": 3,
+    "emission": 18,
+    "time": "4880",
+    "jugement": "coupable",
+    "sanction": "gnouf"
   }
 ]
