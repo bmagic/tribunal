@@ -9,23 +9,23 @@ import {
   Legend,
   ResponsiveContainer,
   ComposedChart,
-} from 'recharts'
-import Header from '../components/Header'
-import { desktops as json } from '../data/data'
+} from 'recharts';
+import Header from '../components/Header';
+import { desktops as json } from '../data/data';
 
 export default function Stats() {
-  const datas1 = []
-  const datas2 = []
-  const datas3 = []
-  let counts1 = 0
-  let counts2 = 0
-  let counts3 = 0
-  let relaxes1 = 0
-  let relaxes2 = 0
-  let relaxes3 = 0
+  const datas1 = [];
+  const datas2 = [];
+  const datas3 = [];
+  let counts1 = 0;
+  let counts2 = 0;
+  let counts3 = 0;
+  let relaxes1 = 0;
+  let relaxes2 = 0;
+  let relaxes3 = 0;
 
-  const map = { s1: {}, s2: {}, s3: {} }
-  let relaxe = 0
+  const map = { s1: {}, s2: {}, s3: {} };
+  let relaxe = 0;
   for (const [key, emission] of Object.entries(json.emission)) {
     map[`s${emission.saison}`][`e${emission.emission}`] = {
       name: json.emission[key].date,
@@ -34,81 +34,80 @@ export default function Stats() {
       gnouf: 0,
       epreuve: 0,
       rappel: 0,
-    }
+    };
   }
   for (const desktop of json.desktop) {
     if (desktop.jugement === 'coupable') {
-      map[`s${desktop.saison}`][`e${desktop.emission}`].coupable++
+      map[`s${desktop.saison}`][`e${desktop.emission}`].coupable++;
       switch (desktop.sanction) {
         case 'gnouf':
-          map[`s${desktop.saison}`][`e${desktop.emission}`].gnouf++
-          break
+          map[`s${desktop.saison}`][`e${desktop.emission}`].gnouf++;
+          break;
         case 'epreuve':
-          map[`s${desktop.saison}`][`e${desktop.emission}`].epreuve++
-          break
+          map[`s${desktop.saison}`][`e${desktop.emission}`].epreuve++;
+          break;
         case 'rappel':
-          map[`s${desktop.saison}`][`e${desktop.emission}`].rappel++
-          break
+          map[`s${desktop.saison}`][`e${desktop.emission}`].rappel++;
+          break;
       }
     } else {
       switch (desktop.saison) {
         case 1:
-          relaxes1++
-          break
+          relaxes1++;
+          break;
         case 2:
-          relaxes2++
-          break
+          relaxes2++;
+          break;
         case 3:
-          relaxes3++
-          break
+          relaxes3++;
+          break;
       }
 
-      map[`s${desktop.saison}`][`e${desktop.emission}`].relaxe++
+      map[`s${desktop.saison}`][`e${desktop.emission}`].relaxe++;
     }
     switch (desktop.saison) {
       case 1:
-        counts1++
-        break
+        counts1++;
+        break;
       case 2:
-        counts2++
-        break
+        counts2++;
+        break;
       case 3:
-        counts3++
-        break
+        counts3++;
+        break;
     }
-
   }
   for (const [key, emission] of Object.entries(map['s1'])) {
     if (emission.gnouf !== 0 || emission.epreuve !== 0 || emission.rappel !== 0)
-      delete emission.coupable
+      delete emission.coupable;
     else {
-      delete emission.gnouf
-      delete emission.epreuve
-      delete emission.rappel
+      delete emission.gnouf;
+      delete emission.epreuve;
+      delete emission.rappel;
     }
-    datas1.push(emission)
+    datas1.push(emission);
   }
 
   for (const [key, emission] of Object.entries(map['s2'])) {
     if (emission.gnouf !== 0 || emission.epreuve !== 0 || emission.rappel !== 0)
-      delete emission.coupable
+      delete emission.coupable;
     else {
-      delete emission.gnouf
-      delete emission.epreuve
-      delete emission.rappel
+      delete emission.gnouf;
+      delete emission.epreuve;
+      delete emission.rappel;
     }
-    datas2.push(emission)
+    datas2.push(emission);
   }
 
   for (const [key, emission] of Object.entries(map['s3'])) {
     if (emission.gnouf !== 0 || emission.epreuve !== 0 || emission.rappel !== 0)
-      delete emission.coupable
+      delete emission.coupable;
     else {
-      delete emission.gnouf
-      delete emission.epreuve
-      delete emission.rappel
+      delete emission.gnouf;
+      delete emission.epreuve;
+      delete emission.rappel;
     }
-    datas3.push(emission)
+    datas3.push(emission);
   }
   return (
     <main>
@@ -205,15 +204,12 @@ export default function Stats() {
               <XAxis dataKey="name" />
               <YAxis />
               <Tooltip contentStyle={{ backgroundColor: '#1f2424' }} />
-              <Bar dataKey="coupable" stackId="a" fill="#b20000" />
               <Bar dataKey="gnouf" stackId="a" fill="#b20000" />
-              <Bar dataKey="epreuve" stackId="a" fill="#b25000" />
-              <Bar dataKey="rappel" stackId="a" fill="#1aaaac" />
               <Bar dataKey="relaxe" stackId="a" fill="#1abc9c" />
             </BarChart>
           </ResponsiveContainer>
         </div>
       </div>
     </main>
-  )
+  );
 }
