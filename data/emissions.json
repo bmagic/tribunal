@@ -508,5 +508,17 @@
     "emission": 19,
     "url": "https://youtu.be/E0vE16CMkAs",
     "date": "18/02/2024"
+  },
+  "s3e20":{
+    "saison": 3,
+    "emission": 20,
+    "url": "https://youtu.be/nqZMcrNzq6I",
+    "date": "25/02/2024"
+  },
+  "s3e21":{
+    "saison": 3,
+    "emission": 21,
+    "url": "https://youtu.be/41TTlHXJE8o",
+    "date": "10/03/2024"
   }
 }
