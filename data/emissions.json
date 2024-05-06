@@ -544,5 +544,11 @@
     "emission": 25,
     "url": "https://www.twitch.tv/videos/2119847448",
     "date": "14/04/2024"
-  } 
+  },
+  "s3e26":{
+    "saison": 3,
+    "emission": 26,
+    "url": "https://www.twitch.tv/videos/2132109657",
+    "date": "28/04/2024"
+  }
 }
