@@ -1179,14 +1179,14 @@
     "id": 1,
     "saison": 3,
     "emission": 26,
-    "time": "00h16m35s",
+    "time": "987",
     "jugement": "relaxe"
   },
   {
     "id": 2,
     "saison": 3,
     "emission": 26,
-    "time": "00h23m02s",
+    "time": "1374",
     "jugement": "coupable",
     "sanction": "gnouf"
   },
@@ -1194,7 +1194,7 @@
     "id": 3,
     "saison": 3,
     "emission": 26,
-    "time": "00h32m14s",
+    "time": "1926",
     "jugement": "coupable",
     "sanction": "gnouf"
   },
@@ -1202,14 +1202,14 @@
     "id": 4,
     "saison": 3,
     "emission": 26,
-    "time": "01h09m27s",
+    "time": "4160",
     "jugement": "relaxe"
   },
   {
     "id": 5,
     "saison": 3,
     "emission": 26,
-    "time": "01h33m08s",
+    "time": "5581",
     "jugement": "coupable",
     "sanction": "gnouf"
   },
@@ -1217,7 +1217,7 @@
     "id": 6,
     "saison": 3,
     "emission": 26,
-    "time": "01h44m45s",
+    "time": "6278",
     "jugement": "relaxe"
   },
   {
