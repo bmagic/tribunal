@@ -562,5 +562,35 @@
     "emission": 28,
     "url": "https://youtu.be/_6XXaXFP0jg",
     "date": "12/05/2024"
+  },
+  "s3e29":{
+    "saison": 3,
+    "emission": 29,
+    "url": "https://youtu.be/KYSHcRRbX98",
+    "date": "26/05/2024"
+  },
+  "s3e30":{
+    "saison": 3,
+    "emission": 30,
+    "url": "https://youtu.be/ygRv2gAZP9U",
+    "date": "02/06/2024"
+  },
+  "s3e31":{
+    "saison": 3,
+    "emission": 31,
+    "url": "https://youtu.be/GyY_b429hhg",
+    "date": "16/06/2024"
+  },
+  "s3e32":{
+    "saison": 3,
+    "emission": 32,
+    "url": "https://youtu.be/NpKCRgPdY8c",
+    "date": "23/06/2024"
+  },
+  "s3e33":{
+    "saison": 3,
+    "emission": 33,
+    "url": "https://youtu.be/uRYr8mXCXXk",
+    "date": "06/07/2024"
   }
 }
