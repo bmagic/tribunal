@@ -1,13 +1,13 @@
-import Head from 'next/head'
-import Link from 'next/link'
-import { useRouter } from 'next/router'
-import { useState } from 'react'
-import ReactAudioPlayer from 'react-audio-player'
+import Head from 'next/head';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+import { useState } from 'react';
+import ReactAudioPlayer from 'react-audio-player';
 
 export default function Header() {
-  const router = useRouter()
+  const router = useRouter();
 
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div>
@@ -52,36 +52,73 @@ export default function Header() {
           </div>
 
           <div
-            className={`navbar-menu ${isOpen ? 'is-active' : ''
-              } is-transparent`}
+            className={`navbar-menu ${
+              isOpen ? 'is-active' : ''
+            } is-transparent`}
           >
             <div className="navbar-start">
-              <Link href="/" className={`navbar-item ${router.pathname === '/' ? 'is-active' : ''
-                }`}>
+              <Link
+                href="/"
+                className={`navbar-item ${
+                  router.pathname === '/' ? 'is-active' : ''
+                }`}
+              >
                 Bureaux
               </Link>
-              <Link href="/vintages" className={`navbar-item ${router.pathname === '/vintages' ? 'is-active' : ''
-                }`}>
+              <Link
+                href="/vintages"
+                className={`navbar-item ${
+                  router.pathname === '/vintages' ? 'is-active' : ''
+                }`}
+              >
                 Vintages
               </Link>
-              <Link href="/claviers" className={`navbar-item ${router.pathname === '/claviers' ? 'is-active' : ''
-                }`}>
+              <Link
+                href="/salons"
+                className={`navbar-item ${
+                  router.pathname === '/salons' ? 'is-active' : ''
+                }`}
+              >
+                Salons
+              </Link>
+              <Link
+                href="/claviers"
+                className={`navbar-item ${
+                  router.pathname === '/claviers' ? 'is-active' : ''
+                }`}
+              >
                 Claviers
               </Link>
-              <Link href="/collections" className={`navbar-item ${router.pathname === '/collections' ? 'is-active' : ''
-                }`}>
+              <Link
+                href="/collections"
+                className={`navbar-item ${
+                  router.pathname === '/collections' ? 'is-active' : ''
+                }`}
+              >
                 Collections
               </Link>
-              <Link href="/stats" className={`navbar-item ${router.pathname === '/stats' ? 'is-active' : ''
-                }`}>
+              <Link
+                href="/stats"
+                className={`navbar-item ${
+                  router.pathname === '/stats' ? 'is-active' : ''
+                }`}
+              >
                 Statistiques
               </Link>
-              <Link href="/dotys1" className={`navbar-item ${router.pathname === '/dotys1' ? 'is-active' : ''
-                }`}>
+              <Link
+                href="/dotys1"
+                className={`navbar-item ${
+                  router.pathname === '/dotys1' ? 'is-active' : ''
+                }`}
+              >
                 DOTY Saison 1
               </Link>
-              <Link href="/dotys2" className={`navbar-item ${router.pathname === '/dotys2' ? 'is-active' : ''
-                }`}>
+              <Link
+                href="/dotys2"
+                className={`navbar-item ${
+                  router.pathname === '/dotys2' ? 'is-active' : ''
+                }`}
+              >
                 DOTY Saison 2
               </Link>
             </div>
@@ -94,5 +131,5 @@ export default function Header() {
         <ReactAudioPlayer src="bureaulogie.mp3" controls />
       </div>
     </div>
-  )
+  );
 }
