@@ -97,30 +97,45 @@ export default function Header() {
               >
                 Collections
               </Link>
-              <Link
+              {/* <Link
                 href="/stats"
                 className={`navbar-item ${
                   router.pathname === '/stats' ? 'is-active' : ''
                 }`}
               >
                 Statistiques
-              </Link>
-              <Link
-                href="/dotys1"
-                className={`navbar-item ${
-                  router.pathname === '/dotys1' ? 'is-active' : ''
-                }`}
-              >
-                DOTY Saison 1
-              </Link>
-              <Link
-                href="/dotys2"
-                className={`navbar-item ${
-                  router.pathname === '/dotys2' ? 'is-active' : ''
-                }`}
-              >
-                DOTY Saison 2
-              </Link>
+              </Link> */}
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                  DOTY
+                </a>
+                <div class="navbar-dropdown">
+                  <Link
+                    href="/dotys1"
+                    className={`navbar-item ${
+                      router.pathname === '/dotys1' ? 'is-active' : ''
+                    }`}
+                  >
+                    Saison 1
+                  </Link>
+                  <Link
+                    href="/dotys2"
+                    className={`navbar-item ${
+                      router.pathname === '/dotys2' ? 'is-active' : ''
+                    }`}
+                  >
+                    Saison 2
+                  </Link>
+                  <Link
+                    href="/dotys3"
+                    className={`navbar-item ${
+                      router.pathname === '/dotys3' ? 'is-active' : ''
+                    }`}
+                  >
+                    Saison 3
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
         </nav>
