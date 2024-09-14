@@ -52,48 +52,42 @@ export default function Header() {
           </div>
 
           <div
-            className={`navbar-menu ${
-              isOpen ? 'is-active' : ''
-            } is-transparent`}
+            className={`navbar-menu ${isOpen ? 'is-active' : ''
+              } is-transparent`}
           >
             <div className="navbar-start">
               <Link
                 href="/"
-                className={`navbar-item ${
-                  router.pathname === '/' ? 'is-active' : ''
-                }`}
+                className={`navbar-item ${router.pathname === '/' ? 'is-active' : ''
+                  }`}
               >
                 Bureaux
               </Link>
               <Link
                 href="/vintages"
-                className={`navbar-item ${
-                  router.pathname === '/vintages' ? 'is-active' : ''
-                }`}
+                className={`navbar-item ${router.pathname === '/vintages' ? 'is-active' : ''
+                  }`}
               >
                 Vintages
               </Link>
               <Link
                 href="/salons"
-                className={`navbar-item ${
-                  router.pathname === '/salons' ? 'is-active' : ''
-                }`}
+                className={`navbar-item ${router.pathname === '/salons' ? 'is-active' : ''
+                  }`}
               >
                 Salons
               </Link>
               <Link
                 href="/claviers"
-                className={`navbar-item ${
-                  router.pathname === '/claviers' ? 'is-active' : ''
-                }`}
+                className={`navbar-item ${router.pathname === '/claviers' ? 'is-active' : ''
+                  }`}
               >
                 Claviers
               </Link>
               <Link
                 href="/collections"
-                className={`navbar-item ${
-                  router.pathname === '/collections' ? 'is-active' : ''
-                }`}
+                className={`navbar-item ${router.pathname === '/collections' ? 'is-active' : ''
+                  }`}
               >
                 Collections
               </Link>
@@ -105,32 +99,29 @@ export default function Header() {
               >
                 Statistiques
               </Link> */}
-              <div class="navbar-item has-dropdown is-hoverable">
-                <a class="navbar-link">
+              <div className="navbar-item has-dropdown is-hoverable">
+                <a className="navbar-link">
                   DOTY
                 </a>
-                <div class="navbar-dropdown">
+                <div className="navbar-dropdown">
                   <Link
                     href="/dotys1"
-                    className={`navbar-item ${
-                      router.pathname === '/dotys1' ? 'is-active' : ''
-                    }`}
+                    className={`navbar-item ${router.pathname === '/dotys1' ? 'is-active' : ''
+                      }`}
                   >
                     Saison 1
                   </Link>
                   <Link
                     href="/dotys2"
-                    className={`navbar-item ${
-                      router.pathname === '/dotys2' ? 'is-active' : ''
-                    }`}
+                    className={`navbar-item ${router.pathname === '/dotys2' ? 'is-active' : ''
+                      }`}
                   >
                     Saison 2
                   </Link>
                   <Link
                     href="/dotys3"
-                    className={`navbar-item ${
-                      router.pathname === '/dotys3' ? 'is-active' : ''
-                    }`}
+                    className={`navbar-item ${router.pathname === '/dotys3' ? 'is-active' : ''
+                      }`}
                   >
                     Saison 3
                   </Link>

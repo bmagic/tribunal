@@ -13,6 +13,7 @@
     "@fortawesome/free-brands-svg-icons": "^6.6.0",
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
     "@fortawesome/react-fontawesome": "^0.2.2",
+    "better-react-infinite-scroll": "^0.2.0",
     "bulma": "^0.9.4",
     "bulmaswatch": "^0.8.1",
     "next": "14.2.11",

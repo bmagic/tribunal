@@ -3,43 +3,78 @@ import { useRouter } from 'next/router';
 import Header from '../components/Header';
 import ScrollToTop from 'react-scroll-to-top';
 import Card from '../components/Card';
+import { useEffect, useState } from 'react';
 
 json.desktop.reverse();
-export default function Home() {
+const Home = ({ initialSaisonFilter, initialAudienceFilter, initialJugementFilter, initialSanctionFilter }) => {
   const router = useRouter();
 
-  let saisonFilter = parseInt(router.query.saison) || 'all';
-  let audienceFilter = router.query.audience || 'all';
-  let jugementFilter = router.query.jugement || 'all';
-  let sanctionFilter = router.query.sanction || 'all';
+  const [desktopFitered, setDesktopFitered] = useState([]);
+  const [destkopDisplayed, setDesktopDisplayed] = useState([]);
 
-  let jugements = {};
-  let sanctions = {};
-  let desktopFitered = [];
+  const [page, setPage] = useState(1);
+  const [saisonFilter, setSaisonFilter] = useState(initialSaisonFilter || 'all');
+  const [audienceFilter, setAudienceFilter] = useState(initialAudienceFilter || 'all');
+  const [jugementFilter, setJugementFilter] = useState(initialJugementFilter || 'all');
+  const [sanctionFilter, setSanctionFilter] = useState(initialSanctionFilter || 'all');
 
-  for (const desktop of json.desktop) {
-    if (saisonFilter !== 'all' && saisonFilter !== desktop.saison) continue;
-    if (jugementFilter !== 'all' && jugementFilter !== desktop.jugement)
-      continue;
-    if (sanctionFilter !== 'all' && sanctionFilter !== desktop.sanction)
-      continue;
-    if (
-      audienceFilter !== 'all' &&
-      audienceFilter !== `s${desktop.saison}e${desktop.emission}`
-    )
-      continue;
+  const [jugements, setJugements] = useState({});
+  const [sanctions, setSanctions] = useState({});
 
-    desktopFitered.push(desktop);
-    jugements[desktop.jugement] =
-      jugements[desktop.jugement] !== undefined
-        ? jugements[desktop.jugement] + 1
-        : 1;
-    if (desktop.sanction)
-      sanctions[desktop.sanction] =
-        sanctions[desktop.sanction] !== undefined
-          ? sanctions[desktop.sanction] + 1
-          : 1;
-  }
+  useEffect(() => {
+    let desktops = []
+    let tmpJudgements = {};
+    let tmpSanctions = {};
+    for (const desktop of json.desktop) {
+      if (saisonFilter !== 'all' && parseInt(saisonFilter) !== desktop.saison) continue;
+      if (jugementFilter !== 'all' && jugementFilter !== desktop.jugement) continue;
+      if (sanctionFilter !== 'all' && sanctionFilter !== desktop.sanction) continue;
+      if (audienceFilter !== 'all' && audienceFilter !== `s${desktop.saison}e${desktop.emission}`) continue;
+
+      desktops.push(desktop);
+      tmpJudgements[desktop.jugement] = tmpJudgements[desktop.jugement] !== undefined ? tmpJudgements[desktop.jugement] + 1 : 1;
+      setJugements(tmpJudgements);
+
+      tmpSanctions[desktop.sanction] = tmpSanctions[desktop.sanction] !== undefined ? tmpSanctions[desktop.sanction] + 1 : 1;
+      setSanctions(tmpSanctions);
+    }
+    router.push(
+      `?saison=${saisonFilter}&audience=${audienceFilter}&jugement=${jugementFilter}&sanction=${sanctionFilter}`,
+      undefined, { shallow: true }
+    );
+
+    setDesktopFitered(desktops);
+    setDesktopDisplayed(desktops.slice(0, page * 9));
+  }, [saisonFilter, audienceFilter, jugementFilter, sanctionFilter, page]);
+
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const [isBottom, setIsBottom] = useState(false);
+
+
+  useEffect(() => {
+    if (isBottom && desktopFitered.length > destkopDisplayed.length) {
+      setPage(page + 1);
+    }
+  }, [isBottom]);
+
+
+  const handleScroll = () => {
+    const scrollTop = window.scrollY;
+    const windowHeight = window.innerHeight;
+    const documentHeight = document.documentElement.scrollHeight;
+    if (scrollTop + windowHeight >= documentHeight - 50) {
+      setIsBottom(true);
+    } else {
+      setIsBottom(false);
+    }
+  };
 
   return (
     <main>
@@ -52,10 +87,9 @@ export default function Home() {
             <div className="select">
               <select
                 onChange={(e) => {
-                  audienceFilter = 'all';
-                  router.push(
-                    `?saison=${e.target.value}&audience=${audienceFilter}&jugement=${jugementFilter}&sanction=${sanctionFilter}`
-                  );
+                  setPage(1)
+                  setAudienceFilter('all');
+                  setSaisonFilter(e.target.value);
                 }}
                 value={saisonFilter}
               >
@@ -76,9 +110,8 @@ export default function Home() {
             <div className="select">
               <select
                 onChange={(e) => {
-                  router.push(
-                    `?saison=${saisonFilter}&audience=${e.target.value}&jugement=${jugementFilter}&sanction=${sanctionFilter}`
-                  );
+                  setPage(1)
+                  setAudienceFilter(e.target.value);
                 }}
                 value={audienceFilter}
               >
@@ -86,7 +119,7 @@ export default function Home() {
                 {Object.entries(json.emission).map(([key, emission]) => {
                   if (
                     saisonFilter !== 'all' &&
-                    emission.saison !== saisonFilter
+                    emission.saison !== parseInt(saisonFilter)
                   )
                     return null;
                   return (
@@ -106,10 +139,9 @@ export default function Home() {
             <div className="select">
               <select
                 onChange={(e) => {
-                  sanctionFilter = 'all';
-                  router.push(
-                    `?saison=${saisonFilter}&audience=${audienceFilter}&jugement=${e.target.value}&sanction=${sanctionFilter}`
-                  );
+                  setPage(1)
+                  setSanctionFilter('all');
+                  setJugementFilter(e.target.value);
                 }}
                 value={jugementFilter}
               >
@@ -122,16 +154,17 @@ export default function Home() {
           </div>
         </div>
         {(jugementFilter === 'all' || jugementFilter === 'coupable') &&
-          saisonFilter !== 2 && (
+          (saisonFilter < 2 || saisonFilter == "all") && (
             <div className="level-item">
               <div className="control">
                 <div className="select">
                   <select
                     onChange={(e) => {
-                      if (e.target.value !== 'all') jugementFilter = 'coupable';
-                      router.push(
-                        `?saison=${saisonFilter}&audience=${audienceFilter}&jugement=${jugementFilter}&sanction=${e.target.value}`
-                      );
+                      setPage(1)
+                      if (e.target.value !== 'all')
+                        setJugementFilter('coupable');
+                      setSanctionFilter(e.target.value);
+
                     }}
                     value={sanctionFilter}
                   >
@@ -246,12 +279,13 @@ export default function Home() {
           </div>
         </div>
       </div>
+
       <div className="section container">
         <div className="columns is-multiline">
-          {desktopFitered.length === 0 && (
+          {destkopDisplayed.length === 0 && (
             <div>Aucun bureau trouvé avec ces filtres </div>
           )}
-          {desktopFitered.map((desktop, index) => {
+          {destkopDisplayed.map((desktop, index) => {
             const emission =
               json.emission[`s${desktop.saison}e${desktop.emission}`];
             if (desktop.hidden === true) return null;
@@ -263,6 +297,17 @@ export default function Home() {
           })}
         </div>
       </div>
-    </main>
+    </main >
   );
-}
+};
+
+Home.getInitialProps = async ({ query }) => {
+  return {
+    initialSaisonFilter: query.saison || 'all',
+    initialAudienceFilter: query.audience || 'all',
+    initialJugementFilter: query.jugement || 'all',
+    initialSanctionFilter: query.sanction || 'all',
+  };
+};
+
+export default Home;
