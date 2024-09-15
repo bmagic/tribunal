@@ -21,6 +21,7 @@ export default function Card({ emission, desktop, type }) {
           </figure>
           {desktop.jugement !== 'nonjuge' && (
             <img
+              alt={`Jugement ${desktop.id} de l'épisode ${desktop.saison}e${desktop.emission} : ${desktop.sanction || desktop.jugement}`}
               src={`/jugements/${desktop.sanction || desktop.jugement}.png`}
               className="jugement"
             />

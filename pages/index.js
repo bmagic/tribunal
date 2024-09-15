@@ -45,7 +45,7 @@ const Home = ({ initialSaisonFilter, initialAudienceFilter, initialJugementFilte
 
     setDesktopFitered(desktops);
     setDesktopDisplayed(desktops.slice(0, page * 9));
-  }, [saisonFilter, audienceFilter, jugementFilter, sanctionFilter, page]);
+  }, [saisonFilter, audienceFilter, jugementFilter, sanctionFilter, page, router, desktopFitered.length]);
 
 
   useEffect(() => {
@@ -62,7 +62,7 @@ const Home = ({ initialSaisonFilter, initialAudienceFilter, initialJugementFilte
     if (isBottom && desktopFitered.length > destkopDisplayed.length) {
       setPage(page + 1);
     }
-  }, [isBottom]);
+  }, [isBottom, desktopFitered.length, destkopDisplayed.length, page]);
 
 
   const handleScroll = () => {
