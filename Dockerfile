@@ -1,4 +1,4 @@
-FROM node:18.19-alpine
+FROM node:lts-alpine
 
 WORKDIR /usr/src/client
 
@@ -7,4 +7,4 @@ RUN npm install
 
 COPY . .
 RUN npm run-script build
-CMD npm run-script start
+CMD ["npm", "run-script", "start"]
