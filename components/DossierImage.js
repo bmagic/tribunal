@@ -1,17 +1,15 @@
 import Image from 'next/image'
 import blur from '../public/img/blur.jpg'
-import dynamic from 'next/dynamic'
 
-
-
-export default function DesktopImage({ id, emission, saison, type }) {
+export default function DossierImage({ id, emission, saison }) {
   return (
     <Image
-
       blurDataURL={blur.src}
       placeholder="blur"
-      src={`/img/s${saison}/${emission}${type || ''}-${id}.jpg`}
+      src={`/img/s${saison}/${emission}-${id}.jpg`}
       alt={`Photo Saison ${saison} Audience ${emission} Bureau ${id}`}
+      width={640}
+      height={480}
     />
   )
 }

@@ -61,44 +61,8 @@ export default function Header() {
                 className={`navbar-item ${router.pathname === '/' ? 'is-active' : ''
                   }`}
               >
-                Bureaux
+                Dossiers
               </Link>
-              <Link
-                href="/vintages"
-                className={`navbar-item ${router.pathname === '/vintages' ? 'is-active' : ''
-                  }`}
-              >
-                Vintages
-              </Link>
-              <Link
-                href="/salons"
-                className={`navbar-item ${router.pathname === '/salons' ? 'is-active' : ''
-                  }`}
-              >
-                Salons
-              </Link>
-              <Link
-                href="/claviers"
-                className={`navbar-item ${router.pathname === '/claviers' ? 'is-active' : ''
-                  }`}
-              >
-                Claviers
-              </Link>
-              <Link
-                href="/collections"
-                className={`navbar-item ${router.pathname === '/collections' ? 'is-active' : ''
-                  }`}
-              >
-                Collections
-              </Link>
-              {/* <Link
-                href="/stats"
-                className={`navbar-item ${
-                  router.pathname === '/stats' ? 'is-active' : ''
-                }`}
-              >
-                Statistiques
-              </Link> */}
               <div className="navbar-item has-dropdown is-hoverable">
                 <a className="navbar-link">
                   DOTY

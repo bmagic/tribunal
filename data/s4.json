@@ -5,7 +5,8 @@
     "emission": 1,
     "time": "1061",
     "jugement": "coupable",
-    "sanction": "gnouf"
+    "sanction": "gnouf",
+    "type": "bureau"
   },
   {
     "id": 2,
@@ -13,14 +14,16 @@
     "emission": 1,
     "time": "2298",
     "jugement": "coupable",
-    "sanction": "gnouf"
+    "sanction": "gnouf",
+    "type": "bureau"
   },
   {
     "id": 3,
     "saison": 4,
     "emission": 1,
     "time": "3163",
-    "jugement": "relaxe"
+    "jugement": "relaxe",
+    "type": "bureau"
   },
   {
     "id": 4,
@@ -28,20 +31,23 @@
     "emission": 1,
     "time": "4199",
     "jugement": "coupable",
-    "sanction": "gnouf"
+    "sanction": "gnouf",
+    "type": "bureau"
   },
   {
     "id": 5,
     "saison": 4,
     "emission": 1,
     "time": "4815",
-    "jugement": "relaxe"
+    "jugement": "relaxe",
+    "type": "bureau"
   },
   {
     "id": 6,
     "saison": 4,
     "emission": 1,
     "time": "5750",
-    "jugement": "relaxe"
+    "jugement": "relaxe",
+    "type": "bureau"
   }
 ]

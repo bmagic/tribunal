@@ -1,28 +1,27 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitch, faYoutube } from '@fortawesome/free-brands-svg-icons';
-import DesktopImage from '../components/DesktopImage';
+import DossierImage from '../components/DossierImage';
 
-export default function Card({ emission, desktop, type }) {
+export default function Card({ emission, dossier, type }) {
   return (
     <div className="card">
       <div className="card-image">
         <a
           target="_blank"
           rel="noreferrer"
-          href={`${desktop.url || emission.url}?t=${desktop.time}`}
+          href={`${dossier.url || emission.url}?t=${dossier.time}`}
         >
           <figure className="image is-16by9">
-            <DesktopImage
-              type={type}
-              id={desktop.id}
-              saison={desktop.saison}
-              emission={desktop.emission}
+            <DossierImage
+              id={dossier.id}
+              saison={dossier.saison}
+              emission={dossier.emission}
             />
           </figure>
-          {desktop.jugement !== 'nonjuge' && (
+          {dossier.jugement !== 'nonjuge' && (
             <img
-              alt={`Jugement ${desktop.id} de l'épisode ${desktop.saison}e${desktop.emission} : ${desktop.sanction || desktop.jugement}`}
-              src={`/jugements/${desktop.sanction || desktop.jugement}.png`}
+              alt={`Jugement ${dossier.id} de l'épisode ${dossier.saison}e${dossier.emission} : ${dossier.sanction || dossier.jugement}`}
+              src={`/jugements/${dossier.sanction || dossier.jugement}.png`}
               className="jugement"
             />
           )}
@@ -30,10 +29,10 @@ export default function Card({ emission, desktop, type }) {
       </div>
       <div className="card-content">
         <div className="content has-text-centered">
-          Saison {desktop.saison} Audience {desktop.emission} Bureau{' '}
-          {desktop.id}
-          {desktop.owner && (
-            <span>,&nbsp;&nbsp;Accusé·e: {desktop.owner || 'Anonyme'}</span>
+          Saison {dossier.saison} Audience {dossier.emission} {dossier.type ? dossier.type.charAt(0).toUpperCase() + dossier.type.slice(1) : "Bureau"}{' '}
+          {dossier.id}
+          {dossier.owner && (
+            <span>,&nbsp;&nbsp;Accusé·e: {dossier.owner || 'Anonyme'}</span>
           )}
           <br />
           <span className="is-italic">{emission.date}</span>
@@ -44,7 +43,7 @@ export default function Card({ emission, desktop, type }) {
           className="card-footer-item"
           target="_blank"
           rel="noreferrer"
-          href={`${desktop.url || emission.url}?t=${desktop.time}`}
+          href={`${dossier.url || emission.url}?t=${dossier.time}`}
         >
           <FontAwesomeIcon
             icon={emission.url.search('youtu') !== -1 ? faYoutube : faTwitch}

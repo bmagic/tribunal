@@ -1,18 +1,19 @@
-import { desktops as json } from '../data/data';
+import { dossiers as json } from '../data/data';
 import { useRouter } from 'next/router';
 import Header from '../components/Header';
 import ScrollToTop from 'react-scroll-to-top';
 import Card from '../components/Card';
 import { useEffect, useState } from 'react';
 
-json.desktop.reverse();
-const Home = ({ initialSaisonFilter, initialAudienceFilter, initialJugementFilter, initialSanctionFilter }) => {
+json.data.reverse();
+const Home = ({ initialTypeFilter, initialSaisonFilter, initialAudienceFilter, initialJugementFilter, initialSanctionFilter, }) => {
   const router = useRouter();
 
-  const [desktopFitered, setDesktopFitered] = useState([]);
-  const [destkopDisplayed, setDesktopDisplayed] = useState([]);
+  const [dossiersFitered, setDossiersFitered] = useState([]);
+  const [dossiersDisplayed, setDossiersDisplayed] = useState([]);
 
   const [page, setPage] = useState(1);
+  const [typeFilter, setTypeFilter] = useState(initialTypeFilter || 'all');
   const [saisonFilter, setSaisonFilter] = useState(initialSaisonFilter || 'all');
   const [audienceFilter, setAudienceFilter] = useState(initialAudienceFilter || 'all');
   const [jugementFilter, setJugementFilter] = useState(initialJugementFilter || 'all');
@@ -22,30 +23,33 @@ const Home = ({ initialSaisonFilter, initialAudienceFilter, initialJugementFilte
   const [sanctions, setSanctions] = useState({});
 
   useEffect(() => {
-    let desktops = []
+    let dossiers = []
     let tmpJudgements = {};
     let tmpSanctions = {};
-    for (const desktop of json.desktop) {
-      if (saisonFilter !== 'all' && parseInt(saisonFilter) !== desktop.saison) continue;
-      if (jugementFilter !== 'all' && jugementFilter !== desktop.jugement) continue;
-      if (sanctionFilter !== 'all' && sanctionFilter !== desktop.sanction) continue;
-      if (audienceFilter !== 'all' && audienceFilter !== `s${desktop.saison}e${desktop.emission}`) continue;
+    for (const dossier of json.data) {
+      if (typeFilter !== 'all' && dossier.type !== typeFilter) continue
+      if (saisonFilter !== 'all' && parseInt(saisonFilter) !== dossier.saison) continue;
+      if (jugementFilter !== 'all' && jugementFilter !== dossier.jugement) continue;
+      if (sanctionFilter !== 'all' && sanctionFilter !== dossier.sanction) continue;
+      if (audienceFilter !== 'all' && audienceFilter !== `s${dossier.saison}e${dossier.emission}`) continue;
 
-      desktops.push(desktop);
-      tmpJudgements[desktop.jugement] = tmpJudgements[desktop.jugement] !== undefined ? tmpJudgements[desktop.jugement] + 1 : 1;
+      if (dossier.hidden === true) { console.log("found"); continue };
+
+      dossiers.push(dossier);
+      tmpJudgements[dossier.jugement] = tmpJudgements[dossier.jugement] !== undefined ? tmpJudgements[dossier.jugement] + 1 : 1;
       setJugements(tmpJudgements);
 
-      tmpSanctions[desktop.sanction] = tmpSanctions[desktop.sanction] !== undefined ? tmpSanctions[desktop.sanction] + 1 : 1;
+      tmpSanctions[dossier.sanction] = tmpSanctions[dossier.sanction] !== undefined ? tmpSanctions[dossier.sanction] + 1 : 1;
       setSanctions(tmpSanctions);
     }
     router.push(
-      `?saison=${saisonFilter}&audience=${audienceFilter}&jugement=${jugementFilter}&sanction=${sanctionFilter}`,
+      `?type=${typeFilter}&saison=${saisonFilter}&audience=${audienceFilter}&jugement=${jugementFilter}&sanction=${sanctionFilter}`,
       undefined, { shallow: true }
     );
 
-    setDesktopFitered(desktops);
-    setDesktopDisplayed(desktops.slice(0, page * 9));
-  }, [saisonFilter, audienceFilter, jugementFilter, sanctionFilter, page, router, desktopFitered.length]);
+    setDossiersFitered(dossiers);
+    setDossiersDisplayed(dossiers.slice(0, page * 9));
+  }, [typeFilter, saisonFilter, audienceFilter, jugementFilter, sanctionFilter, page]);
 
 
   useEffect(() => {
@@ -59,10 +63,10 @@ const Home = ({ initialSaisonFilter, initialAudienceFilter, initialJugementFilte
 
 
   useEffect(() => {
-    if (isBottom && desktopFitered.length > destkopDisplayed.length) {
+    if (isBottom && dossiersFitered.length > dossiersDisplayed.length) {
       setPage(page + 1);
     }
-  }, [isBottom, desktopFitered.length, destkopDisplayed.length, page]);
+  }, [isBottom]);
 
 
   const handleScroll = () => {
@@ -88,7 +92,33 @@ const Home = ({ initialSaisonFilter, initialAudienceFilter, initialJugementFilte
               <select
                 onChange={(e) => {
                   setPage(1)
+                  setSaisonFilter('all');
                   setAudienceFilter('all');
+                  setSanctionFilter('all');
+                  setJugementFilter('all');
+                  setTypeFilter(e.target.value);
+                }}
+                value={typeFilter}
+              >
+                <option value="all">Tous les dossiers</option>
+                <option value="bureau">Bureaux</option>
+                <option value="vintage">Bureaux Vintages</option>
+                <option value="clavier">Claviers</option>
+                <option value="collection">Collections</option>
+                <option value="salon">Salons</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div className="level-item">
+          <div className="control">
+            <div className="select">
+              <select
+                onChange={(e) => {
+                  setPage(1)
+                  setAudienceFilter('all');
+                  setSanctionFilter('all');
+                  setJugementFilter('all');
                   setSaisonFilter(e.target.value);
                 }}
                 value={saisonFilter}
@@ -116,7 +146,7 @@ const Home = ({ initialSaisonFilter, initialAudienceFilter, initialJugementFilte
                 value={audienceFilter}
               >
                 <option value="all">Toutes les audiences</option>
-                {Object.entries(json.emission).map(([key, emission]) => {
+                {Object.entries(json.emissions).map(([key, emission]) => {
                   if (
                     saisonFilter !== 'all' &&
                     emission.saison !== parseInt(saisonFilter)
@@ -153,12 +183,13 @@ const Home = ({ initialSaisonFilter, initialAudienceFilter, initialJugementFilte
             </div>
           </div>
         </div>
-        {(jugementFilter === 'all' || jugementFilter === 'coupable') &&
-          (saisonFilter < 2 || saisonFilter == "all") && (
+        {(jugementFilter === 'all' || jugementFilter === 'coupable')
+          && (
             <div className="level-item">
               <div className="control">
                 <div className="select">
                   <select
+                    disabled={(saisonFilter >= 2)}
                     onChange={(e) => {
                       setPage(1)
                       if (e.target.value !== 'all')
@@ -185,7 +216,7 @@ const Home = ({ initialSaisonFilter, initialAudienceFilter, initialJugementFilte
             <div className="column is-12 has-text-centered">
               <div>
                 <p className="heading"> Nombre de cas</p>
-                <p className="title is-size-1"> {desktopFitered.length}</p>
+                <p className="title is-size-1"> {dossiersFitered.length}</p>
               </div>
             </div>
             {jugementFilter === 'all' && (
@@ -282,16 +313,15 @@ const Home = ({ initialSaisonFilter, initialAudienceFilter, initialJugementFilte
 
       <div className="section container">
         <div className="columns is-multiline">
-          {destkopDisplayed.length === 0 && (
+          {dossiersDisplayed.length === 0 && (
             <div>Aucun bureau trouvé avec ces filtres </div>
           )}
-          {destkopDisplayed.map((desktop, index) => {
+          {dossiersDisplayed.map((dossier, index) => {
             const emission =
-              json.emission[`s${desktop.saison}e${desktop.emission}`];
-            if (desktop.hidden === true) return null;
+              json.emissions[`s${dossier.saison}e${dossier.emission}`];
             return (
               <div key={index} className="column is-4">
-                <Card desktop={desktop} emission={emission} />
+                <Card dossier={dossier} emission={emission} />
               </div>
             );
           })}
@@ -303,6 +333,7 @@ const Home = ({ initialSaisonFilter, initialAudienceFilter, initialJugementFilte
 
 Home.getInitialProps = async ({ query }) => {
   return {
+    initialTypeFilter: query.type || 'all',
     initialSaisonFilter: query.saison || 'all',
     initialAudienceFilter: query.audience || 'all',
     initialJugementFilter: query.jugement || 'all',
