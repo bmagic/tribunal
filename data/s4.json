@@ -202,5 +202,39 @@
     "jugement": "coupable",
     "sanction": "gnouf",
     "type": "bureau"
+  },
+  {
+    "id": 1,
+    "saison": 4,
+    "emission": 6,
+    "time": "1788",
+    "jugement": "relaxe",
+    "type": "bureau"
+  },
+  {
+    "id": 2,
+    "saison": 4,
+    "emission": 6,
+    "time": "2601",
+    "jugement": "relaxe",
+    "type": "bureau"
+  },
+  {
+    "id": 3,
+    "saison": 4,
+    "emission": 6,
+    "time": "3500",
+    "jugement": "coupable",
+    "sanction": "gnouf",
+    "type": "bureau"
+  },
+  {
+    "id": 4,
+    "saison": 4,
+    "emission": 6,
+    "time": "4216",
+    "jugement": "coupable",
+    "sanction": "gnouf",
+    "type": "bureau"
   }
 ]
