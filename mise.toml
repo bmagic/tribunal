@@ -1,0 +1,4 @@
+[tools]
+node = "20"
+npm = "10"
+yt-dlp = "latest"

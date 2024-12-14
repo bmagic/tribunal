@@ -628,5 +628,23 @@
     "emission": 6,
     "url": "https://youtu.be/bnr14NXW4Kg",
     "date": "03/11/2024"
+  },
+  "s4e7": {
+    "saison": 4,
+    "emission": 7,
+    "url": "https://youtu.be/rPs4IAgtvhU",
+    "date": "10/11/2024"
+  },
+  "s4e8": {
+    "saison": 4,
+    "emission": 8,
+    "url": "https://youtu.be/oh7S-gCtm0g",
+    "date": "17/11/2024"
+  },
+  "s4e9": {
+    "saison": 4,
+    "emission": 9,
+    "url": "https://youtu.be/9E1mqON9uz0",
+    "date": "01/12/2024"
   }
 }
