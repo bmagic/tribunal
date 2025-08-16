@@ -1,6 +1,6 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTwitch, faYoutube } from '@fortawesome/free-brands-svg-icons';
-import DossierImage from '../components/DossierImage';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTwitch, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import DossierImage from "../components/DossierImage";
 
 export default function Card({ emission, dossier, type }) {
   return (
@@ -18,7 +18,8 @@ export default function Card({ emission, dossier, type }) {
               emission={dossier.emission}
             />
           </figure>
-          {dossier.jugement !== 'nonjuge' && (
+          {dossier.jugement !== "nonjuge" && (
+            // eslint-disable-next-line @next/next/no-img-element
             <img
               alt={`Jugement ${dossier.id} de l'épisode ${dossier.saison}e${dossier.emission} : ${dossier.sanction || dossier.jugement}`}
               src={`/jugements/${dossier.sanction || dossier.jugement}.png`}
@@ -29,10 +30,13 @@ export default function Card({ emission, dossier, type }) {
       </div>
       <div className="card-content">
         <div className="content has-text-centered">
-          Saison {dossier.saison} Audience {dossier.emission} {dossier.type ? dossier.type.charAt(0).toUpperCase() + dossier.type.slice(1) : "Bureau"}{' '}
+          Saison {dossier.saison} Audience {dossier.emission}{" "}
+          {dossier.type
+            ? dossier.type.charAt(0).toUpperCase() + dossier.type.slice(1)
+            : "Bureau"}{" "}
           {dossier.id}
           {dossier.owner && (
-            <span>,&nbsp;&nbsp;Accusé·e: {dossier.owner || 'Anonyme'}</span>
+            <span>,&nbsp;&nbsp;Accusé·e: {dossier.owner || "Anonyme"}</span>
           )}
           <br />
           <span className="is-italic">{emission.date}</span>
@@ -46,7 +50,7 @@ export default function Card({ emission, dossier, type }) {
           href={`${dossier.url || emission.url}?t=${dossier.time}`}
         >
           <FontAwesomeIcon
-            icon={emission.url.search('youtu') !== -1 ? faYoutube : faTwitch}
+            icon={emission.url.search("youtu") !== -1 ? faYoutube : faTwitch}
           />
           &nbsp;&nbsp;Voir le jugement
         </a>

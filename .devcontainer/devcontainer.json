@@ -9,7 +9,20 @@
 		"ghcr.io/devcontainers-extra/features/yt-dlp:2": {},
 		"ghcr.io/devcontainers/features/docker-outside-of-docker:1": {},
 		"ghcr.io/devcontainers-extra/features/ffmpeg-apt-get:1": {}
-	}
+	},
+
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"esbenp.prettier-vscode"
+			],
+			"settings": {
+				"editor.defaultFormatter": "esbenp.prettier-vscode",
+				"editor.formatOnSave": true
+			}
+		}
+	},
+
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},

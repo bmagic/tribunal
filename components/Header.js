@@ -1,8 +1,8 @@
-import Head from 'next/head';
-import Link from 'next/link';
-import { useRouter } from 'next/router';
-import { useState } from 'react';
-import ReactAudioPlayer from 'react-audio-player';
+import Head from "next/head";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import { useState } from "react";
+import ReactAudioPlayer from "react-audio-player";
 
 export default function Header() {
   const router = useRouter();
@@ -40,7 +40,7 @@ export default function Header() {
           <div className="navbar-brand">
             <a
               role="button"
-              className={`navbar-burger ${isOpen ? 'is-active' : ''}`}
+              className={`navbar-burger ${isOpen ? "is-active" : ""}`}
               aria-label="menu"
               aria-expanded="false"
               onClick={() => setIsOpen(!isOpen)}
@@ -52,40 +52,43 @@ export default function Header() {
           </div>
 
           <div
-            className={`navbar-menu ${isOpen ? 'is-active' : ''
-              } is-transparent`}
+            className={`navbar-menu ${
+              isOpen ? "is-active" : ""
+            } is-transparent`}
           >
             <div className="navbar-start">
               <Link
                 href="/"
-                className={`navbar-item ${router.pathname === '/' ? 'is-active' : ''
-                  }`}
+                className={`navbar-item ${
+                  router.pathname === "/" ? "is-active" : ""
+                }`}
               >
                 Dossiers
               </Link>
               <div className="navbar-item has-dropdown is-hoverable">
-                <a className="navbar-link">
-                  DOTY
-                </a>
+                <a className="navbar-link">DOTY</a>
                 <div className="navbar-dropdown">
                   <Link
                     href="/dotys1"
-                    className={`navbar-item ${router.pathname === '/dotys1' ? 'is-active' : ''
-                      }`}
+                    className={`navbar-item ${
+                      router.pathname === "/dotys1" ? "is-active" : ""
+                    }`}
                   >
                     Saison 1
                   </Link>
                   <Link
                     href="/dotys2"
-                    className={`navbar-item ${router.pathname === '/dotys2' ? 'is-active' : ''
-                      }`}
+                    className={`navbar-item ${
+                      router.pathname === "/dotys2" ? "is-active" : ""
+                    }`}
                   >
                     Saison 2
                   </Link>
                   <Link
                     href="/dotys3"
-                    className={`navbar-item ${router.pathname === '/dotys3' ? 'is-active' : ''
-                      }`}
+                    className={`navbar-item ${
+                      router.pathname === "/dotys3" ? "is-active" : ""
+                    }`}
                   >
                     Saison 3
                   </Link>

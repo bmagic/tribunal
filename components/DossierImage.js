@@ -1,5 +1,5 @@
-import Image from 'next/image'
-import blur from '../public/img/blur.jpg'
+import Image from "next/image";
+import blur from "../public/img/blur.jpg";
 
 export default function DossierImage({ id, emission, saison }) {
   return (
@@ -11,5 +11,5 @@ export default function DossierImage({ id, emission, saison }) {
       width={640}
       height={480}
     />
-  )
+  );
 }

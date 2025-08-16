@@ -1,73 +1,109 @@
-import { dossiers as json } from '../data/data';
-import { useRouter } from 'next/router';
-import Header from '../components/Header';
-import ScrollToTop from 'react-scroll-to-top';
-import Card from '../components/Card';
-import { useEffect, useState } from 'react';
+import { dossiers as json } from "../data/data";
+import { useRouter } from "next/router";
+import Header from "../components/Header";
+import ScrollToTop from "react-scroll-to-top";
+import Card from "../components/Card";
+import { useEffect, useState } from "react";
 
 json.data.reverse();
-const Home = ({ initialTypeFilter, initialSaisonFilter, initialAudienceFilter, initialJugementFilter, initialSanctionFilter, }) => {
+const Home = ({
+  initialTypeFilter,
+  initialSaisonFilter,
+  initialAudienceFilter,
+  initialJugementFilter,
+  initialSanctionFilter,
+}) => {
   const router = useRouter();
 
   const [dossiersFitered, setDossiersFitered] = useState([]);
   const [dossiersDisplayed, setDossiersDisplayed] = useState([]);
 
   const [page, setPage] = useState(1);
-  const [typeFilter, setTypeFilter] = useState(initialTypeFilter || 'all');
-  const [saisonFilter, setSaisonFilter] = useState(initialSaisonFilter || 'all');
-  const [audienceFilter, setAudienceFilter] = useState(initialAudienceFilter || 'all');
-  const [jugementFilter, setJugementFilter] = useState(initialJugementFilter || 'all');
-  const [sanctionFilter, setSanctionFilter] = useState(initialSanctionFilter || 'all');
+  const [typeFilter, setTypeFilter] = useState(initialTypeFilter || "all");
+  const [saisonFilter, setSaisonFilter] = useState(
+    initialSaisonFilter || "all"
+  );
+  const [audienceFilter, setAudienceFilter] = useState(
+    initialAudienceFilter || "all"
+  );
+  const [jugementFilter, setJugementFilter] = useState(
+    initialJugementFilter || "all"
+  );
+  const [sanctionFilter, setSanctionFilter] = useState(
+    initialSanctionFilter || "all"
+  );
 
   const [jugements, setJugements] = useState({});
   const [sanctions, setSanctions] = useState({});
 
   useEffect(() => {
-    let dossiers = []
+    let dossiers = [];
     let tmpJudgements = {};
     let tmpSanctions = {};
     for (const dossier of json.data) {
-      if (typeFilter !== 'all' && dossier.type !== typeFilter) continue
-      if (saisonFilter !== 'all' && parseInt(saisonFilter) !== dossier.saison) continue;
-      if (jugementFilter !== 'all' && jugementFilter !== dossier.jugement) continue;
-      if (sanctionFilter !== 'all' && sanctionFilter !== dossier.sanction) continue;
-      if (audienceFilter !== 'all' && audienceFilter !== `s${dossier.saison}e${dossier.emission}`) continue;
+      if (typeFilter !== "all" && dossier.type !== typeFilter) continue;
+      if (saisonFilter !== "all" && parseInt(saisonFilter) !== dossier.saison)
+        continue;
+      if (jugementFilter !== "all" && jugementFilter !== dossier.jugement)
+        continue;
+      if (sanctionFilter !== "all" && sanctionFilter !== dossier.sanction)
+        continue;
+      if (
+        audienceFilter !== "all" &&
+        audienceFilter !== `s${dossier.saison}e${dossier.emission}`
+      )
+        continue;
 
-      if (dossier.hidden === true) { console.log("found"); continue };
+      if (dossier.hidden === true) {
+        console.log("found");
+        continue;
+      }
 
       dossiers.push(dossier);
-      tmpJudgements[dossier.jugement] = tmpJudgements[dossier.jugement] !== undefined ? tmpJudgements[dossier.jugement] + 1 : 1;
+      tmpJudgements[dossier.jugement] =
+        tmpJudgements[dossier.jugement] !== undefined
+          ? tmpJudgements[dossier.jugement] + 1
+          : 1;
       setJugements(tmpJudgements);
 
-      tmpSanctions[dossier.sanction] = tmpSanctions[dossier.sanction] !== undefined ? tmpSanctions[dossier.sanction] + 1 : 1;
+      tmpSanctions[dossier.sanction] =
+        tmpSanctions[dossier.sanction] !== undefined
+          ? tmpSanctions[dossier.sanction] + 1
+          : 1;
       setSanctions(tmpSanctions);
     }
     router.push(
       `?type=${typeFilter}&saison=${saisonFilter}&audience=${audienceFilter}&jugement=${jugementFilter}&sanction=${sanctionFilter}`,
-      undefined, { shallow: true }
+      undefined,
+      { shallow: true }
     );
 
     setDossiersFitered(dossiers);
     setDossiersDisplayed(dossiers.slice(0, page * 9));
-  }, [typeFilter, saisonFilter, audienceFilter, jugementFilter, sanctionFilter, page]);
-
+  }, [
+    typeFilter,
+    saisonFilter,
+    audienceFilter,
+    jugementFilter,
+    sanctionFilter,
+    page,
+    router,
+  ]);
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   const [isBottom, setIsBottom] = useState(false);
 
-
   useEffect(() => {
     if (isBottom && dossiersFitered.length > dossiersDisplayed.length) {
       setPage(page + 1);
     }
-  }, [isBottom]);
-
+  }, [dossiersDisplayed.length, dossiersFitered.length, isBottom, page]);
 
   const handleScroll = () => {
     const scrollTop = window.scrollY;
@@ -91,11 +127,11 @@ const Home = ({ initialTypeFilter, initialSaisonFilter, initialAudienceFilter, i
             <div className="select">
               <select
                 onChange={(e) => {
-                  setPage(1)
-                  setSaisonFilter('all');
-                  setAudienceFilter('all');
-                  setSanctionFilter('all');
-                  setJugementFilter('all');
+                  setPage(1);
+                  setSaisonFilter("all");
+                  setAudienceFilter("all");
+                  setSanctionFilter("all");
+                  setJugementFilter("all");
                   setTypeFilter(e.target.value);
                 }}
                 value={typeFilter}
@@ -115,10 +151,10 @@ const Home = ({ initialTypeFilter, initialSaisonFilter, initialAudienceFilter, i
             <div className="select">
               <select
                 onChange={(e) => {
-                  setPage(1)
-                  setAudienceFilter('all');
-                  setSanctionFilter('all');
-                  setJugementFilter('all');
+                  setPage(1);
+                  setAudienceFilter("all");
+                  setSanctionFilter("all");
+                  setJugementFilter("all");
                   setSaisonFilter(e.target.value);
                 }}
                 value={saisonFilter}
@@ -140,7 +176,7 @@ const Home = ({ initialTypeFilter, initialSaisonFilter, initialAudienceFilter, i
             <div className="select">
               <select
                 onChange={(e) => {
-                  setPage(1)
+                  setPage(1);
                   setAudienceFilter(e.target.value);
                 }}
                 value={audienceFilter}
@@ -148,13 +184,13 @@ const Home = ({ initialTypeFilter, initialSaisonFilter, initialAudienceFilter, i
                 <option value="all">Toutes les audiences</option>
                 {Object.entries(json.emissions).map(([key, emission]) => {
                   if (
-                    saisonFilter !== 'all' &&
+                    saisonFilter !== "all" &&
                     emission.saison !== parseInt(saisonFilter)
                   )
                     return null;
                   return (
                     <option key={key} value={key}>
-                      {saisonFilter === 'all'
+                      {saisonFilter === "all"
                         ? `Saison ${emission.saison} - Audience ${emission.emission}`
                         : `Audience ${emission.emission}`}
                     </option>
@@ -169,8 +205,8 @@ const Home = ({ initialTypeFilter, initialSaisonFilter, initialAudienceFilter, i
             <div className="select">
               <select
                 onChange={(e) => {
-                  setPage(1)
-                  setSanctionFilter('all');
+                  setPage(1);
+                  setSanctionFilter("all");
                   setJugementFilter(e.target.value);
                 }}
                 value={jugementFilter}
@@ -183,31 +219,28 @@ const Home = ({ initialTypeFilter, initialSaisonFilter, initialAudienceFilter, i
             </div>
           </div>
         </div>
-        {(jugementFilter === 'all' || jugementFilter === 'coupable')
-          && (
-            <div className="level-item">
-              <div className="control">
-                <div className="select">
-                  <select
-                    disabled={(saisonFilter >= 2)}
-                    onChange={(e) => {
-                      setPage(1)
-                      if (e.target.value !== 'all')
-                        setJugementFilter('coupable');
-                      setSanctionFilter(e.target.value);
-
-                    }}
-                    value={sanctionFilter}
-                  >
-                    <option value="all">Toutes les sanctions</option>
-                    <option value="rappel">Rappel à la loi</option>
-                    <option value="epreuve">Mise à l&lsquo;épreuve</option>
-                    <option value="gnouf">Direct au gnouf</option>
-                  </select>
-                </div>
+        {(jugementFilter === "all" || jugementFilter === "coupable") && (
+          <div className="level-item">
+            <div className="control">
+              <div className="select">
+                <select
+                  disabled={saisonFilter >= 2}
+                  onChange={(e) => {
+                    setPage(1);
+                    if (e.target.value !== "all") setJugementFilter("coupable");
+                    setSanctionFilter(e.target.value);
+                  }}
+                  value={sanctionFilter}
+                >
+                  <option value="all">Toutes les sanctions</option>
+                  <option value="rappel">Rappel à la loi</option>
+                  <option value="epreuve">Mise à l&lsquo;épreuve</option>
+                  <option value="gnouf">Direct au gnouf</option>
+                </select>
               </div>
             </div>
-          )}
+          </div>
+        )}
       </div>
 
       <div className="hero is-small">
@@ -219,90 +252,90 @@ const Home = ({ initialTypeFilter, initialSaisonFilter, initialAudienceFilter, i
                 <p className="title is-size-1"> {dossiersFitered.length}</p>
               </div>
             </div>
-            {jugementFilter === 'all' && (
+            {jugementFilter === "all" && (
               <div className="column is-4 has-text-centered">
                 <div>
                   <p className="heading">
-                    {' '}
-                    {jugements['relaxe'] > 1 ? 'Relaxes' : 'Relaxe'}
+                    {" "}
+                    {jugements["relaxe"] > 1 ? "Relaxes" : "Relaxe"}
                   </p>
-                  <p className="title is-size-2"> {jugements['relaxe'] || 0}</p>
+                  <p className="title is-size-2"> {jugements["relaxe"] || 0}</p>
                 </div>
               </div>
             )}
-            {jugementFilter === 'all' && (
+            {jugementFilter === "all" && (
               <div className="column is-4 has-text-centered">
                 <div>
                   <p className="heading">
-                    {' '}
-                    {jugements['coupable'] > 1 ? 'Coupables' : 'Coupable'}
+                    {" "}
+                    {jugements["coupable"] > 1 ? "Coupables" : "Coupable"}
                   </p>
                   <p className="title is-size-2">
-                    {' '}
-                    {jugements['coupable'] || 0}
+                    {" "}
+                    {jugements["coupable"] || 0}
                   </p>
                 </div>
               </div>
             )}
-            {jugementFilter === 'all' && (
+            {jugementFilter === "all" && (
               <div className="column is-4 has-text-centered">
                 <div>
                   <p className="heading">
-                    {' '}
-                    {jugements['nonjuge'] > 1 ? 'Non jugés' : 'Non jugé'}
+                    {" "}
+                    {jugements["nonjuge"] > 1 ? "Non jugés" : "Non jugé"}
                   </p>
                   <p className="title is-size-2">
-                    {' '}
-                    {jugements['nonjuge'] || 0}
+                    {" "}
+                    {jugements["nonjuge"] || 0}
                   </p>
                 </div>
               </div>
             )}
-            {(jugementFilter === 'all' || jugementFilter === 'coupable') &&
-              sanctionFilter === 'all' &&
+            {(jugementFilter === "all" || jugementFilter === "coupable") &&
+              sanctionFilter === "all" &&
               saisonFilter == 1 && (
                 <div className="column is-4 has-text-centered">
                   <div>
                     <p className="heading">
-                      {sanctions['rappel'] > 1
-                        ? 'Rappels à la loi'
-                        : 'Rappel à la loi'}
+                      {sanctions["rappel"] > 1
+                        ? "Rappels à la loi"
+                        : "Rappel à la loi"}
                     </p>
                     <p className="title is-size-2">
-                      {' '}
-                      {sanctions['rappel'] || 0}
+                      {" "}
+                      {sanctions["rappel"] || 0}
                     </p>
                   </div>
                 </div>
               )}
-            {(jugementFilter === 'all' || jugementFilter === 'coupable') &&
-              sanctionFilter === 'all' &&
+            {(jugementFilter === "all" || jugementFilter === "coupable") &&
+              sanctionFilter === "all" &&
               saisonFilter == 1 && (
                 <div className="column is-4 has-text-centered">
                   <div>
                     <p className="heading">
-                      {sanctions['epreuve'] > 1
+                      {sanctions["epreuve"] > 1
                         ? "Mises à l'épreuve"
                         : "Mise à l'épreuve"}
                     </p>
                     <p className="title is-size-2">
-                      {' '}
-                      {sanctions['epreuve'] || 0}
+                      {" "}
+                      {sanctions["epreuve"] || 0}
                     </p>
                   </div>
                 </div>
               )}
-            {(jugementFilter === 'all' || jugementFilter === 'coupable') &&
-              sanctionFilter === 'all' &&
+            {(jugementFilter === "all" || jugementFilter === "coupable") &&
+              sanctionFilter === "all" &&
               saisonFilter == 1 && (
                 <div className="column is-4 has-text-centered">
                   <div>
                     <p className="heading">
-                      {sanctions['gnouf'] > 1 ? 'Gnoufs' : 'Gnouf'}
+                      {sanctions["gnouf"] > 1 ? "Gnoufs" : "Gnouf"}
                     </p>
                     <p className="title is-size-2">
-                      {' '}
-                      {sanctions['gnouf'] || 0}
+                      {" "}
+                      {sanctions["gnouf"] || 0}
                     </p>
                   </div>
                 </div>
@@ -327,17 +360,17 @@ const Home = ({ initialTypeFilter, initialSaisonFilter, initialAudienceFilter, i
           })}
         </div>
       </div>
-    </main >
+    </main>
   );
 };
 
 Home.getInitialProps = async ({ query }) => {
   return {
-    initialTypeFilter: query.type || 'all',
-    initialSaisonFilter: query.saison || 'all',
-    initialAudienceFilter: query.audience || 'all',
-    initialJugementFilter: query.jugement || 'all',
-    initialSanctionFilter: query.sanction || 'all',
+    initialTypeFilter: query.type || "all",
+    initialSaisonFilter: query.saison || "all",
+    initialAudienceFilter: query.audience || "all",
+    initialJugementFilter: query.jugement || "all",
+    initialSanctionFilter: query.sanction || "all",
   };
 };
 
