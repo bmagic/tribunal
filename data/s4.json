@@ -568,27 +568,132 @@
     "saison": 4,
     "emission": 15,
     "time": "5368",
-    "jugement": "relaxe"
+    "jugement": "relaxe",
+    "type": "bureau"
   },
   {
     "id": 6,
     "saison": 4,
     "emission": 15,
     "time": "6493",
-    "jugement": "nonjuge"
+    "jugement": "nonjuge",
+    "type": "bureau"
   },
   {
     "id": 1,
     "saison": 4,
     "emission": 16,
     "time": "771",
-    "jugement": "relaxe"
+    "jugement": "relaxe",
+    "type": "bureau"
   },
   {
     "id": 2,
     "saison": 4,
     "emission": 16,
     "time": "2788",
-    "jugement": "relaxe"
+    "jugement": "relaxe",
+    "type": "bureau"
+  },
+  {
+    "id": 1,
+    "saison": 4,
+    "emission": 17,
+    "time": "674",
+    "jugement": "relaxe",
+    "type": "bureau"
+  },
+  {
+    "id": 2,
+    "saison": 4,
+    "emission": 17,
+    "time": "3744",
+    "jugement": "relaxe",
+    "type": "bureau"
+  },
+  {
+    "id": 1,
+    "saison": 4,
+    "emission": 18,
+    "time": "1075",
+    "jugement": "relaxe",
+    "type": "salon"
+  },
+  {
+    "id": 2,
+    "saison": 4,
+    "emission": 18,
+    "time": "2996",
+    "jugement": "relaxe",
+    "type": "salon"
+  },
+  {
+    "id": 3,
+    "saison": 4,
+    "emission": 18,
+    "time": "4091",
+    "jugement": "relaxe",
+    "type": "salon"
+  },
+  {
+    "id": 4,
+    "saison": 4,
+    "emission": 18,
+    "time": "5249",
+    "jugement": "relaxe",
+    "type": "salon"
+  },
+  {
+    "id": 1,
+    "saison": 4,
+    "emission": 19,
+    "time": "1725",
+    "jugement": "coupable",
+    "sanction": "gnouf",
+    "type": "bureau"
+  },
+  {
+    "id": 2,
+    "saison": 4,
+    "emission": 19,
+    "time": "2772",
+    "jugement": "coupable",
+    "sanction": "gnouf",
+    "type": "bureau"
+  },
+  {
+    "id": 3,
+    "saison": 4,
+    "emission": 19,
+    "time": "3288",
+    "jugement": "coupable",
+    "sanction": "gnouf",
+    "type": "bureau"
+  },
+  {
+    "id": 4,
+    "saison": 4,
+    "emission": 19,
+    "time": "4032",
+    "jugement": "coupable",
+    "sanction": "gnouf",
+    "type": "bureau"
+  },
+  {
+    "id": 5,
+    "saison": 4,
+    "emission": 19,
+    "time": "4350",
+    "jugement": "relaxe",
+    "type": "bureau"
+  },
+  {
+    "id": 6,
+    "saison": 4,
+    "emission": 19,
+    "time": "5172",
+    "jugement": "coupable",
+    "sanction": "gnouf",
+    "type": "bureau"
   }
 ]

@@ -87,7 +87,6 @@ const Home = ({
     jugementFilter,
     sanctionFilter,
     page,
-    router,
   ]);
 
   useEffect(() => {
@@ -103,7 +102,7 @@ const Home = ({
     if (isBottom && dossiersFitered.length > dossiersDisplayed.length) {
       setPage(page + 1);
     }
-  }, [dossiersDisplayed.length, dossiersFitered.length, isBottom, page]);
+  }, [isBottom]);
 
   const handleScroll = () => {
     const scrollTop = window.scrollY;
