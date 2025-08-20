@@ -775,5 +775,38 @@
     "time": "4364",
     "jugement": "relaxe",
     "type": "salon"
+  },
+  {
+    "id": 1,
+    "saison": 4,
+    "emission": 22,
+    "time": "1236",
+    "jugement": "relaxe",
+    "type": "bureau"
+  },
+  {
+    "id": 2,
+    "saison": 4,
+    "emission": 22,
+    "time": "3073",
+    "jugement": "coupable",
+    "sanction": "gnouf",
+    "type": "bureau"
+  },
+  {
+    "id": 3,
+    "saison": 4,
+    "emission": 22,
+    "time": "3295",
+    "jugement": "relaxe",
+    "type": "bureau"
+  },
+  {
+    "id": 4,
+    "saison": 4,
+    "emission": 22,
+    "time": "4612",
+    "jugement": "relaxe",
+    "type": "bureau"
   }
 ]
