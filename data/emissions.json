@@ -759,18 +759,24 @@
     "saison": 4,
     "emission": 28,
     "url": "https://youtu.be/vH3MtajZpM4",
-    "date": "15/06/2025"
+    "date": "09/06/2025"
   },
   "s4e29": {
     "saison": 4,
     "emission": 29,
     "url": "https://youtu.be/HtBCk2gAQUA",
-    "date": "22/06/2025"
+    "date": "15/06/2025"
   },
   "s4e30": {
     "saison": 4,
     "emission": 30,
+    "url": "https://youtu.be/vW0r5CeA6iQ",
+    "date": "22/06/2025"
+  },
+  "s4e31": {
+    "saison": 4,
+    "emission": 31,
     "url": "https://youtu.be/UJtNJAcgfXM",
-    "date": "29/06/2025"
+    "date": "29/07/2025"
   }
 }
